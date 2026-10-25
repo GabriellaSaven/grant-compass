@@ -1,0 +1,8 @@
+dash==3.*
+pydantic-ai-slim[openai]==2.54.0
+python-dotenv
+requests
+beautifulsoup4
+pypdf
+python-docx
+python-pptx

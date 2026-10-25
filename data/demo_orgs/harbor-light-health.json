@@ -1,0 +1,489 @@
+{
+  "slug": "harbor-light-health",
+  "name": "Harbor Light Health Collective",
+  "tagline": "Street medicine, walk-in care and peer navigation for unhoused adults in Alameda County.",
+  "location": "Oakland, California",
+  "cause": "Community health",
+  "profile": {
+    "legal_name": "Harbor Light Health Collective, Inc.",
+    "legal_status": "501(c)(3) public charity",
+    "year_founded": 2013,
+    "headquarters": "Oakland",
+    "state": "California",
+    "website": "",
+    "mission": "Harbor Light Health Collective brings primary care, mental health care and practical support to unhoused and low-income adults in Alameda County, meeting people where they are.",
+    "theory_of_change": "If unhoused and low-income adults receive primary and mental health care where they already are, and peer navigators with lived experience help them secure housing and benefits, then they will manage chronic conditions, rely less on emergency rooms and move toward stable housing. Trust built through repeated, low-barrier contact is what makes the clinical care stick.",
+    "programmes": "Street Medicine Van — mobile primary care and behavioural health visits, 5 days a week, at 14 regular stops in Oakland, Berkeley, Hayward and San Leandro\nHarbor Light Drop-In Clinic — walk-in primary care and counselling, Monday to Friday, on International Boulevard in East Oakland\nPeer Navigator Programme — 12 peer navigators with lived experience connect patients to housing, Medi-Cal, CalFresh and disability benefits, year-round across Alameda County",
+    "focus_areas": [
+      "Health",
+      "Mental health",
+      "Housing & homelessness"
+    ],
+    "populations": [
+      "Adults",
+      "Low-income households",
+      "People with disabilities",
+      "Communities of colour"
+    ],
+    "population_details": "71% of patients were unhoused at their first visit; 92% have incomes below 138% of the federal poverty level; 41% report a disability; 38% have a serious mental illness diagnosis. 48% Black, 22% Latino/Hispanic, 17% white, 8% Asian/Pacific Islander, 5% Native American or multiracial.",
+    "geography": "Alameda County, California — Oakland, Berkeley, Hayward and San Leandro",
+    "people_served": 3940,
+    "annual_budget": 4800000,
+    "fiscal_year_end": "June 30",
+    "revenue_mix": "Federal grants 30%, Medi-Cal reimbursement 25%, Foundations 22%, Alameda County contracts 13%, Individual donors 7%, Corporate gifts 3%",
+    "audit": "Independent audit, clean opinion",
+    "staff": "38 full-time, 9 part-time",
+    "volunteers": "About 60 volunteer clinicians and health-professions students a year",
+    "grant_capacity": "A full-time grants and compliance manager leads all proposals and reports, the development director spends about 40% of time on grants, and we have managed a direct federal grant under Uniform Guidance since 2019.",
+    "federal_experience": "Yes, we manage federal grants directly",
+    "outcomes": "2025-26: 3,940 unique patients received 18,600 primary care and behavioural health visits\n2025-26: 418 patients moved into interim or permanent housing with a peer navigator's help\n2025-26: 58% of patients with hypertension had blood pressure under 140/90 at their last visit, up from 44% in 2023-24",
+    "evaluation": "Clinical measures (blood pressure control, PHQ-9 depression scores) are tracked in our electronic health record and housing and benefits outcomes in a navigator case-management database; both are reported to the board every quarter.",
+    "current_funders": "Bayview Community Health Fund — $250,000 — 2024-2026\nMarlowe Family Foundation — $150,000 — 2025-2027\nEast Bay Wellness Trust — $90,000 — 2023-2026",
+    "grant_types": [
+      "Programme / project",
+      "General operating",
+      "Capacity building"
+    ],
+    "min_award": 25000,
+    "max_match": "Up to 15% cash match",
+    "lead_time_days": 30,
+    "avoid": "Funding that requires sobriety or housing readiness as a condition of care, or that is limited to hospital-based services.",
+    "voice": "Data-led and concise",
+    "key_messages": "We bring care to people instead of waiting for them to reach a clinic\nPeer navigators with lived experience turn a medical visit into a path to housing and benefits\nWe track clinical and housing outcomes for every patient and report them openly",
+    "language_preferences": "Use person-first language such as 'people experiencing homelessness' or 'unhoused neighbours', never 'the homeless' or 'transients'."
+  },
+  "team": [
+    [
+      "Dr. Renata Okafor-Lisle",
+      "Executive Director"
+    ],
+    [
+      "Marcus Tanaka-Reyes",
+      "Director of Development"
+    ],
+    [
+      "Priya Venkataraman",
+      "Grants and Compliance Manager"
+    ]
+  ],
+  "documents": [
+    {
+      "title": "Mission and Theory of Change",
+      "doc_type": "Mission & theory of change",
+      "approved": false,
+      "content": "# Harbor Light Health Collective — Mission and Theory of Change\n\nHarbor Light Health Collective, Inc. is a 501(c)(3) public charity founded in 2013 and based in Oakland, California. Our programmes run across Alameda County, in Oakland, Berkeley, Hayward and San Leandro.\n\n## Mission\nHarbor Light Health Collective brings primary care, mental health care and practical support to unhoused and low-income adults in Alameda County, meeting people where they are.\n\n## Theory of change\nIf unhoused and low-income adults receive primary and mental health care where they already are, and peer navigators with lived experience help them secure housing and benefits, then they will manage chronic conditions, rely less on emergency rooms and move toward stable housing. Trust built through repeated, low-barrier contact is what makes the clinical care stick.\n\n## Principles\n- Care is never conditional on sobriety or housing readiness.\n- People with lived experience of homelessness shape our services, as staff and as board members.\n- We measure clinical and housing outcomes for every patient."
+    },
+    {
+      "title": "Programme Descriptions",
+      "doc_type": "Programme description",
+      "approved": false,
+      "content": "# Programme Descriptions\n\n## Street Medicine Van\nA nurse practitioner, a medical assistant and a behavioural health clinician visit 14 regular stops in Oakland, Berkeley, Hayward and San Leandro, 5 days a week. Services include primary care, wound care, medication refills and brief counselling. 7,200 visits with 1,850 patients in 2025-26.\n\n## Harbor Light Drop-In Clinic\nA walk-in clinic on International Boulevard in East Oakland, open Monday to Friday, offering primary care, chronic disease management and counselling with no appointment needed. 11,400 visits with 2,610 patients in 2025-26.\n\n## Peer Navigator Programme\n12 peer navigators with lived experience of homelessness work alongside our clinicians, helping patients apply for Medi-Cal, CalFresh and disability benefits and secure interim or permanent housing. 1,480 patients worked with a navigator in 2025-26.\n\n## Plans\n- Add a second van in 2027 to reach southern Alameda County (about 900 more patients a year).\n- Pilot a medical respite programme; no site chosen yet."
+    },
+    {
+      "title": "2025-26 Impact Report",
+      "doc_type": "Impact report",
+      "approved": false,
+      "content": "# 2025-26 Impact Report\n\n## Who we serve\n- 3,940 unique patients received 18,600 visits (7,200 on the van, 11,400 at the clinic).\n- 71% were unhoused at their first visit; 92% have incomes below 138% of the federal poverty level.\n- 48% Black, 22% Latino/Hispanic, 17% white, 8% Asian/Pacific Islander, 5% Native American or multiracial.\n- 41% report a disability; 38% have a serious mental illness diagnosis.\n\n## Outcomes\n- 418 patients moved into interim or permanent housing with a peer navigator's help.\n- 1,290 patients were enrolled in Medi-Cal, CalFresh or disability benefits.\n- 58% of patients with hypertension had blood pressure under 140/90 at their last visit, up from 44% in 2023-24.\n- 62% of patients with moderate or severe depression (PHQ-9 of 10 or more) who attended three or more counselling visits improved by 5 points or more.\n- Emergency room visits among navigated patients fell 31% in the six months after enrolment.\n\n\"The van came to me before I could come to anyone. Now I have a doctor and a key.\" — Patient, East Oakland\n\n## How we measure\nClinical data: electronic health record. Housing and benefits data: navigator case-management database. Both reported quarterly."
+    },
+    {
+      "title": "FY2026 Budget Summary",
+      "doc_type": "Budget",
+      "approved": false,
+      "content": "# FY2026 Budget Summary\n\nAnnual operating budget (FY2026, year ending June 30): $4.8 million.\n\n## Expenses\n- Clinical staff (physicians, nurse practitioners, nurses, medical assistants): $1,960,000\n- Behavioural health clinicians: $720,000\n- Peer navigators: $610,000\n- Van operations, fuel, maintenance and medical supplies: $380,000\n- Clinic rent and facilities: $290,000\n- Data systems and electronic health record: $140,000\n- Administration and finance: $450,000\n- Fundraising: $250,000\n- Total: $4,800,000\n\n## Revenue mix\n- Federal grants (direct federal health care for the homeless grant): 30%\n- Medi-Cal reimbursement: 25%\n- Foundations: 22%\n- Alameda County contracts: 13%\n- Individual donors: 7%\n- Corporate gifts: 3%\n\nCost per patient: about $1,220 per year."
+    },
+    {
+      "title": "Governance and Capacity",
+      "doc_type": "Governance",
+      "approved": false,
+      "content": "# Governance and Capacity\n\n- Board of 11 directors; meets every other month. Three directors have lived experience of homelessness, and two are practising clinicians.\n- Most recent audit: FY2025 independent audit, including a federal Single Audit, completed with a clean opinion and no findings.\n- Staff: 38 full-time, 9 part-time, plus about 60 volunteer clinicians and health-professions students a year.\n- We have managed a direct federal grant under Uniform Guidance since 2019.\n- One full-time grants and compliance manager; the development director spends about 40% of time on grants.\n- Policies in place: HIPAA privacy policy, conflict of interest policy, whistleblower policy, patient grievance policy, sliding fee scale policy, harm reduction policy.\n\n## Key leaders\n- Dr. Renata Okafor-Lisle, Executive Director — family physician; has led Harbor Light since 2017.\n- Marcus Tanaka-Reyes, Director of Development — oversees fundraising and funder relationships.\n- Priya Venkataraman, Grants and Compliance Manager — leads proposals, reporting and federal compliance."
+    },
+    {
+      "title": "Organisation Overview",
+      "doc_type": "Approved organisational language",
+      "approved": true,
+      "content": "# Organisation Overview (approved language)\n\nHarbor Light Health Collective brings primary care and mental health care to unhoused and low-income adults across Alameda County. Since 2013 we have met people where they are: on our Street Medicine Van, which visits 14 stops five days a week, and at our walk-in clinic in East Oakland. Twelve peer navigators with lived experience of homelessness help patients secure housing, Medi-Cal and other benefits. In 2025-26 we served 3,940 patients across 18,600 visits, and 418 patients moved into interim or permanent housing with a navigator's help. Care is never conditional on sobriety or housing readiness."
+    }
+  ],
+  "opportunities": [
+    {
+      "funder": "Golden Coast Health Equity Fund",
+      "program_name": "Community Clinic Access Grants",
+      "deadline_days": 6,
+      "geography": "California",
+      "focus_area": "Health",
+      "award_min": 50000,
+      "award_max": 150000,
+      "award_text": "$50,000 to $150,000 for one year",
+      "eligibility": [
+        "California 501(c)(3) organisations providing direct health services",
+        "Annual budget between $1 million and $15 million",
+        "Serves low-income or uninsured adults"
+      ],
+      "restrictions": [
+        "No capital construction",
+        "No funding for hospital-based services"
+      ],
+      "requirements": [
+        "Narrative responses to four questions",
+        "Project budget and budget narrative",
+        "Most recent audited financial statements"
+      ],
+      "matched_funding": "Not required",
+      "reporting": "Mid-year check-in and final report with outcome data",
+      "summary": "One-year grants for community clinics expanding access to primary and behavioural health care for low-income Californians.",
+      "raw_text": "Golden Coast Health Equity Fund — Community Clinic Access Grants (FICTIONAL SAMPLE)\nThe Fund invites California community clinics and safety-net providers to apply for one-year grants of $50,000 to $150,000 that expand access to primary care and behavioural health for low-income, uninsured and unhoused adults. Priority goes to organisations that deliver care outside traditional clinic walls, integrate mental health with primary care, and track clinical outcomes. Applicants must be 501(c)(3) organisations based in California with annual budgets between $1 million and $15 million. Funds may support staff, supplies, outreach and data systems; capital construction and hospital-based services are not eligible. Applications are due by 5:00 p.m. Pacific time on the deadline date and must include four narrative responses, a project budget with narrative, and the most recent audited financial statements. No match is required.",
+      "status": "Drafting",
+      "owner_index": 2,
+      "decision": "Go",
+      "tasks_done": 1,
+      "questions": [
+        {
+          "prompt": "Describe the need in your community and the population you will serve.",
+          "limit_type": "words",
+          "limit_value": 250,
+          "answer": "Harbor Light is the leading provider of street medicine in California and we are truly passionate about helping the most vulnerable people in our community. Every year we serve over 5,000 people, and nearly all of them are homeless. The need in Alameda County is huge and growing every day. Our van and clinic do amazing work and our patients really need us. With your support we can continue to make a real difference in so many lives.",
+          "status": "Drafting"
+        },
+        {
+          "prompt": "Why is your organisation well positioned to deliver this project?",
+          "limit_type": "words",
+          "limit_value": 250,
+          "answer": "",
+          "status": "Not started"
+        },
+        {
+          "prompt": "How will you measure the success of this project?",
+          "limit_type": "words",
+          "limit_value": 200,
+          "answer": "",
+          "status": "Not started"
+        },
+        {
+          "prompt": "Provide a budget narrative explaining how grant funds will be used.",
+          "limit_type": "characters",
+          "limit_value": 1500,
+          "answer": "",
+          "status": "Not started"
+        }
+      ]
+    },
+    {
+      "funder": "Oakland Harbor Foundation",
+      "program_name": "Behavioral Health Bridges",
+      "deadline_days": 12,
+      "geography": "Alameda County, California",
+      "focus_area": "Mental health",
+      "award_min": 40000,
+      "award_max": 100000,
+      "award_text": "$40,000 to $100,000 for one year",
+      "eligibility": [
+        "Nonprofits serving residents of Alameda County",
+        "Programmes that connect adults with mental illness to ongoing care and support"
+      ],
+      "restrictions": [
+        "No funding for inpatient psychiatric care",
+        "No general fundraising events"
+      ],
+      "requirements": [
+        "Two narrative questions",
+        "Programme budget",
+        "List of board members"
+      ],
+      "matched_funding": "Not required",
+      "reporting": "Final report with outcome data at 12 months",
+      "summary": "Supports Alameda County programmes that bridge adults with mental illness into consistent care, housing and benefits.",
+      "raw_text": "Oakland Harbor Foundation — Behavioral Health Bridges (FICTIONAL SAMPLE)\nBehavioral Health Bridges funds Alameda County nonprofits that help adults living with mental illness move from crisis or isolation into consistent care. We are especially interested in peer-led models, outreach to people experiencing homelessness, and programmes that link mental health care with housing and benefits. Grants range from $40,000 to $100,000 for one year. Inpatient psychiatric care and fundraising events are not eligible. Proposals must answer two narrative questions and include a programme budget and board list. Applications close at midnight on the published deadline. Grantees submit a final report with outcome data after 12 months.",
+      "status": "Internal Review",
+      "owner_index": 1,
+      "decision": "Go",
+      "tasks_done": 3,
+      "questions": [
+        {
+          "prompt": "Describe the programme you are requesting support for and how it connects participants to ongoing care.",
+          "limit_type": "words",
+          "limit_value": 200,
+          "answer": "We request support for our Peer Navigator Programme. Twelve peer navigators with lived experience of homelessness work alongside our clinicians on the Street Medicine Van and at the Harbor Light Drop-In Clinic in East Oakland. When a patient is seen, a navigator can begin the same day: helping them apply for Medi-Cal, CalFresh and disability benefits, and working toward interim or permanent housing. Behavioural health clinicians on the van and at the clinic provide counselling, so mental health care is part of every visit rather than a separate referral. In 2025-26, 1,480 patients worked with a navigator. Because 38% of our patients have a serious mental illness diagnosis, this continuity matters: care is never conditional on sobriety or housing readiness.",
+          "status": "Reviewed"
+        },
+        {
+          "prompt": "What outcomes did your programme achieve in the past year?",
+          "limit_type": "words",
+          "limit_value": 150,
+          "answer": "In 2025-26, 418 patients moved into interim or permanent housing with a peer navigator's help, and 1,290 patients were enrolled in Medi-Cal, CalFresh or disability benefits. Among patients with moderate or severe depression (PHQ-9 of 10 or more) who attended three or more counselling visits, 62% improved by 5 points or more. Emergency room visits among navigated patients fell 31% in the six months after enrolment. We track clinical data in our electronic health record and housing and benefits data in our navigator case-management database, and report both to our board quarterly.",
+          "status": "Drafting"
+        }
+      ]
+    },
+    {
+      "funder": "Tamalpais Community Trust",
+      "program_name": "Bay Area Housing & Health Partnerships",
+      "deadline_days": 3,
+      "geography": "San Francisco Bay Area, California",
+      "focus_area": "Housing & homelessness",
+      "award_min": 75000,
+      "award_max": 200000,
+      "award_text": "$75,000 to $200,000 for one year, general operating support",
+      "eligibility": [
+        "Bay Area nonprofits working at the intersection of health and housing",
+        "Organisations with at least five years of operating history"
+      ],
+      "restrictions": [
+        "No funding for capital projects",
+        "Organisations may hold only one Trust grant at a time"
+      ],
+      "requirements": [
+        "Two narrative questions",
+        "Organisational budget",
+        "Most recent audit"
+      ],
+      "matched_funding": "Not required",
+      "reporting": "Annual narrative report and a conversation with Trust staff",
+      "summary": "General operating grants for Bay Area organisations that connect health care with housing for people experiencing homelessness.",
+      "raw_text": "Tamalpais Community Trust — Bay Area Housing & Health Partnerships (FICTIONAL SAMPLE)\nThe Trust offers one-year general operating grants of $75,000 to $200,000 to Bay Area nonprofits that treat housing as health care. We look for organisations that involve people with lived experience of homelessness in leadership and service delivery, and that can show housing and health outcomes. Applicants must have at least five years of operating history. Capital projects are not eligible, and organisations may hold only one Trust grant at a time. Submit two short narrative answers, an organisational budget and your most recent audit through the online portal by 5:00 p.m. on the deadline date.",
+      "status": "Ready to Submit",
+      "owner_index": 0,
+      "decision": "Go",
+      "tasks_done": 5,
+      "questions": [
+        {
+          "prompt": "Briefly describe your organisation's history and mission.",
+          "limit_type": "characters",
+          "limit_value": 1000,
+          "answer": "Harbor Light Health Collective, Inc. is a 501(c)(3) public charity founded in 2013 and based in Oakland. Our mission is to bring primary care, mental health care and practical support to unhoused and low-income adults in Alameda County, meeting people where they are. Our Street Medicine Van visits 14 stops five days a week, our Drop-In Clinic on International Boulevard is open Monday to Friday, and 12 peer navigators help patients secure housing and benefits. In 2025-26 we served 3,940 patients across 18,600 visits.",
+          "status": "Approved"
+        },
+        {
+          "prompt": "How do people with lived experience of homelessness shape your work?",
+          "limit_type": "words",
+          "limit_value": 150,
+          "answer": "Lived experience shapes Harbor Light at every level. Three of our 11 board directors have lived experience of homelessness. Our 12 peer navigators, who also have lived experience, work alongside clinicians on the Street Medicine Van and at our Drop-In Clinic, helping patients apply for Medi-Cal, CalFresh and disability benefits and secure housing. Their work is central to our results: in 2025-26, 418 patients moved into interim or permanent housing with a navigator's help, and emergency room visits among navigated patients fell 31% in the six months after enrolment. Our care is never conditional on sobriety or housing readiness.",
+          "status": "Approved"
+        }
+      ]
+    },
+    {
+      "funder": "Sierra Pacific Health Alliance",
+      "program_name": "Regional Mobile Care Initiative",
+      "deadline_days": 25,
+      "geography": "California (priority to rural and underserved counties)",
+      "focus_area": "Health",
+      "award_min": 200000,
+      "award_max": 500000,
+      "award_text": "$200,000 to $500,000 over two years",
+      "eligibility": [
+        "California nonprofits operating mobile health units",
+        "Priority to programmes serving rural or frontier counties; urban applicants considered in a second funding tier"
+      ],
+      "restrictions": [
+        "Vehicle purchases capped at 40% of the award",
+        "No funding for existing staff positions"
+      ],
+      "requirements": [
+        "1:1 cash match from non-state sources",
+        "Two-year project plan and budget",
+        "Letters of support from county health partners"
+      ],
+      "matched_funding": "1:1 cash match required",
+      "reporting": "Semi-annual reports with patient encounter data",
+      "summary": "Two-year grants to expand mobile health units, with priority for rural counties and a 1:1 cash match.",
+      "raw_text": "Sierra Pacific Health Alliance — Regional Mobile Care Initiative (FICTIONAL SAMPLE)\nThe Alliance will award two-year grants of $200,000 to $500,000 to California nonprofits that launch or expand mobile health units. Our first priority is rural and frontier counties where clinic access is limited; applicants serving urban or suburban counties will be considered in a second tier only if funds remain after rural awards are made. Funds may support new clinical positions, equipment and up to 40% of the award for vehicle purchase or conversion. Existing staff positions are not eligible. Every applicant must provide a 1:1 cash match from non-state sources, committed in writing at the time of application, and letters of support from county health partners. Proposals should describe a two-year expansion plan, projected patient encounters and how the unit will be sustained after the grant. Applications are due by 11:59 p.m. Pacific time on the deadline date. Grantees submit semi-annual reports with patient encounter data.",
+      "status": "Go / No-Go",
+      "owner_index": 1,
+      "decision": null,
+      "tasks_done": 0,
+      "questions": []
+    },
+    {
+      "funder": "Cascadia Children's Health Foundation",
+      "program_name": "Pediatric Access Fund",
+      "deadline_days": 15,
+      "geography": "Oregon and Washington only",
+      "focus_area": "Health",
+      "award_min": 30000,
+      "award_max": 120000,
+      "award_text": "$30,000 to $120,000 for one year",
+      "eligibility": [
+        "Nonprofits based in and serving Oregon or Washington",
+        "Programmes serving children and adolescents aged 0-18"
+      ],
+      "restrictions": [
+        "No services for adults",
+        "No organisations outside Oregon and Washington"
+      ],
+      "requirements": [
+        "Letter of inquiry",
+        "Pediatric patient data for the past year"
+      ],
+      "matched_funding": "Not required",
+      "reporting": "Annual report",
+      "summary": "Grants for pediatric clinics and outreach serving children in Oregon and Washington.",
+      "raw_text": "Cascadia Children's Health Foundation — Pediatric Access Fund (FICTIONAL SAMPLE)\nThe Pediatric Access Fund supports nonprofits that improve access to primary care, dental care and mental health services for children and adolescents aged 0-18. Applicants must be based in and serve communities in Oregon or Washington; organisations outside these two states are not eligible. Programmes primarily serving adults are not eligible, even if they include some young adults. Grants range from $30,000 to $120,000 for one year. Submit a two-page letter of inquiry with pediatric patient data for the past year by the deadline date.",
+      "status": "Researching",
+      "owner_index": null,
+      "decision": null,
+      "tasks_done": 0,
+      "questions": []
+    },
+    {
+      "funder": "Alameda Civic Health Fund",
+      "program_name": "Safety-Net Operating Support",
+      "deadline_days": -20,
+      "geography": "Alameda County, California",
+      "focus_area": "Health",
+      "award_min": 50000,
+      "award_max": 100000,
+      "award_text": "$50,000 to $100,000 for one year, general operating support",
+      "eligibility": [
+        "Alameda County safety-net health providers",
+        "501(c)(3) organisations with a clean recent audit"
+      ],
+      "restrictions": [
+        "No capital projects"
+      ],
+      "requirements": [
+        "Short application form",
+        "Organisational budget",
+        "Most recent audit"
+      ],
+      "matched_funding": "Not required",
+      "reporting": "One-page year-end report",
+      "summary": "Unrestricted operating grants for Alameda County safety-net health providers.",
+      "raw_text": "Alameda Civic Health Fund — Safety-Net Operating Support (FICTIONAL SAMPLE)\nThe Fund provides unrestricted one-year operating grants of $50,000 to $100,000 to nonprofit safety-net health providers serving Alameda County residents. We prioritise providers serving uninsured, low-income and unhoused patients. Applicants must be 501(c)(3) organisations with a clean recent audit. Capital projects are not eligible. Submit a short application form, organisational budget and most recent audit by 5:00 p.m. on the deadline date. Grantees submit a one-page year-end report describing how funds were used.",
+      "status": "Submitted",
+      "owner_index": 2,
+      "decision": "Go",
+      "tasks_done": 6,
+      "questions": []
+    }
+  ],
+  "library_answers": [
+    {
+      "question": "Why is your organisation well positioned to deliver this project?",
+      "answer": "Harbor Light Health Collective has brought care to unhoused and low-income adults in Alameda County since 2013. Our Street Medicine Van visits 14 stops five days a week, our Drop-In Clinic in East Oakland is open Monday to Friday, and 12 peer navigators with lived experience of homelessness connect patients to housing and benefits. In 2025-26 we served 3,940 patients across 18,600 visits; 418 patients moved into interim or permanent housing, and 58% of patients with hypertension had blood pressure under 140/90 at their last visit, up from 44% in 2023-24. We track clinical outcomes in our electronic health record and report them to our board quarterly. Our FY2025 independent audit, including a federal Single Audit, received a clean opinion with no findings, and we have managed a direct federal grant under Uniform Guidance since 2019. Three of our 11 board directors have lived experience of homelessness.",
+      "funder": "Tamalpais Community Trust"
+    }
+  ],
+  "outcomes": [
+    {
+      "result": "Won",
+      "funder": "Pacific Crest Health Foundation",
+      "program_name": "Mobile Primary Care Fund",
+      "geography": "Northern California",
+      "focus_area": "Health",
+      "summary": "Funds nurse practitioner time and medical supplies on Harbor Light's Street Medicine Van for one year.",
+      "raw_text": "Pacific Crest Health Foundation — Mobile Primary Care Fund (FICTIONAL SAMPLE)\nThe Mobile Primary Care Fund supports Northern California nonprofits that deliver primary care outside clinic walls to people experiencing homelessness and other adults who face barriers to care. One-year grants of $50,000 to $100,000 may cover clinical staff time, medical supplies and van operations. Priority goes to providers that integrate behavioural health and track chronic disease outcomes such as blood pressure control.",
+      "amount_awarded": 85000,
+      "decided_days_ago": 80,
+      "grant_period": "August 1, 2026 – July 31, 2027",
+      "report_due_days": 18,
+      "owner_index": 2,
+      "reporting_requirements": "Pacific Crest Health Foundation — Interim Report Requirements (FICTIONAL SAMPLE)\nFirst progress report: due November 10, 2026, covering August 1 – September 30, 2026. A final report is due August 31, 2027.\n\nPlease answer the following four narrative sections:\n1. Progress to date (up to 300 words): describe the services delivered under this grant and how they compare with your plan.\n2. People served and outcomes (up to 250 words): report the number of unique patients, the number of visits, and any change in clinical measures, including blood pressure control for patients with hypertension.\n3. Challenges and adjustments (up to 200 words): describe any delays or obstacles and how you responded.\n4. Patient voice (up to 150 words): share one short patient story or quote, with consent.\n\nRequired metrics: unique patients, total visits, number of stops served, referrals to benefits or housing support.\n\nFinancial report: a one-page statement of grant expenditures to date against the approved budget.\n\nFormat: submit narrative and financial report as a single PDF through the Foundation's grantee portal by 5:00 p.m. Pacific time on the due date.",
+      "report_sections": [
+        {
+          "prompt": "Progress to date: describe the services delivered under this grant and how they compare with your plan.",
+          "limit_type": "words",
+          "limit_value": 300
+        },
+        {
+          "prompt": "People served and outcomes: report the number of unique patients, the number of visits, and any change in clinical measures, including blood pressure control for patients with hypertension.",
+          "limit_type": "words",
+          "limit_value": 250
+        },
+        {
+          "prompt": "Challenges and adjustments: describe any delays or obstacles and how you responded.",
+          "limit_type": "words",
+          "limit_value": 200
+        },
+        {
+          "prompt": "Patient voice: share one short patient story or quote, with consent.",
+          "limit_type": "words",
+          "limit_value": 150
+        }
+      ],
+      "program_report": {
+        "title": "Programme Progress Report: August 1 – September 30, 2026",
+        "content": "# Programme Progress Report: August 1 – September 30, 2026\n\n## Street Medicine Van — Pacific Crest Health Foundation grant ($85,000)\n\nIn the first two months of the grant, the Street Medicine Van ran 5 days a week at all 14 regular stops in Oakland, Berkeley, Hayward and San Leandro, on schedule with our plan.\n\n## Activity to date\n- 1,190 van visits with 760 unique patients.\n- 230 wound care visits and 410 medication refills.\n- 165 patients received brief counselling from the van's behavioural health clinician.\n- 128 patients were referred to a peer navigator; 47 of them have already been enrolled in Medi-Cal, CalFresh or disability benefits.\n\n## Clinical outcomes to date\n- Of 214 van patients with hypertension seen in the period, 55% had blood pressure under 140/90 at their last visit (organisation-wide in 2025-26: 58%).\n\n## Challenges\nThe van was off the road for three days in September for brake repairs; we added a Saturday visit to the Hayward stop to make up the missed visits.\n\n## Patient voice\n\"They remembered my name and my medication. I didn't have to start over.\" — Patient, San Leandro stop\n\n## Spending to date\n$14,150 of $85,000 spent (17%): $11,300 nurse practitioner time and $2,850 medical supplies, in line with the approved budget."
+      }
+    },
+    {
+      "result": "Won",
+      "funder": "Estuary Housing Stability Fund",
+      "program_name": "Navigation to Housing Grants",
+      "geography": "Alameda and Contra Costa Counties, California",
+      "focus_area": "Housing & homelessness",
+      "summary": "Supports salaries of Harbor Light's peer navigators who help unhoused patients secure housing and benefits.",
+      "raw_text": "Estuary Housing Stability Fund — Navigation to Housing Grants (FICTIONAL SAMPLE)\nThe Fund makes one-year grants of $75,000 to $150,000 to East Bay nonprofits that help people experiencing homelessness move into interim or permanent housing. We favour peer-led navigation, close links with health care, and organisations that track housing placements and benefits enrolment for every participant. Funds may support navigator salaries, training and client assistance.",
+      "amount_awarded": 120000,
+      "decided_days_ago": 170,
+      "grant_period": "June 1, 2026 – May 31, 2027",
+      "report_due_days": 59,
+      "owner_index": 0,
+      "reporting_requirements": "Estuary Housing Stability Fund — Interim Report Requirements (FICTIONAL SAMPLE)\nSix-month interim report: due December 21, 2026, covering June 1 – November 30, 2026. The final report is due June 30, 2027.\n\nThe interim report must include four narrative sections:\n1. Programme summary (up to 250 words): summarise navigation activities funded by this grant during the reporting period.\n2. Housing and benefits outcomes (up to 300 words): report housing placements (interim and permanent) and benefits enrolments, compared with the targets in your proposal.\n3. Lived experience and staffing (up to 200 words): describe how peer navigators with lived experience were recruited, trained and supported.\n4. Lessons learned and next steps (up to 200 words): describe what you have learned and any changes planned for the second half of the grant.\n\nRequired metrics: number of participants navigated, interim housing placements, permanent housing placements, Medi-Cal, CalFresh and disability benefits enrolments.\n\nFinancial report: grant expenditures to date by budget line, using the Fund's Excel template.\n\nSubmit the narrative (Word or PDF) and the financial template by email to your programme officer by the due date.",
+      "report_sections": [
+        {
+          "prompt": "Programme summary: summarise navigation activities funded by this grant during the reporting period.",
+          "limit_type": "words",
+          "limit_value": 250
+        },
+        {
+          "prompt": "Housing and benefits outcomes: report housing placements (interim and permanent) and benefits enrolments, compared with the targets in your proposal.",
+          "limit_type": "words",
+          "limit_value": 300
+        },
+        {
+          "prompt": "Lived experience and staffing: describe how peer navigators with lived experience were recruited, trained and supported.",
+          "limit_type": "words",
+          "limit_value": 200
+        },
+        {
+          "prompt": "Lessons learned and next steps: describe what you have learned and any changes planned for the second half of the grant.",
+          "limit_type": "words",
+          "limit_value": 200
+        }
+      ],
+      "program_report": {
+        "title": "Programme Progress Report: June 1 – September 30, 2026",
+        "content": "# Programme Progress Report: June 1 – September 30, 2026\n\n## Peer Navigator Programme — Estuary Housing Stability Fund grant ($120,000)\n\nDuring the first four months of the grant, our 12 peer navigators, all with lived experience of homelessness, worked alongside clinicians on the Street Medicine Van and at the Harbor Light Drop-In Clinic in East Oakland.\n\n## Participants and outcomes to date\n- 590 patients worked with a peer navigator (on track for our annual total of about 1,480).\n- 141 patients moved into interim or permanent housing: 96 into interim housing and 45 into permanent housing.\n- 420 patients were enrolled in Medi-Cal, CalFresh or disability benefits.\n- Emergency room use among navigated patients is measured six months after enrolment; first results will appear in the final report.\n\n## Staffing\nAll 12 navigator positions stayed filled. Two new navigators completed our harm reduction and benefits training in July.\n\n## Participant voice\n\"My navigator had been where I was. She sat with me through every form until I had keys.\" — Participant, Oakland\n\n## Spending to date\n$40,000 of $120,000 spent (33%) on peer navigator salaries and training, in line with the approved budget.\n\n## Next steps\nTracking is done in our navigator case-management database and reported to the board quarterly; we will add a monthly housing-retention check for patients placed since June."
+      }
+    },
+    {
+      "result": "Lost",
+      "funder": "Redwood Valley Health Foundation",
+      "program_name": "Integrated Behavioral Health Expansion",
+      "geography": "California",
+      "focus_area": "Mental health",
+      "summary": "Grants to expand behavioural health services integrated into primary care settings.",
+      "raw_text": "Redwood Valley Health Foundation — Integrated Behavioral Health Expansion (FICTIONAL SAMPLE)\nThe Foundation funds California community health providers that add or expand behavioural health clinicians within primary care. One-year grants of $40,000 to $100,000 may cover clinician salaries and training. This cycle, priority goes to providers in the Central Valley and other counties with the fewest licensed mental health professionals per resident.",
+      "amount_requested": 75000,
+      "decided_days_ago": 40,
+      "owner_index": 1,
+      "lost_reason": "Strong integrated model and clear outcome data, but this cycle the Foundation prioritised Central Valley counties with the greatest shortage of mental health professionals. Harbor Light is encouraged to reapply next year."
+    },
+    {
+      "result": "Won",
+      "funder": "Coastal Bend Wellness Trust",
+      "program_name": "Community Health Navigators",
+      "geography": "Northern California",
+      "focus_area": "Health",
+      "summary": "A one-year grant for two bilingual health navigators at the Oakland clinic.",
+      "raw_text": "Coastal Bend Wellness Trust — Community Health Navigators (FICTIONAL SAMPLE)\nA one-year grant for two bilingual health navigators at the Oakland clinic.",
+      "amount_awarded": 70000,
+      "decided_days_ago": 140,
+      "owner_index": 0,
+      "grant_period": "July 1, 2026 – June 30, 2027"
+    },
+    {
+      "result": "Lost",
+      "funder": "Golden Gate Care Alliance",
+      "program_name": "Clinic Capacity Grants",
+      "geography": "San Francisco Bay Area",
+      "focus_area": "Health",
+      "summary": "A request to fund an extra evening clinic session twice a week.",
+      "raw_text": "Golden Gate Care Alliance — Clinic Capacity Grants (FICTIONAL SAMPLE)\nA request to fund an extra evening clinic session twice a week.",
+      "amount_requested": 90000,
+      "decided_days_ago": 75,
+      "owner_index": 2,
+      "lost_reason": "Reviewers wanted a staffing plan for the evening session and evidence of demand from current patients."
+    }
+  ]
+}

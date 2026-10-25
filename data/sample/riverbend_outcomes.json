@@ -1,0 +1,65 @@
+[
+  {
+    "result": "Won",
+    "funder": "Dayton Readers' Circle Foundation",
+    "program_name": "Early Reading Success Grants",
+    "geography": "Montgomery County, Ohio",
+    "focus_area": "Early literacy (K-3)",
+    "summary": "One-year support for one-on-one reading tutoring for K-3 students in Montgomery County.",
+    "raw_text": "Dayton Readers' Circle Foundation — Early Reading Success Grants (FICTIONAL SAMPLE)\nOne-year grants for programmes that help children in kindergarten through third grade in Montgomery County read at grade level. Priority for evidence-based tutoring delivered during the school day and for programmes that involve families.",
+    "amount_awarded": 75000,
+    "decided_days_ago": 62,
+    "grant_period": "September 1, 2026 – August 31, 2027",
+    "report_due_days": 16,
+    "owner_index": 1,
+    "reporting_requirements": "Dayton Readers' Circle Foundation — Interim Report Requirements (FICTIONAL SAMPLE)\nAn interim report is due at the midpoint of the grant period and a final report within 30 days of its end. Submit as a single PDF to grants@drcf.example.org.\nThe interim report must include:\n1. Progress toward goals (up to 300 words): what was delivered so far and how it compares with the plan in your proposal.\n2. Students served (up to 150 words): number of students enrolled to date, schools, and the share starting below benchmark.\n3. Early results (up to 250 words): any assessment data available, with the tool you use.\n4. Challenges and changes (up to 200 words): anything that did not go as planned and what you changed.\nAttach a one-page budget-to-actual report showing spending to date against the approved budget. Photos and a short participant story are welcome but optional.",
+    "report_sections": [
+      {"prompt": "Progress toward goals: what was delivered so far and how it compares with the plan in your proposal.", "limit_type": "words", "limit_value": 300},
+      {"prompt": "Students served: number of students enrolled to date, schools, and the share starting below benchmark.", "limit_type": "words", "limit_value": 150},
+      {"prompt": "Early results: any assessment data available, with the tool you use.", "limit_type": "words", "limit_value": 250},
+      {"prompt": "Challenges and changes: anything that did not go as planned and what you changed.", "limit_type": "words", "limit_value": 200}
+    ],
+    "program_report": {
+      "title": "Programme Progress Report: Fall 2026 (Dayton Readers' Circle grant)",
+      "content": "# Programme Progress Report: Fall 2026\n\nPeriod covered: September 1 – December 15, 2026. Funded by the Dayton Readers' Circle Foundation ($75,000).\n\n## Delivery\n- 286 students in grades K-3 enrolled in One-on-One Tutoring at all nine partner elementary schools in Dayton Public Schools.\n- 74% of enrolled students started the year below benchmark on the fall DIBELS 8 assessment.\n- 128 trained volunteer tutors completed the six-hour structured literacy training before starting.\n- Students received tutoring twice a week for 30 minutes during the school day; average attendance was 87% of scheduled sessions.\n- Three Family Reading Nights were held, with 412 family members attending.\n\n## Early results\nWinter DIBELS 8 results are due in January. On the mid-fall progress check, 39% of students who started below benchmark had already reached benchmark.\n\n## Challenges\nTutor recruitment at two schools started slowly, so 21 students began tutoring three weeks late. We added a second weekly volunteer orientation, and every waitlisted student was matched by October 6.\n\n## Spending to date\n$36,400 of $75,000 spent (49%), mainly on tutor coordinators and books.\n\n> \"My son asks to read the bus signs out loud now.\" — Parent, Westwood Elementary"
+    }
+  },
+  {
+    "result": "Won",
+    "funder": "Ohio Valley Community Bank Foundation",
+    "program_name": "Neighbourhood Impact Grants",
+    "geography": "Southwest Ohio",
+    "focus_area": "Education and family engagement",
+    "summary": "Support for Family Reading Nights and Summer Book Bags in Dayton.",
+    "raw_text": "Ohio Valley Community Bank Foundation — Neighbourhood Impact Grants (FICTIONAL SAMPLE)\nGrants to nonprofits in the bank's Southwest Ohio footprint for education and family engagement programmes. Preference for programmes that reach low-income households and involve volunteers.",
+    "amount_awarded": 40000,
+    "decided_days_ago": 140,
+    "grant_period": "July 1, 2026 – June 30, 2027",
+    "report_due_days": 68,
+    "owner_index": 0,
+    "reporting_requirements": "Ohio Valley Community Bank Foundation — Mid-Year Report Requirements (FICTIONAL SAMPLE)\nA mid-year report is due by January 31 and a final report by July 31. Complete the online form; each answer has a 1,000-character limit.\nRequired sections:\n1. Programme activities completed this period.\n2. Number of people served, including families.\n3. Volunteer involvement (number of volunteers and hours).\n4. One story that shows the programme's impact.\nInclude total spending to date. The Foundation may share your story in its community report with your permission.",
+    "report_sections": [
+      {"prompt": "Programme activities completed this period.", "limit_type": "characters", "limit_value": 1000},
+      {"prompt": "Number of people served, including families.", "limit_type": "characters", "limit_value": 1000},
+      {"prompt": "Volunteer involvement (number of volunteers and hours).", "limit_type": "characters", "limit_value": 1000},
+      {"prompt": "One story that shows the programme's impact.", "limit_type": "characters", "limit_value": 1000}
+    ],
+    "program_report": {
+      "title": "Family Engagement Report: July – December 2026 (Ohio Valley Community Bank grant)",
+      "content": "# Family Engagement Report: July – December 2026\n\nFunded by the Ohio Valley Community Bank Foundation ($40,000).\n\n## Activities\n- Summer Book Bags: every enrolled student took home 10 free books in June and July; 2,860 books were distributed.\n- Family Reading Nights: four monthly evening events from September to December at partner schools, teaching simple at-home reading routines.\n\n## People served\n- 286 students and 538 family members took part, including 412 family members at Family Reading Nights.\n\n## Volunteers\n- 46 volunteers gave 690 hours at Family Reading Nights and book distribution.\n\n## Story\nA grandmother raising two first graders came to her first Family Reading Night in September. By November she was leading a reading game at her table for other families.\n\n## Spending to date\n$21,300 of $40,000 spent (53%)."
+    }
+  },
+  {
+    "result": "Lost",
+    "funder": "Buckeye Education Futures Fund",
+    "program_name": "Statewide Literacy Scale-Up Awards",
+    "geography": "Ohio",
+    "focus_area": "Literacy at scale",
+    "summary": "Multi-year awards to scale literacy programmes to new Ohio districts.",
+    "raw_text": "Buckeye Education Futures Fund — Statewide Literacy Scale-Up Awards (FICTIONAL SAMPLE)\nMulti-year awards for literacy programmes ready to expand into at least three new Ohio school districts, with a third-party evaluation.",
+    "amount_requested": 150000,
+    "decided_days_ago": 44,
+    "owner_index": 0,
+    "lost_reason": "Reviewers liked the tutoring results but this cycle funded programmes already working in three or more districts with a third-party evaluation."
+  }
+]

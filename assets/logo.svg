@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Grant Compass">
+  <style>
+    .needle { transform-origin: 32px 32px; animation: swing 1.4s cubic-bezier(.3,1.6,.5,1) both; }
+    @keyframes swing { 0% { transform: rotate(-70deg); } 55% { transform: rotate(14deg); } 75% { transform: rotate(-6deg); } 100% { transform: rotate(0deg); } }
+    @media (prefers-reduced-motion: reduce) { .needle { animation: none; } }
+  </style>
+  <circle cx="32" cy="32" r="29" fill="#fffefb" stroke="#2f5d50" stroke-width="3"/>
+  <circle cx="32" cy="32" r="22.5" fill="none" stroke="#2f5d50" stroke-width="1" stroke-dasharray="1.5 4.4" opacity=".55"/>
+  <path d="M32 3.5v6M32 54.5v6M3.5 32h6M54.5 32h6" stroke="#2f5d50" stroke-width="2.4" stroke-linecap="round"/>
+  <g class="needle">
+    <path d="M32 9.5 39 32H25z" fill="#2f5d50"/>
+    <path d="M32 54.5 25 32h14z" fill="#e8907a"/>
+    <circle cx="32" cy="32" r="3.6" fill="#fffefb" stroke="#2f5d50" stroke-width="2"/>
+  </g>
+</svg>

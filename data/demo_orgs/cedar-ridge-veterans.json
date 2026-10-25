@@ -1,0 +1,477 @@
+{
+  "slug": "cedar-ridge-veterans",
+  "name": "Cedar Ridge Veterans Collaborative",
+  "tagline": "Housing, peer support and skilled-trades careers for San Antonio veterans.",
+  "location": "San Antonio, Texas",
+  "cause": "Veteran housing & jobs",
+  "profile": {
+    "legal_name": "Cedar Ridge Veterans Collaborative, Inc.",
+    "legal_status": "501(c)(3) public charity",
+    "year_founded": 2012,
+    "headquarters": "San Antonio",
+    "state": "Texas",
+    "website": "",
+    "mission": "Cedar Ridge Veterans Collaborative helps veterans in the San Antonio region secure stable housing, rebuild connection with fellow veterans, and enter skilled-trades careers that sustain their families.",
+    "theory_of_change": "If veterans at risk of homelessness receive rapid housing navigation, structured peer support from other veterans, and a paid pathway into the skilled trades, then they will stay housed, reconnect with their community, and earn wages that keep their households stable. Housing, connection and employment are addressed together because a gap in any one of them puts the other two at risk.",
+    "programmes": "Homeward Navigation — housing navigation, rapid rehousing and short-term rental assistance for veteran households at risk of or experiencing homelessness; caseworkers work weekdays from our San Antonio office and in clients' homes across Bexar County\nBattle Buddy Peer Network — trained veteran peer mentors lead weekly peer-support groups and one-to-one check-ins; at our East Side centre and two partner sites\nTrades Forward — a 14-week skilled-trades pre-apprenticeship in electrical, HVAC and welding, run in three cohorts a year at our East Side training workshop, with placement into registered apprenticeships",
+    "focus_areas": [
+      "Housing & homelessness",
+      "Higher education & workforce",
+      "Economic mobility"
+    ],
+    "populations": [
+      "Veterans",
+      "Adults",
+      "Families / caregivers",
+      "People with disabilities"
+    ],
+    "population_details": "100% of adults enrolled are veterans; 38% have a service-connected disability rating; 41% of households include children; 16% are women veterans; 57% identify as Hispanic/Latino, 19% as Black, 20% as white and 4% as another race or multiracial.",
+    "geography": "Bexar County, with outreach in Comal and Guadalupe counties, Texas",
+    "people_served": 1100,
+    "annual_budget": 3100000,
+    "fiscal_year_end": "September 30",
+    "revenue_mix": "Federal government 42%, Foundations 26%, State and local government 12%, Individual donors 10%, Corporate gifts 8%, Events 2%",
+    "audit": "Independent audit, clean opinion",
+    "staff": "31 full-time, 6 part-time",
+    "volunteers": "48 volunteer peer mentors and 22 volunteer trades mentors",
+    "grant_capacity": "A three-person grants and finance team manages 14 active grants, including a direct federal award, with monthly budget-to-actual reviews.",
+    "federal_experience": "Yes, we manage federal grants directly",
+    "outcomes": "2025-26: 318 of 412 veteran households enrolled in Homeward Navigation (77%) moved into permanent housing, an average of 38 days after enrolment.\n2025-26: 87% of households housed in 2024-25 remained stably housed 12 months later.\n2025-26: 118 of 146 Trades Forward participants (81%) completed training and 94 entered registered apprenticeships at an average starting wage of $21.40 an hour.",
+    "evaluation": "Housing and employment outcomes are tracked in our HMIS-compatible case-management system and verified at 6 and 12 months after exit. Peer-support participants complete the UCLA Loneliness Scale at intake and after 12 weeks.",
+    "current_funders": "Federal veteran rapid rehousing grant (direct award) — $1,300,000 per year — 2019-2027\nAlamo Heritage Foundation — $150,000 per year — 2024-2026\nLone Star Workforce Trust — $90,000 — 2025-2026",
+    "grant_types": [
+      "Programme / project",
+      "General operating",
+      "Capacity building"
+    ],
+    "min_award": 25000,
+    "max_match": "Up to a 25% cash match",
+    "lead_time_days": 30,
+    "avoid": "We avoid funding that requires us to serve non-veterans as the primary population or to operate emergency shelter beds.",
+    "voice": "Formal and academic",
+    "key_messages": "Housing, peer connection and skilled-trades employment are addressed together, because stability in one depends on the others.\nIn 2025-26, 77% of enrolled veteran households moved into permanent housing, and 87% of those housed the prior year remained housed after 12 months.\nWe manage a direct federal rapid rehousing award and hold a clean independent audit.",
+    "language_preferences": "Use \"veterans experiencing homelessness\" rather than \"homeless veterans\", and refer to participants as veterans or households, not clients or cases."
+  },
+  "team": [
+    [
+      "Dr. Marisol Vega-Hartley",
+      "Executive Director"
+    ],
+    [
+      "Terrence Okafor",
+      "Director of Housing Programmes"
+    ],
+    [
+      "Lauren Pruitt",
+      "Grants and Development Manager"
+    ]
+  ],
+  "documents": [
+    {
+      "title": "Mission and Theory of Change",
+      "doc_type": "Mission & theory of change",
+      "approved": false,
+      "content": "# Mission and Theory of Change\n\n## Mission\nCedar Ridge Veterans Collaborative helps veterans in the San Antonio region secure stable housing, rebuild connection with fellow veterans, and enter skilled-trades careers that sustain their families. We were founded in 2012 and serve Bexar County, with outreach in Comal and Guadalupe counties.\n\n## The problem\nVeterans who lose housing often face several pressures at once: a job loss, a disability, isolation after leaving service, or a family crisis. Services that address only one of these pressures tend to produce short-lived results.\n\n## Theory of change\nIf veterans at risk of homelessness receive rapid housing navigation, structured peer support from other veterans, and a paid pathway into the skilled trades, then they will stay housed, reconnect with their community, and earn wages that keep their households stable. Housing, connection and employment are addressed together because a gap in any one of them puts the other two at risk.\n\n## Principles\n- Housing first: no preconditions for help with housing.\n- Veteran-led: peer mentors are veterans themselves.\n- Measured: outcomes are verified 6 and 12 months after exit."
+    },
+    {
+      "title": "Programme Descriptions",
+      "doc_type": "Programme description",
+      "approved": false,
+      "content": "# Programme Descriptions\n\n## Homeward Navigation\nHousing navigation, rapid rehousing and short-term rental assistance for veteran households at risk of or experiencing homelessness. Caseworkers work weekdays from our San Antonio office and in veterans' homes across Bexar County. Support includes landlord negotiation, security deposits, move-in costs and up to six months of rental assistance.\n\n## Battle Buddy Peer Network\nTrained veteran peer mentors lead weekly peer-support groups and one-to-one check-ins at our East Side centre and two partner sites. The network is supported by 48 volunteer peer mentors, each completing 24 hours of training before matching.\n\n## Trades Forward\nA 14-week skilled-trades pre-apprenticeship in electrical, HVAC and welding, run in three cohorts a year at our East Side training workshop. Participants earn industry-recognised safety certifications and are placed into registered apprenticeships with partner employers. Twenty-two volunteer trades mentors support the cohorts.\n\n## How the programmes connect\nEvery veteran housed through Homeward Navigation is offered a peer mentor and a Trades Forward assessment."
+    },
+    {
+      "title": "2025-26 Impact Report",
+      "doc_type": "Impact report",
+      "approved": false,
+      "content": "# 2025-26 Impact Report\n\n## Who we served\n- 1,100 veterans and family members served in total.\n- 38% of veterans have a service-connected disability rating; 41% of households include children; 16% are women veterans.\n- 57% identify as Hispanic/Latino, 19% as Black, 20% as white and 4% as another race or multiracial.\n\n## Outcomes\n- Homeward Navigation: 318 of 412 enrolled veteran households (77%) moved into permanent housing, an average of 38 days after enrolment.\n- 87% of households housed in 2024-25 remained stably housed 12 months later.\n- Battle Buddy Peer Network: 540 veterans took part; 72% reported lower loneliness on the UCLA Loneliness Scale after 12 weeks.\n- Trades Forward: 118 of 146 participants (81%) completed training and 94 entered registered apprenticeships at an average starting wage of $21.40 an hour.\n\n## In their words\n\"My caseworker found us an apartment in five weeks, and my peer mentor talked me into the HVAC cohort. I start my apprenticeship on Monday.\" — Army veteran and father of two\n\n## How we measure\nOutcomes are tracked in our HMIS-compatible case-management system and verified at 6 and 12 months after exit."
+    },
+    {
+      "title": "FY2026 Budget Summary",
+      "doc_type": "Budget",
+      "approved": false,
+      "content": "# FY2026 Budget Summary\n\nAnnual operating budget (FY2026, year ending September 30, 2026): $3.1 million.\n\n## Expenses\n- Housing navigation and rapid rehousing staff: $820,000\n- Rental and move-in assistance paid to landlords: $760,000\n- Battle Buddy Peer Network: $310,000\n- Trades Forward instructors, tools and certification fees: $540,000\n- Administration and finance: $390,000\n- Fundraising: $280,000\n- Total: $3,100,000\n\n## Revenue mix\n- Federal government (direct veteran rapid rehousing grant): 42%\n- Foundations: 26%\n- State and local government: 12%\n- Individual donors: 10%\n- Corporate gifts: 8%\n- Events: 2%\n\n## Notes\nProgramme expenses (housing, peer support and Trades Forward) total $2,430,000, or 78% of the budget. The federal rapid rehousing grant provides $1,300,000 per year through 2027."
+    },
+    {
+      "title": "Governance and Capacity",
+      "doc_type": "Governance",
+      "approved": false,
+      "content": "# Governance and Capacity\n\n## Board\nA 13-member board of directors, 7 of whom are veterans, meets every other month. Committees cover finance and audit, programmes, and governance. The board approves the annual budget and reviews outcomes each quarter.\n\n## Staff and volunteers\n31 full-time and 6 part-time staff, supported by 48 volunteer peer mentors and 22 volunteer trades mentors.\n\n## Key leaders\n- Dr. Marisol Vega-Hartley, Executive Director: a Navy veteran who has led the Collaborative since 2017.\n- Terrence Okafor, Director of Housing Programmes: oversees Homeward Navigation and the federal rapid rehousing grant.\n- Lauren Pruitt, Grants and Development Manager: manages 14 active grants and all funder reporting.\n\n## Financial management\nIndependent audit, clean opinion, including a single audit of federal funds, for FY2025. A three-person grants and finance team conducts monthly budget-to-actual reviews. We have managed a direct federal award since 2019.\n\n## Policies\nConflict of interest, whistleblower, document retention, client confidentiality and fair housing policies are approved by the board and reviewed every two years."
+    },
+    {
+      "title": "Organisation Overview",
+      "doc_type": "Approved organisational language",
+      "approved": true,
+      "content": "# Organisation Overview (approved language)\n\nCedar Ridge Veterans Collaborative helps veterans in the San Antonio region secure stable housing, rebuild connection with fellow veterans, and enter skilled-trades careers that sustain their families. Since 2012 we have combined three programmes: Homeward Navigation, which provides housing navigation and rapid rehousing; the Battle Buddy Peer Network, which pairs veterans with trained veteran peer mentors; and Trades Forward, a 14-week pre-apprenticeship in electrical, HVAC and welding. In 2025-26, 318 veteran households moved into permanent housing, and 94 veterans entered registered apprenticeships. We manage a direct federal rapid rehousing grant and hold a clean independent audit."
+    }
+  ],
+  "opportunities": [
+    {
+      "funder": "Lone Star Veterans Fund",
+      "program_name": "Housing Stability for Texas Veterans",
+      "deadline_days": 6,
+      "geography": "Texas",
+      "focus_area": "Housing & homelessness",
+      "award_min": 50000,
+      "award_max": 150000,
+      "award_text": "$50,000 to $150,000 for one year",
+      "eligibility": [
+        "Texas-based 501(c)(3) organisations",
+        "At least three years of experience serving veterans",
+        "Programmes that move veterans into permanent housing"
+      ],
+      "restrictions": [
+        "No funding for emergency shelter beds",
+        "No capital construction"
+      ],
+      "requirements": [
+        "Narrative responses (4 questions)",
+        "Programme budget",
+        "Most recent audit",
+        "Board list"
+      ],
+      "matched_funding": "Not required",
+      "reporting": "Interim report at 6 months and final report at 12 months, including housing retention data",
+      "summary": "Statewide funder supporting rapid rehousing and housing navigation that move Texas veterans into permanent housing.",
+      "raw_text": "Lone Star Veterans Fund — Housing Stability for Texas Veterans (FICTIONAL SAMPLE)\nThe Fund invites Texas-based 501(c)(3) organisations with at least three years of experience serving veterans to apply for one-year grants of $50,000 to $150,000. Priority is given to housing navigation and rapid rehousing programmes that move veterans and their families into permanent housing and track retention after 12 months. Applicants that link housing with employment or peer support are especially encouraged. Funds may cover staff, rental and move-in assistance, and programme costs. The Fund does not support emergency shelter beds or capital construction. No match is required. Applications are due in six days and must include four narrative responses, a programme budget, the most recent audit and a board list. Grantees submit an interim report at six months and a final report with housing retention data at twelve months.",
+      "status": "Drafting",
+      "owner_index": 2,
+      "decision": "Go",
+      "tasks_done": 1,
+      "questions": [
+        {
+          "prompt": "Describe the need in your community and your organisation's approach to addressing it.",
+          "limit_type": "words",
+          "limit_value": 300,
+          "answer": "Cedar Ridge Veterans Collaborative is the leading veteran housing provider in Texas. Veteran homelessness is a really big problem and we work very hard every day to solve it. Our programmes have housed over 500 veterans last year, with nearly 100% of them staying housed. We take a holistic, wraparound, best-in-class approach that changes lives. We also help veterans find good jobs. With your support we can do even more to end veteran homelessness once and for all across the state.",
+          "status": "Drafting"
+        },
+        {
+          "prompt": "Why is your organisation well positioned to do this work?",
+          "limit_type": "words",
+          "limit_value": 200,
+          "answer": "",
+          "status": "Not started"
+        },
+        {
+          "prompt": "How will you measure the success of this programme?",
+          "limit_type": "words",
+          "limit_value": 200,
+          "answer": "",
+          "status": "Not started"
+        },
+        {
+          "prompt": "Explain how the requested funds will be used.",
+          "limit_type": "characters",
+          "limit_value": 1200,
+          "answer": "",
+          "status": "Not started"
+        }
+      ]
+    },
+    {
+      "funder": "Hill Country Workforce Foundation",
+      "program_name": "Skilled Trades Pathways Grant",
+      "deadline_days": 12,
+      "geography": "South and Central Texas",
+      "focus_area": "Higher education & workforce",
+      "award_min": 40000,
+      "award_max": 100000,
+      "award_text": "$40,000 to $100,000 for one year",
+      "eligibility": [
+        "Nonprofits in South or Central Texas",
+        "Training that leads to industry-recognised credentials or registered apprenticeships"
+      ],
+      "restrictions": [
+        "No tuition payments to for-profit schools",
+        "No general operating support"
+      ],
+      "requirements": [
+        "Two narrative responses",
+        "Programme budget",
+        "Employer partner letters"
+      ],
+      "matched_funding": "Not required",
+      "reporting": "Final report with completion, placement and wage data",
+      "summary": "Supports pre-apprenticeship and trades training that leads to registered apprenticeships and family-sustaining wages.",
+      "raw_text": "Hill Country Workforce Foundation — Skilled Trades Pathways Grant (FICTIONAL SAMPLE)\nThe Foundation funds nonprofits in South and Central Texas that prepare adults for careers in the skilled trades. Eligible programmes must lead to industry-recognised credentials or placement in registered apprenticeships. Awards range from $40,000 to $100,000 for one year. Priority populations include veterans, people re-entering the workforce and adults with disabilities. The Foundation does not pay tuition to for-profit schools or provide general operating support. Proposals are due in twelve days and include two narrative responses, a programme budget and letters from employer partners. Grantees report completion, placement and starting-wage data at year end.",
+      "status": "Internal Review",
+      "owner_index": 2,
+      "decision": "Go",
+      "tasks_done": 3,
+      "questions": [
+        {
+          "prompt": "Describe the training programme and the population it serves.",
+          "limit_type": "words",
+          "limit_value": 200,
+          "answer": "Trades Forward is a 14-week skilled-trades pre-apprenticeship in electrical, HVAC and welding, run in three cohorts a year at our East Side training workshop in San Antonio. Participants earn industry-recognised safety certifications and are placed into registered apprenticeships with partner employers, supported by 22 volunteer trades mentors. Every participant is a veteran. Across the households we serve, 38% of veterans have a service-connected disability rating, 41% of households include children and 16% are women veterans. Veterans housed through our Homeward Navigation programme are offered a Trades Forward assessment, so training builds directly on housing stability.",
+          "status": "Reviewed"
+        },
+        {
+          "prompt": "What outcomes did the programme achieve last year, and how are they measured?",
+          "limit_type": "words",
+          "limit_value": 150,
+          "answer": "Trades Forward runs three cohorts a year, and participants earn industry-recognised safety certifications before placement with partner employers. In 2025-26, 118 of 146 Trades Forward participants (81%) completed training, and 94 entered registered apprenticeships at an average starting wage of $21.40 an hour. Outcomes are tracked in our HMIS-compatible case-management system and verified at 6 and 12 months after exit. A three-person grants and finance team reviews programme budgets against actual spending each month, and the board reviews outcomes each quarter.",
+          "status": "Drafting"
+        }
+      ]
+    },
+    {
+      "funder": "Bluebonnet Service Members Foundation",
+      "program_name": "Operating Support for Veteran-Serving Organisations",
+      "deadline_days": 3,
+      "geography": "Texas",
+      "focus_area": "Housing & homelessness",
+      "award_min": 25000,
+      "award_max": 75000,
+      "award_text": "$25,000 to $75,000 for one year",
+      "eligibility": [
+        "Texas 501(c)(3) organisations whose primary population is veterans or military families",
+        "Annual budget of $500,000 or more",
+        "Clean independent audit"
+      ],
+      "restrictions": [
+        "No funding for individual stipends paid directly to veterans"
+      ],
+      "requirements": [
+        "Two narrative responses",
+        "Organisational budget",
+        "Audited financial statements"
+      ],
+      "matched_funding": "Not required",
+      "reporting": "Brief annual report on organisational outcomes",
+      "summary": "Unrestricted operating grants for established Texas organisations whose primary population is veterans and military families.",
+      "raw_text": "Bluebonnet Service Members Foundation — Operating Support for Veteran-Serving Organisations (FICTIONAL SAMPLE)\nThe Foundation provides unrestricted general operating grants of $25,000 to $75,000 for one year to Texas 501(c)(3) organisations whose primary population is veterans or military families. Applicants must have an annual budget of $500,000 or more and a clean independent audit. The Foundation values organisations that combine housing, employment and social connection. Grants may not fund stipends paid directly to individual veterans. Applications close in three days and require two narrative responses, an organisational budget and audited financial statements. Grantees submit a brief annual report on organisational outcomes.",
+      "status": "Ready to Submit",
+      "owner_index": 0,
+      "decision": "Go",
+      "tasks_done": 5,
+      "questions": [
+        {
+          "prompt": "Why is your organisation well positioned to do this work?",
+          "limit_type": "words",
+          "limit_value": 200,
+          "answer": "Cedar Ridge Veterans Collaborative has served veterans in the San Antonio region since 2012 and addresses housing, peer connection and employment together. Homeward Navigation provides housing navigation and rapid rehousing; the Battle Buddy Peer Network pairs veterans with trained veteran peer mentors; and Trades Forward offers a 14-week pre-apprenticeship in electrical, HVAC and welding. In 2025-26, 318 of 412 enrolled veteran households (77%) moved into permanent housing, an average of 38 days after enrolment, and 87% of households housed in 2024-25 remained stably housed 12 months later. Of 146 Trades Forward participants, 94 entered registered apprenticeships at an average starting wage of $21.40 an hour. Our capacity is established: we have managed a direct federal rapid rehousing grant since 2019, hold an independent audit with a clean opinion, and are governed by a 13-member board, 7 of whom are veterans.",
+          "status": "Approved"
+        },
+        {
+          "prompt": "How would general operating support strengthen your organisation?",
+          "limit_type": "words",
+          "limit_value": 150,
+          "answer": "Our FY2026 operating budget is $3.1 million, and 42% of revenue comes from a single federal rapid rehousing grant that restricts how funds are used. Flexible support would strengthen the shared functions that hold our three programmes together: administration and finance ($390,000 in FY2026), the coordination that offers every veteran housed through Homeward Navigation a peer mentor and a Trades Forward assessment, and the outcome verification we carry out 6 and 12 months after exit. Unrestricted funding would also help us diversify a revenue mix in which foundations provide 26% and individual donors 10%, reducing reliance on any one source.",
+          "status": "Approved"
+        }
+      ]
+    },
+    {
+      "funder": "National Homefront Housing Alliance",
+      "program_name": "Veteran Housing Capacity Initiative",
+      "deadline_days": 25,
+      "geography": "United States, priority to rural communities",
+      "focus_area": "Housing & homelessness",
+      "award_min": 200000,
+      "award_max": 400000,
+      "award_text": "$200,000 to $400,000 over two years",
+      "eligibility": [
+        "U.S. 501(c)(3) organisations serving veterans experiencing or at risk of homelessness",
+        "Annual budget of at least $2 million"
+      ],
+      "restrictions": [
+        "Funds may not replace existing federal funding",
+        "No capital construction"
+      ],
+      "requirements": [
+        "Letter of inquiry",
+        "Two-year capacity-building plan",
+        "Documentation of committed match"
+      ],
+      "matched_funding": "50% cash match required",
+      "reporting": "Semi-annual progress reports and an independent evaluation in year two",
+      "summary": "Two-year capacity-building grants for veteran housing providers, prioritising rural reach and requiring a 50% cash match.",
+      "raw_text": "National Homefront Housing Alliance — Veteran Housing Capacity Initiative (FICTIONAL SAMPLE)\nThe Alliance invites U.S. 501(c)(3) organisations serving veterans experiencing or at risk of homelessness to apply for two-year capacity-building grants of $200,000 to $400,000. Eligible organisations must have an annual budget of at least $2 million. Funds may support data systems, staff training, landlord-recruitment strategies and expansion of rapid rehousing capacity. Priority will be given to organisations that extend services into rural counties with few veteran housing providers; urban-only proposals will be considered but are less competitive. Grantees must provide a 50% cash match, documented at the time of application, and funds may not replace existing federal funding. Capital construction is not eligible. Letters of inquiry are due in 25 days and must include a two-year capacity-building plan. Selected grantees submit semi-annual progress reports and take part in an independent evaluation in the second year.",
+      "status": "Go / No-Go",
+      "owner_index": 1,
+      "decision": null,
+      "tasks_done": 0,
+      "questions": []
+    },
+    {
+      "funder": "Gulf Coast Youth Futures Fund",
+      "program_name": "Teen Trades Pathways",
+      "deadline_days": 15,
+      "geography": "Louisiana and Mississippi only",
+      "focus_area": "Youth development",
+      "award_min": 20000,
+      "award_max": 60000,
+      "award_text": "$20,000 to $60,000 for one year",
+      "eligibility": [
+        "Organisations headquartered in Louisiana or Mississippi",
+        "Programmes serving youth aged 14 to 18 only"
+      ],
+      "restrictions": [
+        "No services for adults over 18",
+        "No organisations outside Louisiana or Mississippi"
+      ],
+      "requirements": [
+        "Online application",
+        "School partnership letter"
+      ],
+      "matched_funding": "Not required",
+      "reporting": "Final report with school attendance and credential data",
+      "summary": "Funds high-school trades exploration for youth aged 14 to 18 in Louisiana and Mississippi only.",
+      "raw_text": "Gulf Coast Youth Futures Fund — Teen Trades Pathways (FICTIONAL SAMPLE)\nThe Fund supports trades exploration and career-readiness programmes for young people aged 14 to 18. Eligible applicants must be headquartered in Louisiana or Mississippi and deliver services in those states only; organisations based elsewhere are not eligible. Programmes must serve high-school-age youth exclusively, and services for adults over 18 will not be funded. Awards range from $20,000 to $60,000 for one year. Applicants must submit an online application and a letter from a partner school. Applications are due in fifteen days.",
+      "status": "Researching",
+      "owner_index": null,
+      "decision": null,
+      "tasks_done": 0,
+      "questions": []
+    },
+    {
+      "funder": "Patriot Bridge Foundation",
+      "program_name": "Veteran Peer Connection Grants",
+      "deadline_days": -20,
+      "geography": "Texas, Oklahoma and New Mexico",
+      "focus_area": "Mental health",
+      "award_min": 30000,
+      "award_max": 80000,
+      "award_text": "$30,000 to $80,000 for one year",
+      "eligibility": [
+        "501(c)(3) organisations in Texas, Oklahoma or New Mexico",
+        "Peer-support programmes led by veterans"
+      ],
+      "restrictions": [
+        "No clinical treatment costs"
+      ],
+      "requirements": [
+        "Narrative proposal",
+        "Programme budget",
+        "Peer mentor training outline"
+      ],
+      "matched_funding": "Not required",
+      "reporting": "Final report with participation and wellbeing measures",
+      "summary": "Supports veteran-led peer-support programmes that reduce isolation among veterans.",
+      "raw_text": "Patriot Bridge Foundation — Veteran Peer Connection Grants (FICTIONAL SAMPLE)\nThe Foundation funds veteran-led peer-support programmes in Texas, Oklahoma and New Mexico that reduce isolation and strengthen connection among veterans. Awards of $30,000 to $80,000 for one year may cover peer mentor training, group facilitation and coordination staff. Clinical treatment costs are not eligible. Applicants submit a narrative proposal, a programme budget and an outline of peer mentor training. The application deadline has passed; grantees report participation and a validated wellbeing or loneliness measure at year end.",
+      "status": "Submitted",
+      "owner_index": 0,
+      "decision": "Go",
+      "tasks_done": 6,
+      "questions": []
+    }
+  ],
+  "library_answers": [
+    {
+      "question": "Why is your organisation well positioned to do this work?",
+      "answer": "Cedar Ridge Veterans Collaborative has served veterans in the San Antonio region since 2012 and addresses housing, peer connection and employment together. Homeward Navigation provides housing navigation and rapid rehousing; the Battle Buddy Peer Network pairs veterans with trained veteran peer mentors; and Trades Forward offers a 14-week pre-apprenticeship in electrical, HVAC and welding. In 2025-26, 318 of 412 enrolled veteran households (77%) moved into permanent housing, an average of 38 days after enrolment, and 87% of households housed in 2024-25 remained stably housed 12 months later. Of 146 Trades Forward participants, 94 entered registered apprenticeships at an average starting wage of $21.40 an hour. Our capacity is established: we have managed a direct federal rapid rehousing grant since 2019, hold an independent audit with a clean opinion, and are governed by a 13-member board, 7 of whom are veterans.",
+      "funder": "Bluebonnet Service Members Foundation"
+    }
+  ],
+  "outcomes": [
+    {
+      "result": "Won",
+      "funder": "Mission City Community Foundation",
+      "program_name": "Veteran Housing Stability Fund",
+      "geography": "Bexar County, Texas",
+      "focus_area": "Housing & homelessness",
+      "summary": "Funds caseworker time and rental and move-in assistance to move veteran households in Bexar County into permanent housing through Homeward Navigation.",
+      "raw_text": "Mission City Community Foundation — Veteran Housing Stability Fund (FICTIONAL SAMPLE)\nThe Veteran Housing Stability Fund makes one-year grants of $50,000 to $100,000 to nonprofits in Bexar County that help veterans experiencing homelessness, or at imminent risk of it, move quickly into permanent housing. Priority goes to housing-first programmes that combine navigation, landlord engagement and direct rental assistance, and that track housing retention after exit.",
+      "amount_awarded": 75000,
+      "decided_days_ago": 85,
+      "grant_period": "August 1, 2026 – July 31, 2027",
+      "report_due_days": 18,
+      "owner_index": 1,
+      "reporting_requirements": "Mission City Community Foundation — Interim Report Requirements (FICTIONAL SAMPLE)\nGrantees in the Veteran Housing Stability Fund submit a first-quarter interim report covering August 1 – October 31, 2026. The report is due by 5:00 p.m. Central Time on November 10, 2026. Please answer the following narrative sections:\n1. Progress toward housing goals: describe enrolment, housing placements and time to housing during the reporting period. (300 words maximum)\n2. Participant story: share one example of a veteran household served with these funds, with consent and without identifying details. (150 words maximum)\n3. Challenges and adjustments: describe any barriers to placement and how you responded. (200 words maximum)\n4. Plans for the next quarter: describe planned activities and any expected changes to the budget or timeline. (150 words maximum)\nRequired metrics: number of veteran households enrolled; number moved into permanent housing; average days from enrolment to housing; amount of rental and move-in assistance paid to landlords. Financial report: attach the Foundation's budget-to-actual template showing spending to date against the approved $75,000 budget, with an explanation of any line more than 10% off plan. Submit the narrative and attachments as a single PDF through the Foundation's grantee portal.",
+      "report_sections": [
+        {
+          "prompt": "Progress toward housing goals: describe enrolment, housing placements and time to housing during the reporting period.",
+          "limit_type": "words",
+          "limit_value": 300
+        },
+        {
+          "prompt": "Participant story: share one example of a veteran household served with these funds, with consent and without identifying details.",
+          "limit_type": "words",
+          "limit_value": 150
+        },
+        {
+          "prompt": "Challenges and adjustments: describe any barriers to placement and how you responded.",
+          "limit_type": "words",
+          "limit_value": 200
+        },
+        {
+          "prompt": "Plans for the next quarter: describe planned activities and any expected changes to the budget or timeline.",
+          "limit_type": "words",
+          "limit_value": 150
+        }
+      ],
+      "program_report": {
+        "title": "Programme Progress Report: August 1 – October 31, 2026",
+        "content": "# Programme Progress Report: August 1 – October 31, 2026\n\n## Veteran Housing Stability Fund — Homeward Navigation\n\nMission City Community Foundation's $75,000 grant supports caseworker time and rental and move-in assistance for veteran households in Bexar County. This report covers the first quarter of the grant period (figures to October 20, 2026).\n\n## Delivered so far\n- 58 veteran households enrolled in Homeward Navigation with support from this grant.\n- 41 households (71%) moved into permanent housing, an average of 36 days after enrolment.\n- 17 households are still working with a caseworker on landlord negotiation or move-in.\n- 24 of the 58 households (41%) include children; 22 veterans (38%) have a service-connected disability rating.\n- 39 of the 41 newly housed veterans accepted a Battle Buddy peer mentor, and 12 completed a Trades Forward assessment.\n\n## In their words\n\"I had a deposit and nowhere to use it until my caseworker sat down with the landlord. We moved in three weeks later.\" — Marine Corps veteran, Bexar County\n\n## Spending to date\n$31,400 of $75,000 (42%) has been spent: $18,600 in security deposits, move-in costs and rental assistance paid to landlords, and $12,800 in caseworker time. Spending is on plan. Outcomes are tracked in our HMIS-compatible case-management system and will be verified at 6 and 12 months after exit."
+      }
+    },
+    {
+      "result": "Won",
+      "funder": "South Texas Industrial Partners Foundation",
+      "program_name": "Veteran Apprenticeship Readiness Grant",
+      "geography": "South Texas",
+      "focus_area": "Higher education & workforce",
+      "summary": "Funds instructors, tools and certification fees for Trades Forward cohorts that place veterans into registered apprenticeships in electrical, HVAC and welding.",
+      "raw_text": "South Texas Industrial Partners Foundation — Veteran Apprenticeship Readiness Grant (FICTIONAL SAMPLE)\nThe Foundation supports pre-apprenticeship programmes that prepare veterans for registered apprenticeships in the construction and industrial trades across South Texas. Grants of up to $150,000 for one year cover instruction, tools, safety certifications and employer engagement. Applicants must show placement partnerships with registered apprenticeship sponsors and report starting wages.",
+      "amount_awarded": 120000,
+      "decided_days_ago": 138,
+      "grant_period": "July 1, 2026 – June 30, 2027",
+      "report_due_days": 84,
+      "owner_index": 2,
+      "reporting_requirements": "South Texas Industrial Partners Foundation — Interim Report Requirements (FICTIONAL SAMPLE)\nRecipients of a Veteran Apprenticeship Readiness Grant submit a six-month interim report covering July 1 – December 31, 2026. Reports are due no later than January 15, 2027. The narrative should include these sections:\n1. Programme activities: summarise the training delivered, including cohort dates, trades offered and certifications earned. (250 words maximum)\n2. Participant outcomes: report enrolment, completion, apprenticeship placement and starting wages against your approved targets. (300 words maximum)\n3. Employer partnerships: describe the registered apprenticeship sponsors engaged during the period. (200 words maximum)\n4. Lessons learned: describe what you have learned and how it will shape the remaining grant period. (200 words maximum)\nRequired metrics: participants enrolled; participants completing training; industry-recognised certifications earned; participants entering registered apprenticeships; average starting hourly wage. Report metrics by trade (electrical, HVAC, welding). Financial report: a one-page statement of expenses to date by budget line, signed by the Executive Director or finance lead. Email the narrative (Word or PDF, 11-point font minimum) and the financial statement to the Foundation's programme officer. Final payment of 40% is released on approval of the interim report.",
+      "report_sections": [
+        {
+          "prompt": "Programme activities: summarise the training delivered, including cohort dates, trades offered and certifications earned.",
+          "limit_type": "words",
+          "limit_value": 250
+        },
+        {
+          "prompt": "Participant outcomes: report enrolment, completion, apprenticeship placement and starting wages against your approved targets.",
+          "limit_type": "words",
+          "limit_value": 300
+        },
+        {
+          "prompt": "Employer partnerships: describe the registered apprenticeship sponsors engaged during the period.",
+          "limit_type": "words",
+          "limit_value": 200
+        },
+        {
+          "prompt": "Lessons learned: describe what you have learned and how it will shape the remaining grant period.",
+          "limit_type": "words",
+          "limit_value": 200
+        }
+      ],
+      "program_report": {
+        "title": "Programme Progress Report: July 1 – September 30, 2026",
+        "content": "# Programme Progress Report: July 1 – September 30, 2026\n\n## Veteran Apprenticeship Readiness Grant — Trades Forward\n\nSouth Texas Industrial Partners Foundation's $120,000 grant funds instructors, tools and certification fees for Trades Forward, our 14-week pre-apprenticeship in electrical, HVAC and welding at the East Side training workshop.\n\n## Delivered so far\nThe summer cohort ran from June 29 to October 2, 2026.\n- 50 veterans enrolled: 18 in electrical, 17 in HVAC and 15 in welding.\n- 41 participants (82%) completed training; 41 earned an OSHA 10 safety certification and 15 earned an EPA Section 608 certification.\n- 33 graduates entered registered apprenticeships with partner employers, at an average starting wage of $21.10 an hour.\n- 22 volunteer trades mentors supported the cohort, and 9 participants were referred from Homeward Navigation.\n\n## In their words\n\"Fourteen weeks ago I was sleeping on a friend's couch. Now I'm a first-year electrical apprentice with a pay cheque I can plan around.\" — Air Force veteran\n\n## Spending to date\n$46,500 of $120,000 (39%) has been spent: $31,200 on instructors, $9,800 on tools and protective equipment and $5,500 on certification fees. The autumn cohort begins on October 26, 2026, and spending remains on plan."
+      }
+    },
+    {
+      "result": "Lost",
+      "funder": "Brazos Valor Foundation",
+      "program_name": "Women Veterans Transition Grants",
+      "geography": "Texas",
+      "focus_area": "Economic mobility",
+      "summary": "Would have funded a dedicated women veterans' track within Trades Forward and the Battle Buddy Peer Network.",
+      "raw_text": "Brazos Valor Foundation — Women Veterans Transition Grants (FICTIONAL SAMPLE)\nThe Foundation funds Texas nonprofits that help women veterans move into stable, well-paid employment after service. Grants of $25,000 to $75,000 support career training, peer networks and childcare-friendly programming designed for women veterans. Programmes in which women veterans are the primary population receive priority.",
+      "amount_requested": 50000,
+      "decided_days_ago": 40,
+      "owner_index": 0,
+      "lost_reason": "Reviewers valued the integrated housing and trades model, but this cycle prioritised organisations whose programmes serve women veterans as the primary population; women veterans are 16% of Cedar Ridge's participants."
+    },
+    {
+      "result": "Won",
+      "funder": "Alamo Heights Service Fund",
+      "program_name": "Veteran Family Stability",
+      "geography": "Bexar County, Texas",
+      "focus_area": "Veterans",
+      "summary": "A one-year grant for emergency rent assistance and case management for veteran families.",
+      "raw_text": "Alamo Heights Service Fund — Veteran Family Stability (FICTIONAL SAMPLE)\nA one-year grant for emergency rent assistance and case management for veteran families.",
+      "amount_awarded": 50000,
+      "decided_days_ago": 110,
+      "owner_index": 1,
+      "grant_period": "July 1, 2026 – June 30, 2027"
+    }
+  ]
+}

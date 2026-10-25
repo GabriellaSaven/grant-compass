@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grant Compass · Real-user test kit</title>
+<style>
+  :root { --ink:#1d2320; --ink2:#3c433f; --muted:#6e736c; --line:#e4e0d6; --line2:#efece4; --paper:#f7f5f0;
+          --card:#fffefb; --accent:#2f5d50; --soft:#e8efe9; --attn:#b5832a; --crit:#b4473c; --ok:#3f7d5a; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 15px/1.55 "Inter", system-ui, -apple-system, sans-serif; }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 36px 24px 80px; }
+  h1, h2, h3 { font-family: "Newsreader", Georgia, serif; font-weight: 500; margin: 0; }
+  h1 { font-size: 36px; line-height: 1.15; }
+  h2 { font-size: 23px; margin: 0 0 10px; }
+  h3 { font-size: 18px; margin: 14px 0 6px; }
+  .eyebrow { font-size: 11.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+  .lede { color: var(--ink2); font-size: 16px; margin: 10px 0 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px; margin: 18px 0; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .stat { background: var(--soft); border-radius: 10px; padding: 12px 14px; }
+  .stat b { display: block; font-family: "Newsreader", Georgia, serif; font-size: 22px; font-weight: 500; color: var(--accent); }
+  .stat span { font-size: 12.5px; color: var(--muted); }
+  ul, ol { padding-left: 20px; margin: 6px 0; }
+  li { margin: 3px 0; }
+  .say { border-left: 3px solid var(--accent); background: var(--soft); padding: 10px 14px; border-radius: 0 8px 8px 0; margin: 10px 0; color: var(--ink2); }
+  .say::before { content: "SAY  "; font-size: 10.5px; font-weight: 700; letter-spacing: .1em; color: var(--accent); }
+  .watch { border-left: 3px solid var(--attn); background: #fbf4e6; padding: 10px 14px; border-radius: 0 8px 8px 0; margin: 10px 0; color: var(--ink2); font-size: 14px; }
+  .watch::before { content: "WATCH FOR  "; font-size: 10.5px; font-weight: 700; letter-spacing: .1em; color: var(--attn); }
+  .time { float: right; font-size: 12px; font-weight: 700; color: var(--muted); background: var(--line2); border-radius: 999px; padding: 2px 10px; }
+  label { display: block; font-size: 12.5px; font-weight: 600; color: var(--ink2); margin: 10px 0 4px; }
+  input[type=text], input[type=number], textarea, select { width: 100%; font: inherit; font-size: 14px; color: var(--ink);
+    background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; }
+  textarea { min-height: 64px; resize: vertical; }
+  .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+  .timer { display: flex; align-items: center; gap: 10px; margin: 12px 0 4px; }
+  .clock { font-family: "Newsreader", Georgia, serif; font-size: 34px; min-width: 110px; font-variant-numeric: tabular-nums; }
+  button { font: inherit; font-size: 13.5px; font-weight: 600; border-radius: 8px; padding: 7px 14px; cursor: pointer;
+    border: 1px solid var(--line); background: #fff; color: var(--ink); }
+  button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  button:hover { filter: brightness(.97); }
+  .scale { display: flex; gap: 6px; flex-wrap: wrap; }
+  .scale label { margin: 0; font-weight: 500; display: inline-flex; align-items: center; gap: 4px; border: 1px solid var(--line);
+    border-radius: 8px; padding: 4px 10px; background: #fff; cursor: pointer; }
+  .scale input { margin: 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th { text-align: left; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--line); padding: 8px 8px 8px 0; }
+  td { border-bottom: 1px solid var(--line2); padding: 9px 8px 9px 0; vertical-align: top; }
+  td.num { font-variant-numeric: tabular-nums; font-weight: 600; }
+  .saved { font-size: 12px; color: var(--ok); }
+  .bar { position: sticky; top: 0; z-index: 5; background: rgba(247,245,240,.94); backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--line); }
+  .bar .wrap { padding: 10px 24px; display: flex; gap: 10px; align-items: center; justify-content: space-between; }
+  .chk li { list-style: none; margin-left: -20px; }
+  .chk li::before { content: "☐  "; color: var(--accent); }
+  .note { font-size: 13px; color: var(--muted); }
+  @media print { .bar, button { display: none !important; } .card { break-inside: avoid; } body { background: #fff; } }
+</style>
+</head>
+<body>
+<div class="bar"><div class="wrap">
+  <span class="eyebrow">Grant Compass · user test</span>
+  <span><span id="saved" class="saved"></span>&nbsp;
+    <button onclick="copyMarkdown()">Copy results as Markdown</button>
+    <button onclick="window.print()">Print / save PDF</button>
+    <button onclick="resetAll()">Clear</button></span>
+</div></div>
+
+<div class="wrap">
+  <div class="eyebrow">Real-user test kit · 15 minutes</div>
+  <h1>Watch a grant professional use Grant Compass</h1>
+  <p class="lede">One short session with someone who writes or manages grants gives the report its strongest Impact
+    evidence: time saved against how they work today, a quote, and what confused them. Everything you type here is
+    saved in this browser as you go.</p>
+
+  <div class="grid3" style="margin-top:18px">
+    <div class="stat"><b>15 min</b><span>2 intro · 2 background · 9 tasks · 2 wrap-up</span></div>
+    <div class="stat"><b>3 tasks</b><span>find & decide · draft & improve · update the board</span></div>
+    <div class="stat"><b>Before vs after</b><span>their usual time for each job vs. their time with the app</span></div>
+  </div>
+
+  <!-- ===================================================== SETUP -->
+  <div class="card">
+    <h2>Before they arrive (5 minutes)</h2>
+    <ul class="chk">
+      <li>Start the app (<code>python app.py</code>) and open <b>http://127.0.0.1:8050</b>. Check that it loads.</li>
+      <li>Choose the organisation:
+        <b>Best:</b> their own. On the login page use <b>Start your organisation</b> with their organisation's public
+        website, a few minutes before they arrive, so the profile is filled in. Upload one or two of their public
+        reports to <i>Source documents</i> if they have them.
+        <b>Otherwise:</b> the demo closest to their field (literacy → Riverbend Reads, health → Harbor Light, food →
+        Prairie Roots, veterans/housing → Cedar Ridge, STEM/youth → Bright Orbit, arts → Tidewater).</li>
+      <li>Run one Discover search yourself first, so results are cached and the session doesn't wait on the AI.</li>
+      <li>Have a screen recorder or a phone ready for 2–3 screenshots (only if they agree).</li>
+      <li>Close other tabs and notifications. Don't explain the app in advance.</li>
+    </ul>
+    <label>Organisation used in the session</label>
+    <input type="text" data-k="org" placeholder="e.g. their own org (website: …) or the Harbor Light demo">
+  </div>
+
+  <!-- ===================================================== INTRO -->
+  <div class="card">
+    <span class="time">0:00 – 2:00</span>
+    <h2>1. Welcome and consent</h2>
+    <div class="say">Thanks for doing this. I'm testing a tool I built, not you, so there are no wrong answers. Please
+      think out loud as you go: what you're looking for, what you expect, what surprises you. I may stay quiet so I
+      can see where the app is unclear. It takes about 15 minutes.</div>
+    <div class="say">Is it OK if I note your comments and quote you anonymously in a class report, by role only (for
+      example "a development director at a mid-sized nonprofit")? And may I take a screenshot or two of the screen,
+      not of you?</div>
+    <div class="row">
+      <div><label>Quote consent</label><select data-k="consent_quote"><option></option><option>Yes, anonymously by role</option><option>Yes, with name</option><option>No</option></select></div>
+      <div><label>Screenshot consent</label><select data-k="consent_shots"><option></option><option>Yes</option><option>No</option></select></div>
+      <div><label>Date</label><input type="text" data-k="date" placeholder="e.g. 25 Oct 2026"></div>
+    </div>
+  </div>
+
+  <!-- ===================================================== BACKGROUND -->
+  <div class="card">
+    <span class="time">2:00 – 4:00</span>
+    <h2>2. Background: how they work today</h2>
+    <p class="note">These answers are the "before" numbers. Ask for their honest typical time, not a best case.</p>
+    <div class="row">
+      <div><label>Role</label><input type="text" data-k="role" placeholder="e.g. Development Director"></div>
+      <div><label>Organisation type & size</label><input type="text" data-k="orgtype" placeholder="e.g. literacy nonprofit, $1.2M budget"></div>
+      <div><label>Grant applications per year</label><input type="number" data-k="apps_per_year" placeholder="e.g. 25"></div>
+    </div>
+    <label>How do you find new grants today, and which tools do you use?</label>
+    <textarea data-k="today_tools" placeholder="e.g. Instrumentl (paid), Google, newsletters, Candid…"></textarea>
+    <div class="row">
+      <div><label>Today: minutes to find and vet ONE good-fit funder</label><input type="number" data-k="b1" placeholder="minutes"></div>
+      <div><label>Today: minutes to write a first draft of ONE 300-word answer</label><input type="number" data-k="b2" placeholder="minutes"></div>
+      <div><label>Today: minutes to prepare a board fundraising update</label><input type="number" data-k="b3" placeholder="minutes"></div>
+    </div>
+  </div>
+
+  <!-- ===================================================== TASKS -->
+  <div class="card" id="t1">
+    <span class="time">4:00 – 7:00</span>
+    <h2>3. Task 1: Find a grant and decide whether to pursue it</h2>
+    <div class="say">Imagine it's Monday morning and you want one new grant worth pursuing. Using this app, find one
+      and decide whether it's a Go. Tell me when you've decided.</div>
+    <div class="note">Success: they open <b>Discover</b>, run or read a search, open a result, read the fit (dial and
+      bars, "Why it matched", "Your history with this funder"), and either <b>Add to pipeline</b> or reject it with a
+      reason. Don't help unless they're stuck for 60 seconds.</div>
+    <div class="watch">Do they understand the fit %? Do they open the dimension bars? Do they trust the recommendation?
+      Do they notice the funder icon or "Applied before"?</div>
+    <div class="timer"><span class="clock" id="c1">0:00</span>
+      <button class="primary" onclick="tick(1)">Start / stop</button><button onclick="zero(1)">Reset</button></div>
+    <div class="row">
+      <div><label>Completed?</label><select data-k="done1"><option></option><option>Yes, alone</option><option>Yes, with a hint</option><option>No</option></select></div>
+      <div><label>Ease (1 very hard – 7 very easy)</label><select data-k="ease1"><option></option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option></select></div>
+      <div><label>Decision they made</label><input type="text" data-k="dec1" placeholder="e.g. Go on AEP; No-Go on X"></div>
+    </div>
+    <label>Where they hesitated or got confused</label><textarea data-k="conf1"></textarea>
+  </div>
+
+  <div class="card" id="t2">
+    <span class="time">7:00 – 10:00</span>
+    <h2>4. Task 2: Draft an answer and improve it</h2>
+    <div class="say">Now open an application that's being written and get a first draft of one question. Then make it
+      better using whatever the app suggests, until you'd be comfortable sending it to a colleague.</div>
+    <div class="note">Success: <b>Applications</b> → open one → pick a question → <b>✦ Draft with AI</b> → read
+      "Where each fact comes from" → <b>Review suggestions</b> → Accept or Reject at least one → (optional) Evidence
+      tab. Stop the clock when they say it's good enough to share.</div>
+    <div class="watch">Do they check the sources? Do they spot [MISSING: …] gaps? Do they trust or edit the draft? Do
+      they understand Accept/Reject and Undo?</div>
+    <div class="timer"><span class="clock" id="c2">0:00</span>
+      <button class="primary" onclick="tick(2)">Start / stop</button><button onclick="zero(2)">Reset</button></div>
+    <div class="row">
+      <div><label>Completed?</label><select data-k="done2"><option></option><option>Yes, alone</option><option>Yes, with a hint</option><option>No</option></select></div>
+      <div><label>Ease (1–7)</label><select data-k="ease2"><option></option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option></select></div>
+      <div><label>Draft quality (1 unusable – 5 ready with light edits)</label><select data-k="quality2"><option></option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></div>
+    </div>
+    <label>Where they hesitated or got confused</label><textarea data-k="conf2"></textarea>
+  </div>
+
+  <div class="card" id="t3">
+    <span class="time">10:00 – 13:00</span>
+    <h2>5. Task 3: Prepare an update for your board</h2>
+    <div class="say">Your board meets this week and wants to know where fundraising stands. Use the app to find out
+      what needs attention, and produce something you could hand to them.</div>
+    <div class="note">Success: either asks the chat assistant (bottom right), e.g. "What should I work on this
+      week?", and/or goes to <b>Reports</b> → <b>Board update</b> → (optional) <b>✦ Write summary with AI</b> →
+      <b>⬇ PowerPoint deck</b> or <b>⬇ Word document</b>, and opens the file. Stop when they have the file open.</div>
+    <div class="watch">Do they find Reports? Do they read "Waiting on people" on Home? Would they actually send the deck?
+      What would they change in it?</div>
+    <div class="timer"><span class="clock" id="c3">0:00</span>
+      <button class="primary" onclick="tick(3)">Start / stop</button><button onclick="zero(3)">Reset</button></div>
+    <div class="row">
+      <div><label>Completed?</label><select data-k="done3"><option></option><option>Yes, alone</option><option>Yes, with a hint</option><option>No</option></select></div>
+      <div><label>Ease (1–7)</label><select data-k="ease3"><option></option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option></select></div>
+      <div><label>Would they send it? (as is / with edits / no)</label><select data-k="send3"><option></option><option>As is</option><option>With light edits</option><option>With major edits</option><option>No</option></select></div>
+    </div>
+    <label>Where they hesitated or got confused</label><textarea data-k="conf3"></textarea>
+  </div>
+
+  <!-- ===================================================== WRAP-UP -->
+  <div class="card">
+    <span class="time">13:00 – 15:00</span>
+    <h2>6. Wrap-up questions</h2>
+    <label>“In one sentence, what would this change about your week?” (write their exact words)</label>
+    <textarea data-k="q_week"></textarea>
+    <label>“What was the most useful thing you saw?”</label><textarea data-k="q_best"></textarea>
+    <label>“What would stop you from using it?”</label><textarea data-k="q_stop"></textarea>
+    <div class="row">
+      <div><label>“How likely are you to recommend it to a colleague?” (0–10)</label>
+        <select data-k="nps"><option></option><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option></select></div>
+      <div><label>“Did you trust what the AI wrote?” (1 not at all – 5 completely)</label>
+        <select data-k="trust"><option></option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></div>
+      <div><label>“Would you pay for this?” If yes, how much a month?</label><input type="text" data-k="pay" placeholder="e.g. Yes, about $50/month"></div>
+    </div>
+    <div class="say">Thank you, that was really helpful. Is there anything else you'd want it to do?</div>
+    <label>Anything else they wanted</label><textarea data-k="q_more"></textarea>
+  </div>
+
+  <!-- ===================================================== QUOTES -->
+  <div class="card">
+    <h2>7. Quote capture</h2>
+    <p class="note">Write their exact words the moment they say something striking, positive or negative. The report
+      needs one strong quote; a critical one shows honesty.</p>
+    <div id="quotes"></div>
+    <button onclick="addQuote()">+ Add a quote</button>
+  </div>
+
+  <!-- ===================================================== RESULTS -->
+  <div class="card">
+    <h2>8. Timing sheet: before vs. after</h2>
+    <p class="note">Filled in automatically from the tasks and their "today" estimates.</p>
+    <table>
+      <thead><tr><th>Job</th><th>Today (their estimate)</th><th>With Grant Compass</th><th>Saved</th><th>Done</th><th>Ease</th></tr></thead>
+      <tbody id="sheet"></tbody>
+    </table>
+    <p id="yearly" class="note" style="margin-top:12px"></p>
+    <h3>Screenshots to take (if allowed)</h3>
+    <ul class="chk">
+      <li>Task 1: the fit dial with a dimension opened</li>
+      <li>Task 2: the draft with "Where each fact comes from", or a suggestion card open</li>
+      <li>Task 3: the board deck open in PowerPoint or Keynote</li>
+    </ul>
+    <h3>How to use this in the report</h3>
+    <ul>
+      <li><b>Impact:</b> the timing table, the yearly hours saved, the ease and recommend scores, and one quote
+        attributed by role. Say it's one user and that the "today" times are their estimates.</li>
+      <li><b>Look + feel / limits:</b> the confusion notes are your honest "what doesn't work yet" list.</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  const KEY = "gc-user-test";
+  const state = JSON.parse(localStorage.getItem(KEY) || "{}");
+  state.timers = state.timers || {1: 0, 2: 0, 3: 0};
+  state.quotes = state.quotes || [];
+  const running = {};
+
+  function save() {
+    localStorage.setItem(KEY, JSON.stringify(state));
+    const s = document.getElementById("saved");
+    s.textContent = "Saved " + new Date().toLocaleTimeString([], {hour: "2-digit", minute: "2-digit"});
+    renderSheet();
+  }
+  document.querySelectorAll("[data-k]").forEach(el => {
+    if (state[el.dataset.k] !== undefined) el.value = state[el.dataset.k];
+    el.addEventListener("input", () => { state[el.dataset.k] = el.value; save(); });
+  });
+
+  // Stopwatches (keep counting across tab switches; saved every second)
+  const fmt = s => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
+  function show(n) { document.getElementById("c" + n).textContent = fmt(state.timers[n]); }
+  function tick(n) {
+    if (running[n]) { clearInterval(running[n].id); delete running[n]; save(); return; }
+    const start = Date.now() - state.timers[n] * 1000;
+    running[n] = {id: setInterval(() => { state.timers[n] = (Date.now() - start) / 1000; show(n); save(); }, 500)};
+  }
+  function zero(n) { if (running[n]) tick(n); state.timers[n] = 0; show(n); save(); }
+  [1, 2, 3].forEach(show);
+
+  // Quotes
+  function renderQuotes() {
+    const box = document.getElementById("quotes");
+    box.innerHTML = "";
+    state.quotes.forEach((q, i) => {
+      const div = document.createElement("div");
+      div.className = "row";
+      div.style.marginBottom = "8px";
+      div.innerHTML = `<div style="grid-column: span 2"><label>Quote ${i + 1} (exact words)</label>
+        <textarea data-q="${i}" data-f="text">${q.text || ""}</textarea></div>
+        <div><label>During</label><select data-q="${i}" data-f="when">
+        ${["", "Task 1", "Task 2", "Task 3", "Wrap-up", "Other"].map(o => `<option ${o === q.when ? "selected" : ""}>${o}</option>`).join("")}
+        </select><label>Tone</label><select data-q="${i}" data-f="tone">
+        ${["", "Positive", "Critical", "Neutral"].map(o => `<option ${o === q.tone ? "selected" : ""}>${o}</option>`).join("")}
+        </select></div>`;
+      box.appendChild(div);
+    });
+    box.querySelectorAll("[data-q]").forEach(el => el.addEventListener("input", () => {
+      state.quotes[el.dataset.q][el.dataset.f] = el.value; save();
+    }));
+  }
+  function addQuote() { state.quotes.push({text: "", when: "", tone: ""}); renderQuotes(); save(); }
+  renderQuotes();
+
+  // Timing sheet
+  const JOBS = [["Find and vet one good-fit funder", "b1", 1, "done1", "ease1"],
+                ["First draft of one answer, improved", "b2", 2, "done2", "ease2"],
+                ["Board fundraising update", "b3", 3, "done3", "ease3"]];
+  function rows() {
+    return JOBS.map(([job, b, t, d, e]) => {
+      const before = parseFloat(state[b]), after = state.timers[t] / 60;
+      const saved = !isNaN(before) && after > 0 ? before - after : null;
+      return {job, before, after, saved, done: state[d] || "—", ease: state[e] || "—"};
+    });
+  }
+  function renderSheet() {
+    const r = rows();
+    document.getElementById("sheet").innerHTML = r.map(x => `<tr><td>${x.job}</td>
+      <td class="num">${isNaN(x.before) ? "—" : x.before + " min"}</td>
+      <td class="num">${x.after > 0 ? x.after.toFixed(1) + " min" : "—"}</td>
+      <td class="num" style="color:${x.saved > 0 ? "var(--ok)" : "var(--crit)"}">${x.saved === null ? "—" : x.saved.toFixed(1) + " min"}</td>
+      <td>${x.done}</td><td>${x.ease}${x.ease !== "—" ? "/7" : ""}</td></tr>`).join("");
+    const perApp = r[1].saved, apps = parseFloat(state.apps_per_year);
+    document.getElementById("yearly").textContent = perApp > 0 && apps > 0
+      ? `If each application has about 5 answers, drafting alone saves roughly ${(perApp * 5 * apps / 60).toFixed(0)} hours a year (${apps} applications × 5 answers × ${perApp.toFixed(0)} min). State this as an estimate from one user.`
+      : "Fill in their applications per year and Task 2 to estimate hours saved a year.";
+  }
+  renderSheet();
+
+  // Markdown for the report
+  function copyMarkdown() {
+    const r = rows(), v = k => state[k] || "—";
+    const md = [
+      `## Real-user test (${v("date")})`, "",
+      `**Participant:** ${v("role")}, ${v("orgtype")} (${v("apps_per_year")} applications a year). Quote consent: ${v("consent_quote")}.`,
+      `**Organisation used:** ${v("org")}. **Finds grants today with:** ${v("today_tools")}`, "",
+      "| Job | Today (their estimate) | With Grant Compass | Saved | Completed | Ease (1–7) |", "|---|---|---|---|---|---|",
+      ...r.map(x => `| ${x.job} | ${isNaN(x.before) ? "—" : x.before + " min"} | ${x.after > 0 ? x.after.toFixed(1) + " min" : "—"} | ${x.saved === null ? "—" : x.saved.toFixed(1) + " min"} | ${x.done} | ${x.ease} |`),
+      "", `Draft quality: ${v("quality2")}/5 · Would send board deck: ${v("send3")} · Recommend: ${v("nps")}/10 · Trusted the AI: ${v("trust")}/5 · Would pay: ${v("pay")}`, "",
+      `**What it would change about their week:** "${v("q_week")}"`, `**Most useful:** ${v("q_best")}`, `**What would stop them:** ${v("q_stop")}`, "",
+      "**Quotes:**", ...state.quotes.filter(q => q.text).map(q => `- "${q.text}" (${q.when || "session"}, ${q.tone || "neutral"})`), "",
+      "**Where they got confused:**", `- Task 1: ${v("conf1")}`, `- Task 2: ${v("conf2")}`, `- Task 3: ${v("conf3")}`, "",
+      document.getElementById("yearly").textContent];
+    navigator.clipboard.writeText(md.join("\n")).then(() => alert("Copied. Paste it to me or into the report."));
+  }
+  function resetAll() { if (confirm("Clear every answer and timer?")) { localStorage.removeItem(KEY); location.reload(); } }
+</script>
+</body>
+</html>

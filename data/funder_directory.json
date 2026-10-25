@@ -1,0 +1,1098 @@
+[
+ {
+  "n": 1,
+  "name": "Gates Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://www.gatesfoundation.org/about/how-we-work/grant-opportunities",
+  "url": null,
+  "usable": false,
+  "note": "The page only shows its content after JavaScript runs, so there's no text to read."
+ },
+ {
+  "n": 2,
+  "name": "Ford Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://www.fordfoundation.org/work/our-grants/",
+  "url": "https://www.fordfoundation.org/work/our-grants/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": [
+   "we do not accept"
+  ]
+ },
+ {
+  "n": 3,
+  "name": "William and Flora Hewlett Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://hewlett.org/grants/open-calls/",
+  "url": null,
+  "usable": false,
+  "note": "The site's robots.txt asks automated tools not to read this page."
+ },
+ {
+  "n": 4,
+  "name": "David and Lucile Packard Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://www.packard.org/how-we-work/how-we-fund/",
+  "url": "https://www.packard.org/grantees/funding-opportunties/",
+  "usable": true,
+  "note": "The listed link was dead (404); found the current grants page from the homepage.",
+  "closed_signals": []
+ },
+ {
+  "n": 5,
+  "name": "John D. and Catherine T. MacArthur Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://www.macfound.org/grants/",
+  "url": null,
+  "usable": false,
+  "note": "The site's robots.txt asks automated tools not to read this page."
+ },
+ {
+  "n": 6,
+  "name": "Rockefeller Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://www.rockefellerfoundation.org/grants/",
+  "url": "https://www.rockefellerfoundation.org/grants/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": [
+   "does not accept unsolicited"
+  ]
+ },
+ {
+  "n": 7,
+  "name": "Mellon Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://www.mellon.org/grants",
+  "url": "https://www.mellon.org/grants",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 8,
+  "name": "Carnegie Corporation of New York",
+  "type": "Private foundation",
+  "listed_url": "https://www.carnegie.org/grants/",
+  "url": "https://www.carnegie.org/grants/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": [
+   "we do not accept"
+  ]
+ },
+ {
+  "n": 9,
+  "name": "Open Society Foundations",
+  "type": "Private foundation",
+  "listed_url": "https://www.opensocietyfoundations.org/grants",
+  "url": "https://www.opensocietyfoundations.org/grants",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 10,
+  "name": "Gordon and Betty Moore Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://www.moore.org/grants/",
+  "url": "https://www.moore.org/grants/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 11,
+  "name": "Robert Wood Johnson Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://www.rwjf.org/en/grants/active-funding-opportunities.html",
+  "url": "https://www.rwjf.org/en/grants/active-funding-opportunities.html",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 12,
+  "name": "Knight Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://knightfoundation.org/apply/",
+  "url": "https://knightfoundation.org/apply/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 13,
+  "name": "Kresge Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://kresge.org/grants-social-investments/",
+  "url": "https://kresge.org/grants-social-investments/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": [
+   "does not accept unsolicited"
+  ]
+ },
+ {
+  "n": 14,
+  "name": "Walton Family Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://www.waltonfamilyfoundation.org/grants",
+  "url": "https://www.waltonfamilyfoundation.org/grants",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": [
+   "does not accept unsolicited"
+  ]
+ },
+ {
+  "n": 15,
+  "name": "Alfred P. Sloan Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://sloan.org/grants/apply",
+  "url": null,
+  "usable": false,
+  "note": "The site blocks automated tools with a bot check (HTTP 403). We don't bypass these."
+ },
+ {
+  "n": 16,
+  "name": "Simons Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://www.simonsfoundation.org/funding-opportunities/",
+  "url": "https://www.simonsfoundation.org/funding-opportunities/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 17,
+  "name": "John Templeton Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://www.templeton.org/grants",
+  "url": "https://www.templeton.org/grants",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 18,
+  "name": "Doris Duke Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://www.dorisduke.org/funding-opportunities/",
+  "url": "https://www.dorisduke.org/grants",
+  "usable": true,
+  "note": "The listed link was dead (404); found the current grants page from the homepage.",
+  "closed_signals": []
+ },
+ {
+  "n": 19,
+  "name": "Surdna Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://surdna.org/grants/",
+  "url": "https://surdna.org/grants/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 20,
+  "name": "Charles Stewart Mott Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://www.mott.org/grants/",
+  "url": "https://www.mott.org/grants/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 21,
+  "name": "W.K. Kellogg Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://www.wkkf.org/grantseekers/",
+  "url": "https://www.wkkf.org/grantseekers/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 22,
+  "name": "Conrad N. Hilton Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://www.hiltonfoundation.org/grants/",
+  "url": "https://www.hiltonfoundation.org/grants/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": [
+   "we do not accept"
+  ]
+ },
+ {
+  "n": 23,
+  "name": "Rockefeller Brothers Fund",
+  "type": "Private foundation",
+  "listed_url": "https://www.rbf.org/grantmaking",
+  "url": "https://www.rbf.org/grantmaking",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 24,
+  "name": "Bush Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://www.bushfoundation.org/opportunities",
+  "url": "https://www.bushfoundation.org/funding-for-your-organization/",
+  "usable": true,
+  "note": "The listed link was dead (404); found the current grants page from the homepage.",
+  "closed_signals": []
+ },
+ {
+  "n": 25,
+  "name": "McKnight Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://www.mcknight.org/grants/apply-for-a-grant/",
+  "url": "https://www.mcknight.org/grants/for-grant-seekers/",
+  "usable": true,
+  "note": "The listed link was dead (404); found the current grants page from the homepage.",
+  "closed_signals": []
+ },
+ {
+  "n": 26,
+  "name": "Barr Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://www.barrfoundation.org/how-we-work/grantmaking",
+  "url": "https://www.barrfoundation.org/grantmaking/",
+  "usable": true,
+  "note": "The listed link was dead (404); found the current grants page from the homepage.",
+  "closed_signals": []
+ },
+ {
+  "n": 27,
+  "name": "Hearst Foundations",
+  "type": "Private foundation",
+  "listed_url": "https://www.hearstfdn.org/funding-priorities/",
+  "url": null,
+  "usable": false,
+  "note": "The page only shows its content after JavaScript runs, so there's no text to read."
+ },
+ {
+  "n": 28,
+  "name": "Kauffman Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://www.kauffman.org/grants/",
+  "url": "https://www.kauffman.org/grants/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 29,
+  "name": "Lumina Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://www.luminafoundation.org/grants/",
+  "url": "https://www.luminafoundation.org/grants/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 30,
+  "name": "Spencer Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://www.spencer.org/grant_types",
+  "url": "https://www.spencer.org/research-grants",
+  "usable": true,
+  "note": "The listed link was dead (404); found the current grants page from the homepage.",
+  "closed_signals": []
+ },
+ {
+  "n": 31,
+  "name": "Teagle Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://teaglefoundation.org/Call-for-Proposals",
+  "url": "https://teaglefoundation.org/Call-for-Proposals",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 32,
+  "name": "ECMC Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://www.ecmcfoundation.org/what-we-do/grantmaking",
+  "url": "https://www.ecmcfoundation.org/funding-approach/apply-for-funding/faqs/",
+  "usable": true,
+  "note": "The listed link was dead (404); found the current grants page from the homepage.",
+  "closed_signals": []
+ },
+ {
+  "n": 33,
+  "name": "Henry Luce Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://www.hluce.org/grants/",
+  "url": "https://www.hluce.org/grants/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 34,
+  "name": "Rita Allen Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://ritaallen.org/grants/",
+  "url": null,
+  "usable": false,
+  "note": "The page only shows its content after JavaScript runs, so there's no text to read."
+ },
+ {
+  "n": 35,
+  "name": "Burroughs Wellcome Fund",
+  "type": "Private foundation",
+  "listed_url": "https://www.bwfund.org/funding-opportunities/",
+  "url": "https://www.bwfund.org/funding-opportunities/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 36,
+  "name": "Arnold and Mabel Beckman Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://www.beckman-foundation.org/programs/",
+  "url": "https://www.beckman-foundation.org/programs/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 37,
+  "name": "Chan Zuckerberg Initiative",
+  "type": "Private foundation",
+  "listed_url": "https://chanzuckerberg.com/rfa/",
+  "url": "https://chanzuckerberg.com/grants-ventures/",
+  "usable": true,
+  "note": "The listed link was dead (404); found the current grants page from the homepage.",
+  "closed_signals": []
+ },
+ {
+  "n": 38,
+  "name": "Susan G. Komen",
+  "type": "Health charity",
+  "listed_url": "https://www.komen.org/breast-cancer-research/grants/",
+  "url": null,
+  "usable": false,
+  "note": "The site blocks automated tools with a bot check (HTTP 403). We don't bypass these."
+ },
+ {
+  "n": 39,
+  "name": "American Cancer Society",
+  "type": "Health charity",
+  "listed_url": "https://www.cancer.org/research/we-fund-cancer-research/apply-research-grant.html",
+  "url": "https://www.cancer.org/research/we-fund-cancer-research/apply-research-grant.html",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 40,
+  "name": "American Heart Association",
+  "type": "Health charity",
+  "listed_url": "https://professional.heart.org/en/research-programs/application-information",
+  "url": null,
+  "usable": false,
+  "note": "The site blocks automated tools with a bot check (HTTP 403). We don't bypass these."
+ },
+ {
+  "n": 41,
+  "name": "Alzheimer's Association",
+  "type": "Health charity",
+  "listed_url": "https://www.alz.org/research/for_researchers/grants-funding",
+  "url": null,
+  "usable": false,
+  "note": "The listed link was dead (404) and no current grants page could be found from the homepage."
+ },
+ {
+  "n": 42,
+  "name": "Michael J. Fox Foundation",
+  "type": "Health charity",
+  "listed_url": "https://www.michaeljfox.org/funding-opportunities",
+  "url": "https://www.michaeljfox.org/funding-opportunities",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 43,
+  "name": "Parkinson's Foundation",
+  "type": "Health charity",
+  "listed_url": "https://www.parkinson.org/advancing-research/for-researchers",
+  "url": "https://www.parkinson.org/advancing-research/for-researchers",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 44,
+  "name": "Damon Runyon Cancer Research Foundation",
+  "type": "Health charity",
+  "listed_url": "https://www.damonrunyon.org/for-scientists/application-guidelines",
+  "url": null,
+  "usable": false,
+  "note": "The listed link was dead (404) and no current grants page could be found from the homepage."
+ },
+ {
+  "n": 45,
+  "name": "The Andy Warhol Foundation for the Visual Arts",
+  "type": "Arts foundation",
+  "listed_url": "https://warholfoundation.org/grants/",
+  "url": "https://warholfoundation.org/grants/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": [
+   "by invitation only"
+  ]
+ },
+ {
+  "n": 46,
+  "name": "Shubert Foundation",
+  "type": "Arts foundation",
+  "listed_url": "https://shubertfoundation.org/grants/",
+  "url": null,
+  "usable": false,
+  "note": "The listed link was dead (404) and no current grants page could be found from the homepage."
+ },
+ {
+  "n": 47,
+  "name": "Terra Foundation for American Art",
+  "type": "Arts foundation",
+  "listed_url": "https://www.terraamericanart.org/what-we-offer/grant-fellowship-opportunities/",
+  "url": "https://www.terraamericanart.org/grant-program/exhibition-grants/",
+  "usable": true,
+  "note": "The listed link was dead (404); found the current grants page from the homepage.",
+  "closed_signals": [
+   "we do not accept"
+  ]
+ },
+ {
+  "n": 48,
+  "name": "Samuel H. Kress Foundation",
+  "type": "Arts foundation",
+  "listed_url": "https://www.kressfoundation.org/Programs",
+  "url": "https://www.kressfoundation.org/Programs",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 49,
+  "name": "Pollock-Krasner Foundation",
+  "type": "Arts foundation",
+  "listed_url": "https://pkf.org/apply/",
+  "url": "https://pkf.org/apply/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": [
+   "we do not accept"
+  ]
+ },
+ {
+  "n": 50,
+  "name": "Art Bridges Foundation",
+  "type": "Arts foundation",
+  "listed_url": "https://artbridgesfoundation.org/grants",
+  "url": null,
+  "usable": false,
+  "note": "The page only shows its content after JavaScript runs, so there's no text to read."
+ },
+ {
+  "n": 51,
+  "name": "National Fish and Wildlife Foundation",
+  "type": "Environment",
+  "listed_url": "https://www.nfwf.org/apply-grant/application-information",
+  "url": "https://www.nfwf.org/apply-grant/application-information",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 52,
+  "name": "Patagonia Environmental Grants",
+  "type": "Environment",
+  "listed_url": "https://www.patagonia.com/how-we-fund/",
+  "url": "https://www.patagonia.com/how-we-fund/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 53,
+  "name": "Captain Planet Foundation",
+  "type": "Environment",
+  "listed_url": "https://captainplanetfoundation.org/grants/",
+  "url": "https://captainplanetfoundation.org/grants/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 54,
+  "name": "Ben & Jerry's Foundation",
+  "type": "Corporate foundation",
+  "listed_url": "https://benandjerrysfoundation.org/grants/",
+  "url": "http://benandjerrysfoundation.org/national-grants/",
+  "usable": true,
+  "note": "The listed link was dead (404); found the current grants page from the homepage.",
+  "closed_signals": [
+   "we do not accept"
+  ]
+ },
+ {
+  "n": 55,
+  "name": "Clif Family Foundation",
+  "type": "Private foundation",
+  "listed_url": "https://cliffamilyfoundation.org/grants-programs/",
+  "url": "https://cliffamilyfoundation.org/grants-program",
+  "usable": true,
+  "note": "The listed link was dead (404); found the current grants page from the homepage.",
+  "closed_signals": [
+   "by invitation only"
+  ]
+ },
+ {
+  "n": 56,
+  "name": "Walmart.org",
+  "type": "Corporate foundation",
+  "listed_url": "https://walmart.org/how-we-give/local-community-grants",
+  "url": "https://walmart.org/how-we-give/local-community-grants",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 57,
+  "name": "Bank of America Charitable Foundation",
+  "type": "Corporate foundation",
+  "listed_url": "https://about.bankofamerica.com/en/making-an-impact/charitable-foundation-funding",
+  "url": "https://about.bankofamerica.com/en/making-an-impact/charitable-foundation-funding",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": [
+   "by invitation only"
+  ]
+ },
+ {
+  "n": 58,
+  "name": "Wells Fargo Foundation",
+  "type": "Corporate foundation",
+  "listed_url": "https://www.wellsfargo.com/about/corporate-responsibility/community-giving/",
+  "url": "https://www.wellsfargo.com/about/corporate-responsibility/community-giving/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 59,
+  "name": "Citi Foundation",
+  "type": "Corporate foundation",
+  "listed_url": "https://www.citigroup.com/citi/foundation/",
+  "url": null,
+  "usable": false,
+  "note": "The site's robots.txt asks automated tools not to read this page."
+ },
+ {
+  "n": 60,
+  "name": "Truist Foundation",
+  "type": "Corporate foundation",
+  "listed_url": "https://www.truist.com/purpose/truist-foundation/grants",
+  "url": null,
+  "usable": false,
+  "note": "The listed link was dead (404) and no current grants page could be found from the homepage."
+ },
+ {
+  "n": 61,
+  "name": "PNC Foundation",
+  "type": "Corporate foundation",
+  "listed_url": "https://www.pnc.com/en/about-pnc/corporate-responsibility/philanthropy/pnc-foundation.html",
+  "url": "https://www.pnc.com/en/about-pnc/corporate-responsibility/philanthropy/pnc-foundation.html",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 62,
+  "name": "U.S. Bank Foundation",
+  "type": "Corporate foundation",
+  "listed_url": "https://www.usbank.com/about-us-bank/community/charitable-giving.html",
+  "url": null,
+  "usable": false,
+  "note": "The listed link was dead (404) and no current grants page could be found from the homepage."
+ },
+ {
+  "n": 63,
+  "name": "KeyBank Foundation",
+  "type": "Corporate foundation",
+  "listed_url": "https://www.key.com/about/community/keybank-foundation.html",
+  "url": null,
+  "usable": false,
+  "note": "The listed link was dead (404) and no current grants page could be found from the homepage."
+ },
+ {
+  "n": 64,
+  "name": "M&T Charitable Foundation",
+  "type": "Corporate foundation",
+  "listed_url": "https://www3.mtb.com/about-mt/community-involvement/charitable-giving",
+  "url": null,
+  "usable": false,
+  "note": "The listed link was dead (404) and no current grants page could be found from the homepage."
+ },
+ {
+  "n": 65,
+  "name": "State Farm",
+  "type": "Corporate foundation",
+  "listed_url": "https://www.statefarm.com/about-us/corporate-responsibility/community-grants",
+  "url": "https://www.statefarm.com/about-us/corporate-responsibility/community-grants",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": [
+   "invitation only"
+  ]
+ },
+ {
+  "n": 66,
+  "name": "Nationwide Foundation",
+  "type": "Corporate foundation",
+  "listed_url": "https://www.nationwide.com/personal/about-us/giving/nationwide-foundation/",
+  "url": "https://www.nationwide.com/personal/about-us/giving/nationwide-foundation/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 67,
+  "name": "The Home Depot Foundation",
+  "type": "Corporate foundation",
+  "listed_url": "https://corporate.homedepot.com/page/home-depot-foundation",
+  "url": "https://corporate.homedepot.com/page/home-depot-foundation",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 68,
+  "name": "Lowe's Foundation",
+  "type": "Corporate foundation",
+  "listed_url": "https://www.lowes.com/l/about/lowes-foundation",
+  "url": null,
+  "usable": false,
+  "note": "The site blocks automated tools with a bot check (HTTP 403). We don't bypass these."
+ },
+ {
+  "n": 69,
+  "name": "T-Mobile Hometown Grants",
+  "type": "Corporate foundation",
+  "listed_url": "https://www.t-mobile.com/brand/hometown-grants",
+  "url": "https://www.t-mobile.com/brand/hometown-grants",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 70,
+  "name": "Duke Energy Foundation",
+  "type": "Corporate foundation",
+  "listed_url": "https://foundation.duke-energy.com/",
+  "url": "https://foundation.duke-energy.com/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": [],
+  "states": [
+   "North Carolina",
+   "South Carolina",
+   "Florida",
+   "Indiana",
+   "Ohio",
+   "Kentucky"
+  ]
+ },
+ {
+  "n": 71,
+  "name": "Dominion Energy Charitable Foundation",
+  "type": "Corporate foundation",
+  "listed_url": "https://www.dominionenergy.com/our-company/customers-and-community/charitable-giving",
+  "url": null,
+  "usable": false,
+  "note": "The listed link was dead (404) and no current grants page could be found from the homepage."
+ },
+ {
+  "n": 72,
+  "name": "Entergy Charitable Foundation",
+  "type": "Corporate foundation",
+  "listed_url": "https://www.entergy.com/community/grants",
+  "url": "https://www.entergy.com/community/grants",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": [
+   "we do not accept"
+  ],
+  "states": [
+   "Arkansas",
+   "Louisiana",
+   "Mississippi",
+   "Texas"
+  ]
+ },
+ {
+  "n": 73,
+  "name": "AEP Foundation",
+  "type": "Corporate foundation",
+  "listed_url": "https://www.aep.com/community/givingback/",
+  "url": "https://www.aep.com/community/givingback/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": [
+   "by invitation only"
+  ],
+  "states": [
+   "Arkansas",
+   "Indiana",
+   "Kentucky",
+   "Louisiana",
+   "Michigan",
+   "Ohio",
+   "Oklahoma",
+   "Tennessee",
+   "Texas",
+   "Virginia",
+   "West Virginia"
+  ]
+ },
+ {
+  "n": 74,
+  "name": "PPL Foundation",
+  "type": "Corporate foundation",
+  "listed_url": "https://www.pplweb.com/communities/ppl-foundation/",
+  "url": "https://www.pplweb.com/communities/ppl-foundation/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": [],
+  "states": [
+   "Pennsylvania",
+   "Kentucky",
+   "Rhode Island",
+   "Virginia"
+  ]
+ },
+ {
+  "n": 75,
+  "name": "Gilead Foundation / Gilead Giving",
+  "type": "Corporate foundation",
+  "listed_url": "https://www.gilead.com/purpose/giving/funding-requests",
+  "url": "https://www.gilead.com/purpose/giving/funding-requests",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 76,
+  "name": "Pfizer Independent Grants",
+  "type": "Corporate foundation",
+  "listed_url": "https://www.pfizer.com/about/programs-policies/grants",
+  "url": null,
+  "usable": false,
+  "note": "The site blocks automated tools with a bot check (HTTP 403). We don't bypass these."
+ },
+ {
+  "n": 77,
+  "name": "Merck Foundation / Merck Grants",
+  "type": "Corporate foundation",
+  "listed_url": "https://www.merck.com/company-overview/esg/philanthropy/",
+  "url": "https://www.merck.com/company-overview/esg/philanthropy/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": [
+   "do not accept unsolicited"
+  ]
+ },
+ {
+  "n": 78,
+  "name": "Amgen Foundation",
+  "type": "Corporate foundation",
+  "listed_url": "https://www.amgen.com/responsibility/amgen-foundation",
+  "url": null,
+  "usable": false,
+  "note": "The listed link was dead (404) and no current grants page could be found from the homepage."
+ },
+ {
+  "n": 79,
+  "name": "Genentech Giving",
+  "type": "Corporate foundation",
+  "listed_url": "https://www.gene.com/good/giving",
+  "url": "https://www.gene.com/good/giving",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": []
+ },
+ {
+  "n": 80,
+  "name": "AbbVie Foundation",
+  "type": "Corporate foundation",
+  "listed_url": "https://www.abbvie.com/societal-impact/abbvie-foundation.html",
+  "url": null,
+  "usable": false,
+  "note": "The site blocks automated tools with a bot check (HTTP 403). We don't bypass these."
+ },
+ {
+  "n": 81,
+  "name": "Silicon Valley Community Foundation",
+  "type": "Community foundation",
+  "listed_url": "https://www.siliconvalleycf.org/nonprofits/grant-opportunities",
+  "url": "https://www.siliconvalleycf.org/nonprofits/grant-opportunities",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": [],
+  "states": [
+   "California"
+  ]
+ },
+ {
+  "n": 82,
+  "name": "California Community Foundation",
+  "type": "Community foundation",
+  "listed_url": "https://www.calfund.org/nonprofits/grant-opportunities/",
+  "url": "https://www.calfund.org/our-process/",
+  "usable": true,
+  "note": "The listed link was dead (404); found the current grants page from the homepage.",
+  "closed_signals": [
+   "does not accept unsolicited"
+  ],
+  "states": [
+   "California"
+  ]
+ },
+ {
+  "n": 83,
+  "name": "The New York Community Trust",
+  "type": "Community foundation",
+  "listed_url": "https://thenytrust.org/grants/",
+  "url": "https://thenytrust.org/nonprofits/rfp-loi-additional-funding-opportunities/",
+  "usable": true,
+  "note": "The listed link was dead (404); found the current grants page from the homepage.",
+  "closed_signals": [],
+  "states": [
+   "New York"
+  ]
+ },
+ {
+  "n": 84,
+  "name": "The Chicago Community Trust",
+  "type": "Community foundation",
+  "listed_url": "https://www.cct.org/grants/",
+  "url": null,
+  "usable": false,
+  "note": "The site blocks automated tools with a bot check (HTTP 403). We don't bypass these."
+ },
+ {
+  "n": 85,
+  "name": "The Boston Foundation",
+  "type": "Community foundation",
+  "listed_url": "https://www.tbf.org/nonprofits/grant-making",
+  "url": "https://www.tbf.org/nonprofits/grant-making-initiatives/latino-equity-fund/latino-equity-fund-fy27-applications",
+  "usable": true,
+  "note": "The listed link was dead (404); found the current grants page from the homepage.",
+  "closed_signals": [],
+  "states": [
+   "Massachusetts"
+  ]
+ },
+ {
+  "n": 86,
+  "name": "Communities Foundation of Texas",
+  "type": "Community foundation",
+  "listed_url": "https://www.cftexas.org/nonprofits/grant-opportunities",
+  "url": "https://www.cftexas.org/nonprofits/apply-for-grants/",
+  "usable": true,
+  "note": "The listed link was dead (404); found the current grants page from the homepage.",
+  "closed_signals": [
+   "by invitation only",
+   "invitation-only"
+  ],
+  "states": [
+   "Texas"
+  ]
+ },
+ {
+  "n": 87,
+  "name": "Cleveland Foundation",
+  "type": "Community foundation",
+  "listed_url": "https://www.clevelandfoundation.org/grants/",
+  "url": "https://www.clevelandfoundation.org/grants/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": [],
+  "states": [
+   "Ohio"
+  ]
+ },
+ {
+  "n": 88,
+  "name": "The Columbus Foundation",
+  "type": "Community foundation",
+  "listed_url": "https://columbusfoundation.org/nonprofits/grant-opportunities",
+  "url": null,
+  "usable": false,
+  "note": "The site blocks automated tools with a bot check (HTTP 403). We don't bypass these."
+ },
+ {
+  "n": 89,
+  "name": "Greater Milwaukee Foundation",
+  "type": "Community foundation",
+  "listed_url": "https://www.greatermilwaukeefoundation.org/grants/",
+  "url": "https://www.greatermilwaukeefoundation.org/grants/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": [],
+  "states": [
+   "Wisconsin"
+  ]
+ },
+ {
+  "n": 90,
+  "name": "Oregon Community Foundation",
+  "type": "Community foundation",
+  "listed_url": "https://oregoncf.org/grants-and-scholarships/grants/",
+  "url": "https://oregoncf.org/grants-and-scholarships/grants/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": [
+   "by invitation only"
+  ],
+  "states": [
+   "Oregon"
+  ]
+ },
+ {
+  "n": 91,
+  "name": "Seattle Foundation",
+  "type": "Community foundation",
+  "listed_url": "https://www.seattlefoundation.org/nonprofits/grant-opportunities/",
+  "url": null,
+  "usable": false,
+  "note": "The page only shows its content after JavaScript runs, so there's no text to read."
+ },
+ {
+  "n": 92,
+  "name": "Community Foundation for Greater Atlanta",
+  "type": "Community foundation",
+  "listed_url": "https://cfgreateratlanta.org/nonprofits/grants/",
+  "url": "https://cfgreateratlanta.org/nonprofits/grants/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": [],
+  "states": [
+   "Georgia"
+  ]
+ },
+ {
+  "n": 93,
+  "name": "Hartford Foundation for Public Giving",
+  "type": "Community foundation",
+  "listed_url": "https://www.hfpg.org/nonprofits/grant-opportunities",
+  "url": null,
+  "usable": false,
+  "note": "The listed link was dead (404) and no current grants page could be found from the homepage."
+ },
+ {
+  "n": 94,
+  "name": "Community Foundation for Greater New Haven",
+  "type": "Community foundation",
+  "listed_url": "https://www.cfgnh.org/grants",
+  "url": "https://www.cfgnh.org/grants",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": [],
+  "states": [
+   "Connecticut"
+  ]
+ },
+ {
+  "n": 95,
+  "name": "Fairfield County's Community Foundation",
+  "type": "Community foundation",
+  "listed_url": "https://fccfoundation.org/nonprofits/grant-opportunities/",
+  "url": "https://fccfoundation.org/our-grants/",
+  "usable": true,
+  "note": "The listed link was dead (404); found the current grants page from the homepage.",
+  "closed_signals": [],
+  "states": [
+   "Connecticut"
+  ]
+ },
+ {
+  "n": 96,
+  "name": "The Pittsburgh Foundation",
+  "type": "Community foundation",
+  "listed_url": "https://pittsburghfoundation.org/grant-opportunities",
+  "url": "https://pittsburghfoundation.org/grant-opps",
+  "usable": true,
+  "note": "The listed link was dead (404); found the current grants page from the homepage.",
+  "closed_signals": [],
+  "states": [
+   "Pennsylvania"
+  ]
+ },
+ {
+  "n": 97,
+  "name": "Philadelphia Foundation",
+  "type": "Community foundation",
+  "listed_url": "https://www.philafound.org/nonprofits/grants/",
+  "url": "https://www.philafound.org/nonprofits/grants/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": [],
+  "states": [
+   "Pennsylvania"
+  ]
+ },
+ {
+  "n": 98,
+  "name": "San Francisco Foundation",
+  "type": "Community foundation",
+  "listed_url": "https://sff.org/grantseekers/",
+  "url": "https://sff.org/what-we-do/funding/",
+  "usable": true,
+  "note": "The listed link was dead (404); found the current grants page from the homepage.",
+  "closed_signals": [
+   "invitation-only"
+  ],
+  "states": [
+   "California"
+  ]
+ },
+ {
+  "n": 99,
+  "name": "The Denver Foundation",
+  "type": "Community foundation",
+  "listed_url": "https://denverfoundation.org/grants/",
+  "url": "https://denverfoundation.org/grants/",
+  "usable": true,
+  "note": "Readable as listed.",
+  "closed_signals": [],
+  "states": [
+   "Colorado"
+  ]
+ },
+ {
+  "n": 100,
+  "name": "Rhode Island Foundation",
+  "type": "Community foundation",
+  "listed_url": "https://rifoundation.org/grant",
+  "url": "https://rifoundation.org/investing-in-a-thriving-rhode-island/capacity-building-for-nonprofits",
+  "usable": true,
+  "note": "The listed link was dead (404); found the current grants page from the homepage.",
+  "closed_signals": [],
+  "states": [
+   "Rhode Island"
+  ]
+ }
+]
