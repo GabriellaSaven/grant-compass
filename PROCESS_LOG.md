@@ -2543,3 +2543,15 @@ report's GitHub link was a placeholder.
   collaborator.
 - Added the link to the report's title page and rebuilt it (still 15 pages),
   and put the clone command in README step 1.
+
+## Grader access
+
+**Prompt:** "Keep the repo private and add zlisto as a collaborator."
+
+**What was lacking before:** the repo was private with no collaborators, so
+the professor couldn't see it.
+
+- Invited `zlisto` (Tauhid R. Zaman) to GabriellaSaven/grant-compass. Personal
+  repos can't grant read-only access, so the invite is the standard
+  collaborator role (write). The repo stays private.
+- The invitation is pending until zlisto accepts it.
