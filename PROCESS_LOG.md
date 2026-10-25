@@ -2481,3 +2481,49 @@ report answers all the questions in the requirements"
   - Limits / With another month
 - **Added visuals:** the home screen on page 2, plus HTML bar charts of
   spend by agent (page 9) and experiment cost per setting (page 11).
+
+## First commit
+
+**Prompt:** "commit the app and then we will come back to the report."
+
+**What was lacking before:** the repo had no commits, so there was nothing to
+link on Canvas.
+
+- First commit `0892a9b` on `master`: 95 files (the app, demo data, tests,
+  user test kit, README, `.env.example`).
+- Left out:
+  - `report/`, still in progress
+  - files that were already gitignored: `.env`, the databases, logs, the
+    session secret, and the virtual environments
+- Before committing: scanned for key patterns (none found) and for model
+  names other than gpt-6-luna (none found).
+- Fresh-clone check: clone, new venv, `pip install -r requirements.txt`,
+  `python app.py`, with `.env` one folder up. The page loaded (HTTP 200) in
+  13 s and the key was found.
+- Not pushed; there's no GitHub remote yet.
+
+## Report: quotes from a user review
+
+**Prompt:** "Here is a review from a friend, extract a few quotes from it to put
+into my report" (the review was pasted in full).
+
+**What was lacking before:** the Impact section had no real-user evidence
+(the rubric gives half marks without it), and the "Coach vs ChatGPT" claim
+rested only on my own description.
+
+- Saved the full review verbatim in `report/user_review.md` as evidence.
+- Quotes used word for word, attributed to "a friend with grant-fundraising
+  experience". That role is inferred from "most grant tools I've used"; to be
+  confirmed by the author. No name is used.
+  - **Impact (page 14):** four quotes (worth-pursuing, time saved for small
+    teams, "something I would use in real life", pipeline as favourite),
+    plus their one suggestion.
+  - **What's new (page 4):** the Grant Coach vs ChatGPT quote.
+  - **Motivation (page 3):** "designed by someone who actually understands
+    how grant fundraising works".
+  - **Next steps (page 15):** their suggestion to deepen the
+    organisation-knowledge side.
+- Moved the board-update screenshot to page 6 (as the Executive Director's
+  output) to make room. All 15 pages still fit.
+- The timed before/after session is still marked as optional, in a TO ADD
+  box.

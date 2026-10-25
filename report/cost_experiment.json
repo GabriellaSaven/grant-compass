@@ -1,0 +1,265 @@
+{
+ "org": "cedar-ridge-veterans",
+ "results": {
+  "A_shipped": [
+   {
+    "opp": 6,
+    "funder": "Patriot Bridge Foundation",
+    "fit": 92,
+    "rec": "No-Go",
+    "warnings": 0,
+    "input": 4812,
+    "cached": 4297,
+    "output": 1440,
+    "cost": 0.0008241949999999999,
+    "seconds": 8.3
+   },
+   {
+    "opp": 3,
+    "funder": "Bluebonnet Service Members Foundation",
+    "fit": 92,
+    "rec": "No-Go",
+    "warnings": 0,
+    "input": 4852,
+    "cached": 4297,
+    "output": 1795,
+    "cost": 0.001006695,
+    "seconds": 10.1
+   },
+   {
+    "opp": 1,
+    "funder": "Lone Star Veterans Fund",
+    "fit": 100,
+    "rec": "Research further",
+    "warnings": 0,
+    "input": 4909,
+    "cached": 4297,
+    "output": 1375,
+    "cost": 0.0008038199999999999,
+    "seconds": 8.1
+   },
+   {
+    "opp": 2,
+    "funder": "Hill Country Workforce Foundation",
+    "fit": 92,
+    "rec": "Research further",
+    "warnings": 0,
+    "input": 4851,
+    "cached": 4297,
+    "output": 1398,
+    "cost": 0.0008080699999999999,
+    "seconds": 13.8
+   },
+   {
+    "opp": 5,
+    "funder": "Gulf Coast Youth Futures Fund",
+    "fit": 8,
+    "rec": "No-Go",
+    "warnings": 0,
+    "input": 4825,
+    "cached": 4297,
+    "output": 1409,
+    "cost": 0.0008103199999999999,
+    "seconds": 7.3
+   },
+   {
+    "opp": 4,
+    "funder": "National Homefront Housing Alliance",
+    "fit": 78,
+    "rec": "Research further",
+    "warnings": 1,
+    "input": 4926,
+    "cached": 4297,
+    "output": 1807,
+    "cost": 0.001021945,
+    "seconds": 9.8
+   }
+  ],
+  "B_no_cache_order": [
+   {
+    "opp": 6,
+    "funder": "Patriot Bridge Foundation",
+    "fit": 96,
+    "rec": "No-Go",
+    "warnings": 1,
+    "input": 4812,
+    "cached": 0,
+    "output": 1335,
+    "cost": 0.00126585,
+    "seconds": 7.9
+   },
+   {
+    "opp": 3,
+    "funder": "Bluebonnet Service Members Foundation",
+    "fit": 96,
+    "rec": "No-Go",
+    "warnings": 0,
+    "input": 4852,
+    "cached": 0,
+    "output": 1328,
+    "cost": 0.00126735,
+    "seconds": 6.9
+   },
+   {
+    "opp": 1,
+    "funder": "Lone Star Veterans Fund",
+    "fit": 96,
+    "rec": "No-Go",
+    "warnings": 0,
+    "input": 4909,
+    "cached": 0,
+    "output": 1499,
+    "cost": 0.0013599749999999998,
+    "seconds": 8.4
+   },
+   {
+    "opp": 2,
+    "funder": "Hill Country Workforce Foundation",
+    "fit": 92,
+    "rec": "Research further",
+    "warnings": 0,
+    "input": 4851,
+    "cached": 0,
+    "output": 1560,
+    "cost": 0.0013832249999999999,
+    "seconds": 9.6
+   },
+   {
+    "opp": 5,
+    "funder": "Gulf Coast Youth Futures Fund",
+    "fit": 11,
+    "rec": "No-Go",
+    "warnings": 0,
+    "input": 4825,
+    "cached": 0,
+    "output": 1418,
+    "cost": 0.001308975,
+    "seconds": 7.2
+   },
+   {
+    "opp": 4,
+    "funder": "National Homefront Housing Alliance",
+    "fit": 78,
+    "rec": "No-Go",
+    "warnings": 0,
+    "input": 4926,
+    "cached": 0,
+    "output": 1710,
+    "cost": 0.0014676,
+    "seconds": 8.9
+   }
+  ],
+  "C_medium_reasoning": [
+   {
+    "opp": 6,
+    "funder": "Patriot Bridge Foundation",
+    "fit": 96,
+    "rec": "No-Go",
+    "warnings": 0,
+    "input": 4812,
+    "cached": 0,
+    "output": 1791,
+    "cost": 0.00149385,
+    "seconds": 10.1
+   },
+   {
+    "opp": 3,
+    "funder": "Bluebonnet Service Members Foundation",
+    "fit": 89,
+    "rec": "No-Go",
+    "warnings": 0,
+    "input": 4852,
+    "cached": 4297,
+    "output": 3309,
+    "cost": 0.001763695,
+    "seconds": 18.4
+   },
+   {
+    "opp": 1,
+    "funder": "Lone Star Veterans Fund",
+    "fit": 92,
+    "rec": "No-Go",
+    "warnings": 0,
+    "input": 4909,
+    "cached": 4297,
+    "output": 2049,
+    "cost": 0.0011408199999999999,
+    "seconds": 10.9
+   },
+   {
+    "opp": 2,
+    "funder": "Hill Country Workforce Foundation",
+    "fit": 92,
+    "rec": "No-Go",
+    "warnings": 0,
+    "input": 4851,
+    "cached": 4297,
+    "output": 1993,
+    "cost": 0.00110557,
+    "seconds": 12.2
+   },
+   {
+    "opp": 5,
+    "funder": "Gulf Coast Youth Futures Fund",
+    "fit": 11,
+    "rec": "No-Go",
+    "warnings": 0,
+    "input": 4825,
+    "cached": 4297,
+    "output": 2521,
+    "cost": 0.0013663199999999999,
+    "seconds": 14.5
+   },
+   {
+    "opp": 4,
+    "funder": "National Homefront Housing Alliance",
+    "fit": 74,
+    "rec": "No-Go",
+    "warnings": 0,
+    "input": 4926,
+    "cached": 4297,
+    "output": 2739,
+    "cost": 0.0014879449999999998,
+    "seconds": 17.2
+   }
+  ]
+ },
+ "summary": {
+  "A_shipped": {
+   "runs": 6,
+   "mean_input": 4862,
+   "mean_cached": 4297,
+   "cached_share": 0.884,
+   "mean_output": 1537,
+   "mean_cost": 0.000879,
+   "mean_seconds": 9.6,
+   "same_recommendation_as_A": 6,
+   "mean_abs_fit_diff_vs_A": 0,
+   "quote_warnings": 1
+  },
+  "B_no_cache_order": {
+   "runs": 6,
+   "mean_input": 4862,
+   "mean_cached": 0,
+   "cached_share": 0.0,
+   "mean_output": 1475,
+   "mean_cost": 0.001342,
+   "mean_seconds": 8.2,
+   "same_recommendation_as_A": 4,
+   "mean_abs_fit_diff_vs_A": 2.5,
+   "quote_warnings": 1
+  },
+  "C_medium_reasoning": {
+   "runs": 6,
+   "mean_input": 4862,
+   "mean_cached": 3581,
+   "cached_share": 0.736,
+   "mean_output": 2400,
+   "mean_cost": 0.001393,
+   "mean_seconds": 13.9,
+   "same_recommendation_as_A": 3,
+   "mean_abs_fit_diff_vs_A": 3.7,
+   "quote_warnings": 0
+  }
+ }
+}
