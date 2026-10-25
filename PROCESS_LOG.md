@@ -2555,3 +2555,34 @@ the professor couldn't see it.
   repos can't grant read-only access, so the invite is the standard
   collaborator role (write). The repo stays private.
 - The invitation is pending until zlisto accepts it.
+
+## Slides (report/slides.html)
+
+**Prompt:** "Start on slides.html: reveal.js from a CDN, 10 slides max, reusing
+the report's screenshots, diagram and numbers."
+
+**What was lacking before:** no slides (8 rubric points).
+
+- `report/build_slides.py` imports the report builder, so both use the same
+  numbers, screenshots and agent diagram. It uses reveal.js 5.2.1 from
+  jsDelivr; screenshots are embedded. Output is 1.0 MB, 1280×720 slides.
+  Arrow keys move, F goes full screen, Esc shows an overview, and there are
+  slide numbers.
+- 10 slides, in the course's suggested order:
+  1. Title
+  2. The problem, in the author's own voice, with four stats
+  3. What's new: comparison table and the core rule
+  4. Agent diagram
+  5. Demo: Discover, then the fit score
+  6. Demo: Draft, Coach, Evidence; the checker caught the writer
+  7. Cost: per grant, per user, 100 and 10,000 users, cost cuts, and the
+     experiment
+  8. Safety: 13/13, with the injection screenshot
+  9. Impact: two user quotes and a before/after table
+  10. Limits and next steps
+- **Checked** by screenshotting every slide in Chrome:
+  - no slide overflows
+  - fixed: missing font (reveal.js has no theme loaded), lists too small,
+    the title slide's position, the diagram legend's styling
+  - made the tables bigger, and re-cropped slide 5 to show the 59% score
+    and its bars
