@@ -23,7 +23,7 @@ OUT = REPORT / "report.html"
 
 # --- Author details (fill these in) ---------------------------------------------------------------
 AUTHOR = "Gabriella Saven"
-REPO_URL = None  # e.g. "https://github.com/<user>/grant-compass"; shown as TO ADD until set
+REPO_URL = "https://github.com/GabriellaSaven/grant-compass"
 USER_TEST = None  # path to the Markdown copied from user_test_kit.html, once the session has been run
 
 

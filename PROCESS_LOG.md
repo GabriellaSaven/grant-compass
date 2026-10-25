@@ -2527,3 +2527,19 @@ rested only on my own description.
   output) to make room. All 15 pages still fit.
 - The timed before/after session is still marked as optional, in a TO ADD
   box.
+
+## GitHub repo
+
+**Prompt:** "Commit the report and process log, then create the GitHub repo,
+push, and put the link in the report."
+
+**What was lacking before:** the work existed only on this computer, and the
+report's GitHub link was a placeholder.
+
+- Committed the report and its evidence (`2206932`).
+- Created **private** repo https://github.com/GabriellaSaven/grant-compass and
+  pushed `master`. Private was chosen because the visibility wasn't
+  specified. Before submission, either make it public or add `zlisto` as a
+  collaborator.
+- Added the link to the report's title page and rebuilt it (still 15 pages),
+  and put the clone command in README step 1.

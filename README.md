@@ -17,7 +17,11 @@ reviews how the other six are working.
 come with 3.9; if yours does, install a newer Python (python.org or
 `brew install python@3.12`) and use `python3.12` in step 2.
 
-1. Clone the repo and enter the folder.
+1. Clone the repo and enter the folder:
+   ```bash
+   git clone https://github.com/GabriellaSaven/grant-compass.git
+   cd grant-compass
+   ```
 2. Create a virtual environment and install the requirements:
    ```bash
    python3 -m venv .venv
