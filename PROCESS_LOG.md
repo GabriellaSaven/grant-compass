@@ -2609,3 +2609,39 @@ showed only a link, not a ready-to-run clone command.
 - Checked: the report still fits 15 pages; neither slide overflows.
 - To submit on Canvas: only `report/report.html`, `report/slides.html`, and
   optionally a video.
+
+## Slides: stronger demos, Impact table headings, polish
+
+**Prompt:** "did you use Use reveal.js? the demo screenshots are minimal and
+weak, in the impact, there arent headings on the right hand table, make the
+whole thing better"
+
+**What was lacking before:**
+- The demo slides used small, tall crops of full-page screenshots, shrunk
+  to fit.
+- The Impact table had no column headings.
+- There were no speaker notes.
+- If reveal.js failed to load (offline), the deck silently fell apart into
+  one long page.
+- (Yes, it already used reveal.js 5.2.1 from jsDelivr.)
+
+- **New 16:9 demo captures** (`report/slide_shots.py`, 1440×810 at 2x, chat
+  button hidden): Discover, the Go/No-Go card with Geography's reasoning
+  opened (the funder's quote next to Cedar Ridge's), the Pipeline, the Draft,
+  the Coach with a suggestion card fully visible, the Evidence check, and a
+  fresh injection test.
+- **Demo slides rebuilt as click-throughs** using reveal.js fragments: three
+  full-size screens each, stacked, with numbered red markers on the screen
+  matching numbered points beside it. The current point is bright and
+  earlier ones dim. Markers sit at the edge of their targets so they don't
+  cover the text.
+  - Demo 1: Find a funder, and get an honest answer on whether to apply.
+  - Demo 2: Draft, coach and fact-check an answer, and catch the AI's
+    mistake.
+- **Safety slide:** the injection screen shown large, with two markers.
+- **Impact:** the table now has the headings Task / Today / With Grant
+  Compass, plus a "Newly possible" banner.
+- **Every slide:** speaker notes (press S), a footer with the repo, and a red
+  banner if reveal.js can't load.
+- **Checked** every slide and each demo step in Chrome: nothing overflows,
+  and there are no errors other than a missing favicon.
