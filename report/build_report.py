@@ -388,7 +388,7 @@ page("Title", f"""
 <p class="lede">Grant Compass is an AI development team for small nonprofits: it finds grants that fit, tells
 you honestly whether to apply, and helps you write answers that are true to your own records.</p>
 <div class="meta"><b>Author</b><span>{AUTHOR}</span>
-<b>GitHub</b><span>{repo}</span>
+<b>GitHub</b><span>{repo} (public repository)<br><code>git clone {REPO_URL}.git</code></span>
 <b>App</b><span>Runs locally from the README (not hosted online): Python 3.10+, one <code>PORTKEY_API_KEY</code>, six demo organisations with no password</span>
 <b>Model</b><span>gpt-6-luna via Portkey, for every AI call</span></div>
 <div class="kpis">

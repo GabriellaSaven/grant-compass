@@ -2586,3 +2586,26 @@ the report's screenshots, diagram and numbers."
     the title slide's position, the diagram legend's styling
   - made the tables bigger, and re-cropped slide 5 to show the 59% score
     and its bars
+
+## Public repo; clone link in the report and slides
+
+**Prompts:** "i actually want to make the repo public", then the professor's
+email: Canvas takes files only (report HTML, slides HTML, optional video,
+nothing else); put the GitHub URL in both so it can be cloned, and say so if
+the repo is private.
+
+**What was lacking before:** the repo was private, and the report and slides
+showed only a link, not a ready-to-run clone command.
+
+- Before going public, scanned every commit for API keys, private keys,
+  `.env`, database or secret files, and personal details. Nothing found; the
+  only hits were funders' own page text. Commits are authored by the user's
+  GitHub account.
+- Made https://github.com/GabriellaSaven/grant-compass **public**; confirmed it
+  loads without logging in (HTTP 200).
+- Report title page: link + "(public repository)" +
+  `git clone https://github.com/GabriellaSaven/grant-compass.git`.
+- Slides: the same on the title slide and again on the last slide.
+- Checked: the report still fits 15 pages; neither slide overflows.
+- To submit on Canvas: only `report/report.html`, `report/slides.html`, and
+  optionally a video.
