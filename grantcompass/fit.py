@@ -16,7 +16,7 @@ from .library import library_context
 from .llm import log_run, run_agent, usage_dict
 from .models import DIMENSIONS, GO_NO_GO_QUESTIONS, FitAssessment
 
-INSTRUCTIONS = (PROMPTS_DIR / "fit_agent.md").read_text()
+INSTRUCTIONS = (PROMPTS_DIR / "fit_agent.md").read_text(encoding="utf-8")
 
 # How much each dimension counts toward fit. Application effort is reported
 # separately (it is a cost, not a measure of fit).

@@ -4,6 +4,7 @@ from datetime import date, timedelta
 
 from dash import dcc, html
 
+from ..dates import dfmt
 from .. import db
 from ..pipeline import HEALTH_ORDER, pipeline_rows
 from ..profile import completeness
@@ -23,7 +24,7 @@ def deadline_strip(active: list[dict]):
         return empty("No deadlines in the next 60 days.")
     today = date.today()
     ticks = [html.Div([html.Span(className="tick-line"),
-                       html.Span("Today" if d == 0 else (today + timedelta(days=d)).strftime("%-d %b"),
+                       html.Span("Today" if d == 0 else dfmt((today + timedelta(days=d)), "%-d %b"),
                                  className="tick-label")],
                       className="tick", style={"left": f"{d / WINDOW * 100}%"}) for d in range(0, WINDOW + 1, 15)]
     dots, lanes = [], {"down": -99.0, "up": -99.0, "down2": -99.0, "up2": -99.0}
@@ -116,7 +117,7 @@ def layout():
 
     return html.Div(
         [
-            html.Div(today.strftime("%A %-d %B %Y"), className="eyebrow"),
+            html.Div(dfmt(today, "%A %-d %B %Y"), className="eyebrow"),
             html.H1("Good to see you. Here's where your grants stand.", className="welcome"),
             html.Div("You're viewing fictional sample data. Replace it with your own documents and opportunities.",
                      className="banner") if sample else None,

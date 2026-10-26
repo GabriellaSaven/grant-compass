@@ -12,6 +12,7 @@ from ..director import review
 from ..errors import friendly
 from ..health import AGENTS, INITIALS, PERSONAS, WHERE, compute
 from .components import card, label, page_header, profile_tabs
+from ..dates import dfmt
 
 STATUS_CLASS = {"Healthy": "ok", "Watch": "attn", "Attention": "crit", "Act": "crit", "Not used yet": "muted"}
 KIND_CLASS = {"working well": "ok", "watch": "attn", "act": "crit"}
@@ -19,7 +20,7 @@ LEVEL_CLASS = {"ok": "", "info": "", "watch": "attn", "attention": "crit"}
 
 
 def _when(iso: str) -> str:
-    return datetime.fromisoformat(iso).strftime("%-d %b %Y, %H:%M")
+    return dfmt(datetime.fromisoformat(iso), "%-d %b %Y, %H:%M")
 
 
 FIELD_WORDS = {"runs": "runs", "runs_7d": "runs this week", "cost_usd": "spent", "avg_cost_usd": "cost per run",

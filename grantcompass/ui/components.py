@@ -4,6 +4,7 @@ import re
 from datetime import date
 
 from dash import dcc, html
+from ..dates import dfmt
 
 HEALTH_CLASS = {"On Track": "ok", "Needs Attention": "attn", "At Risk": "risk", "Critical": "crit"}
 REC_CLASS = {"Go": "ok", "Research further": "attn", "No-Go": "crit"}
@@ -158,7 +159,7 @@ def deadline_text(opp: dict) -> str:
     """A short deadline label that fits a table cell. Funders without a fixed date often describe their
     timing in a whole sentence; that becomes 'Rolling', 'Closed', 'Feb 1 & Aug 1' or 'See details'."""
     if opp.get("deadline"):
-        return date.fromisoformat(opp["deadline"]).strftime("%-d %b %Y")
+        return dfmt(date.fromisoformat(opp["deadline"]), "%-d %b %Y")
     text = (opp.get("deadline_text") or "").strip()
     low = text.lower()
     if not text or low.startswith("not stated"):

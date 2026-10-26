@@ -16,6 +16,7 @@ from ..errors import friendly
 from ..exports import board_docx, board_pptx, funder_report_docx, funder_report_pptx
 from ..library import decode_upload
 from .components import card, days_text, empty, label, link, money, page_header, section_title, stat
+from ..dates import dfmt
 
 DOCX = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
 PPTX = "application/vnd.openxmlformats-officedocument.presentationml.presentation"
@@ -30,7 +31,7 @@ def _due(opp: dict):
         return html.Span("No report date", className="muted small")
     days = (date.fromisoformat(opp["report_due"]) - date.today()).days
     kind = "crit" if days < 0 else "risk" if days <= 14 else "attn" if days <= 30 else "ok"
-    return label(f"Report due {date.fromisoformat(opp['report_due']):%-d %b} · {days_text(days)}", kind)
+    return label(f"Report due {dfmt(date.fromisoformat(opp['report_due']), '%-d %b')} · {days_text(days)}", kind)
 
 
 def _progress(opp_id: int) -> tuple[int, int]:
@@ -100,7 +101,7 @@ def decisions():
         html.Div([html.Strong(f"{o['funder']} — {o['program_name']}"),
                   html.Div(f"{money(o.get('awarded_amount') or o.get('award_max'))} "
                            f"{'awarded' if o['status'] == 'Won' else 'requested'} · "
-                           f"{date.fromisoformat(o['result_date']):%-d %b %Y}", className="small muted"),
+                           f"{dfmt(date.fromisoformat(o['result_date']), '%-d %b %Y')}", className="small muted"),
                   html.Div(f"Feedback: {o['lost_reason']}", className="small") if o.get("lost_reason") else None]),
     ], className="decision") for o in out], className="decisions")
 

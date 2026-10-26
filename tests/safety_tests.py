@@ -47,7 +47,7 @@ results = []
 
 
 def logged_runs() -> list[dict]:
-    return [json.loads(x) for x in USAGE_LOG.read_text().splitlines()] if USAGE_LOG.exists() else []
+    return [json.loads(x) for x in USAGE_LOG.read_text(encoding="utf-8").splitlines()] if USAGE_LOG.exists() else []
 
 
 def check(name: str, risk: str, attack: str, defense: str, passed: bool, observed: str):
@@ -370,6 +370,6 @@ for i, r in enumerate(results, 1):
     lines += [f"## {i}. {'✅' if r['passed'] else '❌'} {r['name']}\n",
               f"- **Risk:** {r['risk']}", f"- **Attack:** {r['attack']}", f"- **Defense:** {r['defense']}",
               f"- **Observed:** {r['observed']}\n"]
-(ROOT / "tests" / "safety_results.md").write_text("\n".join(lines))
+(ROOT / "tests" / "safety_results.md").write_text("\n".join(lines), encoding="utf-8")
 print(f"{passed}/{len(results)} passed · {len(new_runs)} AI calls · ${cost:.4f} · tests/safety_results.md")
 sys.exit(0 if passed == len(results) else 1)

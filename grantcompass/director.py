@@ -13,7 +13,7 @@ from .health import AGENTS, RULES, compute
 from .llm import log_run, run_agent, usage_dict
 from .models import DirectorReport
 
-INSTRUCTIONS = (PROMPTS_DIR / "executive_director.md").read_text()
+INSTRUCTIONS = (PROMPTS_DIR / "executive_director.md").read_text(encoding="utf-8")
 FLOOR = {"Healthy": "Healthy", "Not used yet": "Healthy", "Watch": "Watch", "Attention": "Act"}
 LEVEL = {"Healthy": 0, "Watch": 1, "Act": 2}
 

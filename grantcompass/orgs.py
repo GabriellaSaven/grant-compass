@@ -20,6 +20,7 @@ from werkzeug.security import check_password_hash, generate_password_hash
 
 from . import db, llm
 from .config import ROOT
+from .dates import dfmt
 
 DATA = ROOT / "data"
 DEMO_DIR = DATA / "demo_orgs"
@@ -51,7 +52,7 @@ def activate(slug: str) -> None:
 def demo_files() -> dict[str, dict]:
     out = {}
     for p in sorted(DEMO_DIR.glob("*.json")):
-        d = json.loads(p.read_text())
+        d = json.loads(p.read_text(encoding="utf-8"))
         out[d["slug"]] = d
     return out
 
@@ -125,7 +126,7 @@ def seed_demo(d: dict) -> None:
         opp = {k: o[k] for k in ("funder", "program_name", "geography", "focus_area", "award_min", "award_max",
                                  "award_text", "eligibility", "restrictions", "requirements", "matched_funding",
                                  "reporting", "summary", "raw_text")}
-        opp.update(deadline=deadline.isoformat(), deadline_text=deadline.strftime("%B %-d, %Y"), source_url=None,
+        opp.update(deadline=deadline.isoformat(), deadline_text=dfmt(deadline, "%B %-d, %Y"), source_url=None,
                    origin="Sample data")
         owner = team[o["owner_index"]] if o.get("owner_index") is not None else None
         opp_id = db.add_opportunity(opp, status=o["status"], owner=owner, sample=True)
@@ -162,7 +163,7 @@ def _ensure_outcomes(slug: str) -> None:
     if any(o["status"] in ("Won", "Lost") for o in db.list_opportunities()):
         return
     if slug == RIVERBEND["slug"]:
-        outcomes = json.loads((DATA / "sample" / "riverbend_outcomes.json").read_text())
+        outcomes = json.loads((DATA / "sample" / "riverbend_outcomes.json").read_text(encoding="utf-8"))
     else:
         outcomes = demo_files()[slug].get("outcomes") or []
     seed_outcomes(outcomes)
@@ -181,7 +182,7 @@ def seed_outcomes(outcomes: list[dict]) -> None:
         deadline = decided - timedelta(days=45)
         amount = o.get("amount_awarded") if won else o.get("amount_requested")
         opp = {k: o.get(k) for k in ("funder", "program_name", "geography", "focus_area", "summary", "raw_text")}
-        opp.update(deadline=deadline.isoformat(), deadline_text=deadline.strftime("%B %-d, %Y"), award_min=None,
+        opp.update(deadline=deadline.isoformat(), deadline_text=dfmt(deadline, "%B %-d, %Y"), award_min=None,
                    award_max=amount, award_text=f"${amount:,} {'awarded' if won else 'requested'}",
                    eligibility=[], restrictions=[], requirements=[], matched_funding="Not stated",
                    reporting="Interim and final reports" if won else "", source_url=None, origin="Sample data")
@@ -302,7 +303,7 @@ def export_data(slug: str) -> dict:
         for t in tables:
             out["tables"][t] = [dict(r) for r in conn.execute(f"SELECT * FROM {t}")]
     usage = log_dir(slug) / "usage.jsonl"
-    out["ai_usage_log"] = [json.loads(x) for x in usage.read_text().splitlines()] if usage.exists() else []
+    out["ai_usage_log"] = [json.loads(x) for x in usage.read_text(encoding="utf-8").splitlines()] if usage.exists() else []
     with _accounts() as conn:
         row = conn.execute("SELECT email, name, org_name, created FROM users WHERE slug = ?", (slug,)).fetchone()
     out["account"] = dict(row) if row else None

@@ -8,12 +8,13 @@ from dash.exceptions import PreventUpdate
 from .. import db
 from ..answers import OTHER, TOPICS, classify, search, word_count
 from .components import card, copy_action, page_header, section_title
+from ..dates import dfmt
 
 TOPIC_LIST = ["All", *TOPICS, OTHER]
 
 
 def _date(iso: str) -> str:
-    return datetime.fromisoformat(iso).strftime("%-d %b %Y")
+    return dfmt(datetime.fromisoformat(iso), "%-d %b %Y")
 
 
 def answer_card(a: dict):

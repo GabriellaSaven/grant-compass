@@ -22,7 +22,7 @@ from .llm import MODEL_SETTINGS, build_model, log_run, timed_run, usage_dict
 from .pipeline import RISK_RULES, pipeline_rows
 from .profile import completeness, render as render_profile
 
-INSTRUCTIONS = (PROMPTS_DIR / "assistant.md").read_text()
+INSTRUCTIONS = (PROMPTS_DIR / "assistant.md").read_text(encoding="utf-8")
 LIMITS = UsageLimits(request_limit=8, total_tokens_limit=80_000)  # a few tool calls, then answer
 MAX_MESSAGE_CHARS = 2_000
 HISTORY_TURNS = 8  # earlier turns sent back for context, newest last
@@ -269,7 +269,7 @@ def ai_spending() -> dict:
     path = llm.log_dir() / "usage.jsonl"
     by_agent, total, unpriced = {}, 0.0, 0
     if path.exists():
-        for line in path.read_text().splitlines():
+        for line in path.read_text(encoding="utf-8").splitlines():
             r = json.loads(line)
             b = by_agent.setdefault(r["agent"], {"runs": 0, "cost_usd": 0.0})
             b["runs"] += 1

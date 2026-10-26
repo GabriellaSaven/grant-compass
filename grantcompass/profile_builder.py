@@ -111,7 +111,7 @@ def fill_from_website(url: str) -> dict:
     """Read the site, extract what it supports, verify, fill empty fields. Returns a summary for the UI."""
     pages = read_site(url)
     corpus = "\n\n".join(f"<page url='{p['url']}'>\n{p['text']}\n</page>" for p in pages)[:MAX_CHARS]
-    run = run_agent(ProfileFromWebsite, (PROMPTS_DIR / "profile_from_website.md").read_text(),
+    run = run_agent(ProfileFromWebsite, (PROMPTS_DIR / "profile_from_website.md").read_text(encoding="utf-8"),
                     f"Profile fields:\n{_field_list()}\n\n<website untrusted='true'>\n{corpus}\n</website>",
                     agent="research_agent")
     usage = usage_dict(run.usage)

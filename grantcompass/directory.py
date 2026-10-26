@@ -20,7 +20,7 @@ CHECK_WORKERS = 8
 
 
 def entries() -> list[dict]:
-    return json.loads(DIRECTORY_FILE.read_text())
+    return json.loads(DIRECTORY_FILE.read_text(encoding="utf-8"))
 
 
 def sync() -> None:
@@ -28,7 +28,7 @@ def sync() -> None:
     A cached result is only reused while the page's text hash still matches."""
     db.sync_directory(entries())
     if CACHE_FILE.exists():
-        cache = json.loads(CACHE_FILE.read_text())
+        cache = json.loads(CACHE_FILE.read_text(encoding="utf-8"))
         for row in db.list_directory():
             c = cache.get(row["url"])
             if c and not row["content_hash"]:
@@ -40,7 +40,7 @@ def export_cache() -> int:
     rows = [r for r in db.list_directory() if r["result"]]
     cache = {r["url"]: {"content_hash": r["content_hash"], "result": {**r["result"], "raw_text": r["result"].get(
         "raw_text", "")}} for r in rows}
-    CACHE_FILE.write_text(json.dumps(cache, indent=1))
+    CACHE_FILE.write_text(json.dumps(cache, indent=1), encoding="utf-8")
     return len(cache)
 
 

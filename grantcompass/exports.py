@@ -26,6 +26,7 @@ from pptx.util import Inches as PIn
 from pptx.util import Pt as PPt
 
 from . import db
+from .dates import dfmt
 
 ACCENT, INK, MUTED, PAPER, CORAL = "2F5D50", "1D2320", "6E736C", "F7F5F0", "E8907A"
 SERIF, SANS = "Georgia", "Calibri"
@@ -142,11 +143,11 @@ def funder_report_docx(opp_id: int) -> bytes:
     sections = db.list_questions(opp_id, kind="report")
     doc = _doc()
     _cover(doc, f"Grant report · {opp['funder']}", f"{opp['program_name']}: progress report",
-           [f"Submitted by {org.get('legal_name', '')}", f"Prepared {date.today():%-d %B %Y}"])
+           [f"Submitted by {org.get('legal_name', '')}", f"Prepared {dfmt(date.today(), '%-d %B %Y')}"])
     _facts_table(doc, [("Funder", opp["funder"]), ("Grant", opp["program_name"]),
                        ("Amount awarded", money(opp.get("awarded_amount"))),
                        ("Grant period", opp.get("grant_period") or "—"),
-                       ("Report due", date.fromisoformat(opp["report_due"]).strftime("%-d %B %Y")
+                       ("Report due", dfmt(date.fromisoformat(opp["report_due"]), "%-d %B %Y")
                         if opp.get("report_due") else "—"),
                        ("Contact", org.get("legal_name", ""))])
     for i, q in enumerate(sections, 1):
@@ -268,7 +269,7 @@ def board_docx(f: dict, summary: dict | None) -> bytes:
     org = _org()
     doc = _doc()
     _cover(doc, "Board update · fundraising", f"Grants report to the board",
-           [org.get("legal_name", ""), f"{f['period_label']} · prepared {date.today():%-d %B %Y}"])
+           [org.get("legal_name", ""), f"{f['period_label']} · prepared {dfmt(date.today(), '%-d %B %Y')}"])
     if summary:
         doc.add_heading("Summary", level=1)
         doc.add_paragraph(summary["summary"])

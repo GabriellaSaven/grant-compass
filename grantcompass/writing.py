@@ -18,7 +18,7 @@ from .library import library_context
 from .llm import log_run, run_agent, usage_dict
 from .models import COACH_CATEGORIES, CoachReview, EvidenceReport, WriterDraft
 
-PROMPTS = {name: (PROMPTS_DIR / f"{name}.md").read_text() for name in ("grant_writer", "grant_coach", "evidence_checker")}
+PROMPTS = {name: (PROMPTS_DIR / f"{name}.md").read_text(encoding="utf-8") for name in ("grant_writer", "grant_coach", "evidence_checker")}
 FUNDER_TEXT_LIMIT = 8_000  # characters of the funder's text given to the writer and coach
 
 

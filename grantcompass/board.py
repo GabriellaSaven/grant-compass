@@ -12,6 +12,7 @@ from . import db
 from .config import PROMPTS_DIR
 from .llm import log_run, run_agent, usage_dict
 from .pipeline import CLOSED, pipeline_rows
+from .dates import dfmt
 
 WINDOW_DAYS = 183  # "the last six months"
 IN_PROGRESS = ("Drafting", "Internal Review", "Ready to Submit")
@@ -29,7 +30,7 @@ def _name(o: dict) -> str:
 
 
 def _when(iso: str | None) -> str:
-    return date.fromisoformat(iso).strftime("%-d %b %Y") if iso else "—"
+    return dfmt(date.fromisoformat(iso), "%-d %b %Y") if iso else "—"
 
 
 def facts() -> dict:
@@ -60,7 +61,7 @@ def facts() -> dict:
         return f"{sum(bool(q['response'].strip()) for q in qs)} of {len(qs)}"
 
     return {
-        "period_label": f"{since:%-d %b} – {today:%-d %b %Y}",
+        "period_label": f"{dfmt(since, '%-d %b')} – {dfmt(today, '%-d %b %Y')}",
         "won": [{"name": _name(o), "amount": o.get("awarded_amount") or 0, "when": _when(o["result_date"])} for o in won],
         "won_total": sum(o.get("awarded_amount") or 0 for o in won),
         "lost": [{"name": _name(o), "amount": o.get("award_max") or 0, "reason": o.get("lost_reason"),
@@ -122,7 +123,7 @@ def _clean(text: str, allowed: set[float]) -> tuple[str, int]:
 
 def summarize(f: dict) -> dict:
     """The Executive Director's summary for the board, with any unverifiable number removed."""
-    run = run_agent(BoardSummary, (PROMPTS_DIR / "board_update.md").read_text(),
+    run = run_agent(BoardSummary, (PROMPTS_DIR / "board_update.md").read_text(encoding="utf-8"),
                     "Facts for the board update (JSON):\n" + json.dumps(f, indent=1), agent="executive_director")
     out = run.output.model_dump()
     allowed, removed = _allowed(f), 0

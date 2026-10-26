@@ -32,8 +32,8 @@ app.index_string = app.index_string.replace(
 KEY_FILE = ROOT / "data" / ".secret_key"
 if not KEY_FILE.exists():
     KEY_FILE.parent.mkdir(exist_ok=True)
-    KEY_FILE.write_text(secrets.token_hex(32))
-app.server.secret_key = KEY_FILE.read_text().strip()
+    KEY_FILE.write_text(secrets.token_hex(32), encoding="utf-8")
+app.server.secret_key = KEY_FILE.read_text(encoding="utf-8").strip()
 app.server.permanent_session_lifetime = timedelta(days=14)
 app.server.config.update(SESSION_COOKIE_HTTPONLY=True, SESSION_COOKIE_SAMESITE="Lax",  # no script or cross-site use
                          MAX_CONTENT_LENGTH=MAX_REQUEST_BYTES)  # oversized uploads are refused before they're read

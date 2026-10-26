@@ -11,11 +11,12 @@ from flask import session
 
 from .. import db
 from .components import label
+from ..dates import dfmt
 
 
 def _when(iso: str) -> str:
     d = datetime.fromisoformat(iso)
-    return d.strftime("%-d %b, %H:%M")
+    return dfmt(d, "%-d %b, %H:%M")
 
 
 def team_labels() -> list[str]:

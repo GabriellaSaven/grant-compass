@@ -5,6 +5,7 @@ from datetime import date
 
 from dash import ALL, Input, Output, State, callback, dcc, html, no_update
 
+from ..dates import dfmt
 from .. import db
 from ..errors import friendly
 from ..fit import assess
@@ -178,7 +179,7 @@ def tasks_block(opp_id: int):
                 dcc.Checklist([{"label": "", "value": "done"}], ["done"] if t["done"] else [],
                               id={"type": "task", "id": t["id"]}, className="task-check"),
                 html.Span(t["title"], className="task-title" + (" done" if t["done"] else "")),
-                html.Span(("Overdue · " if late else "") + due.strftime("%-d %b"),
+                html.Span(("Overdue · " if late else "") + dfmt(due, "%-d %b"),
                           className="task-due" + (" late" if late else "")),
             ],
             className="task",

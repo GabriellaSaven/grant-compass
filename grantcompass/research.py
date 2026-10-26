@@ -15,7 +15,7 @@ from .llm import log_run, run_agent, usage_dict
 from .netsafe import check_public, safe_get
 from .models import OpportunityExtract
 
-INSTRUCTIONS = (PROMPTS_DIR / "research_agent.md").read_text()
+INSTRUCTIONS = (PROMPTS_DIR / "research_agent.md").read_text(encoding="utf-8")
 
 
 def is_approved(url: str) -> bool:

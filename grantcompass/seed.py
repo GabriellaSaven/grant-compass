@@ -8,6 +8,7 @@ from datetime import date, timedelta
 from . import db
 from .config import SAMPLE_DIR
 from .pipeline import workback_plan
+from .dates import dfmt
 
 SAMPLE_TEAM = [("Maya Chen", "Development Director"), ("Sam Ortiz", "Grants Manager"),
                ("Priya Nair", "Programme Director")]
@@ -53,7 +54,7 @@ def _opportunities(today: date) -> list[dict]:
             "reporting": "Annual outcome report",
             "summary": "Early literacy grants for K-3 programmes in the Miami Valley.",
             "source_url": None,
-            "raw_text": (SAMPLE_DIR / "opportunity_good_fit.md").read_text(),
+            "raw_text": (SAMPLE_DIR / "opportunity_good_fit.md").read_text(encoding="utf-8"),
             "_status": "Drafting", "_owner": TEAM[1], "_decision": "Go", "_done": 1,
         },
         {
@@ -117,7 +118,7 @@ def _opportunities(today: date) -> list[dict]:
             "reporting": "Not stated",
             "summary": "High school STEM career programmes in Michigan and Wisconsin.",
             "source_url": None,
-            "raw_text": (SAMPLE_DIR / "opportunity_poor_fit.md").read_text(),
+            "raw_text": (SAMPLE_DIR / "opportunity_poor_fit.md").read_text(encoding="utf-8"),
             "_status": "Researching", "_owner": None, "_decision": None, "_done": 0,
         },
         {
@@ -163,12 +164,12 @@ def _opportunities(today: date) -> list[dict]:
 def seed() -> None:
     lib = SAMPLE_DIR / "library"
     for filename, title, doc_type, approved in LIBRARY:
-        db.add_document(title, doc_type, (lib / filename).read_text(), approved=approved, sample=True)
+        db.add_document(title, doc_type, (lib / filename).read_text(encoding="utf-8"), approved=approved, sample=True)
 
     today = date.today()
     for opp in _opportunities(today):
         meta = {k: opp.pop(k) for k in list(opp) if k.startswith("_")}
-        opp["deadline_text"] = date.fromisoformat(opp["deadline"]).strftime("%B %-d, %Y")
+        opp["deadline_text"] = dfmt(date.fromisoformat(opp["deadline"]), "%B %-d, %Y")
         opp_id = db.add_opportunity({**opp, "origin": "Sample data"}, status=meta["_status"], owner=meta["_owner"],
                                     sample=True)
         if meta["_decision"]:

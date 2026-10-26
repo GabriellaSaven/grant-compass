@@ -22,6 +22,7 @@ from .components import (
 )
 from .fit_explain import fit_explainer
 from .icons import field_icon
+from ..dates import dfmt
 
 BAND_CLASS = {"Strong": "ok", "Possible": "attn", "Weak": "muted"}
 
@@ -131,7 +132,7 @@ def history_block(lead: dict, opp_id: int | None):
                          html.Div("You haven't applied to this funder before.", className="small muted")],
                         className="ov-block")
     def row(h):
-        when = f" · {date.fromisoformat(h['when']):%-d %b %Y}" if h.get("when") else ""
+        when = f" · {dfmt(date.fromisoformat(h['when']), '%-d %b %Y')}" if h.get("when") else ""
         amount = f" · ${h['amount']:,}" if h.get("amount") else ""
         name = dcc.Link(h["programme"], href=f"/opportunity/{h['id']}") if h["id"] else html.Span(h["programme"])
         return html.Li([label(h["status"], {"Won": "ok", "Lost": "crit", "Funded you": "ok"}.get(h["status"], "attn")),
@@ -715,6 +716,6 @@ def manage_watch(_add, removes, url, name):
           prevent_initial_call=True)
 def load_sample(_):
     """A fictional application form with numbered questions and word limits."""
-    return (SAMPLE_DIR / "application_form.md").read_text(), True
+    return (SAMPLE_DIR / "application_form.md").read_text(encoding="utf-8"), True
 
 

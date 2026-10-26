@@ -76,7 +76,7 @@ RULES = [
 
 def _jsonl(name: str) -> list[dict]:
     path = llm.log_dir() / name  # the signed-in organisation's logs
-    return [json.loads(x) for x in path.read_text().splitlines() if x.strip()] if path.exists() else []
+    return [json.loads(x) for x in path.read_text(encoding="utf-8").splitlines() if x.strip()] if path.exists() else []
 
 
 def _rows(sql: str) -> list[dict]:
