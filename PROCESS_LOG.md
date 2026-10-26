@@ -2769,3 +2769,41 @@ the author's own fundraising experience.
 - The source note on page 15 now says $1,500 is where flat fees start in
   the guide, and that it's the figure used.
 - Checked: no fee range is left in either file; all 15 report pages fit.
+
+## Final grader simulation
+
+**Prompt:** "are you absolutely sure that everything works? I am not going to
+submit a video so I want to make sure that if I only submit the slides and the
+report, they will be able to run the app"
+
+**What was lacking before:** the fresh-clone check only confirmed that the home
+page loaded. It didn't exercise any feature, any other operating system, or
+the oldest supported Python.
+
+- **Portability scan found two Windows-only crashes** (fixed and pushed,
+  `e286389`):
+  - 19 date formats used `%-d`, which raises on Windows. They now go through
+    `grantcompass/dates.dfmt`.
+  - 20 file reads and 3 writes had no encoding, so Windows would use its own
+    code page and fail on the demo data's dashes and accents. All now name
+    UTF-8.
+- **Fresh clone from GitHub** (`.env` one folder up, as on the staff setup),
+  following the README, on Python 3.14 and on **Python 3.10.22** (the oldest
+  the README allows). A browser script clicked through every feature with
+  real AI calls. **24/24 steps passed on both**, with no HTTP 5xx, no browser
+  console errors and no server tracebacks:
+  - the 6 demos load, and all 11 pages open
+  - a grant's full record opens
+  - assessing the sample (Research + Fit)
+  - Discover search: 141 results
+  - Draft with AI, Grant Coach, Evidence check
+  - chat answers ("Riverside Children's Fund … due soonest, in 3 days")
+  - the board update, with Word and PowerPoint downloads
+  - the Agent health review
+  - creating a new account
+- On Python 3.10, all 13 safety tests also pass.
+- The first runs failed because of mistakes in the test script itself, not
+  the app: it checked pages before they had finished loading, and expected
+  links on Pipeline, which opens grants in a pop-up panel. Fixed in the
+  script only.
+- Test clones and servers were removed afterwards.
