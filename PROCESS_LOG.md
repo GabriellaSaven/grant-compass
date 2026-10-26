@@ -2680,3 +2680,53 @@ red dot?"
   line again.
 - **Checked:** all 15 report pages fit; 12 source links work; the legend has
   no red markers; the 16 demo markers are intact.
+
+## Slides: cost, safety and closing rewritten for graders
+
+**Prompts:**
+- About the cost slide: "this slide is hard to understand especially the
+  stuff about hurting quality. remember the slides are to help the graders
+  understand the project"
+- About the safety slide: "insufficient, i really want it to be in line with
+  the safety measures in the requirements of the project"
+- About "$1,500–5,000": "does that mean that grantwriters are paid
+  $300/hour? because that is impossible"
+- About the last slide: "should be written in more human language" and the
+  closing line "should be improved"
+
+**What was lacking before:**
+- The cost slide used shorthand ("18-run test", "+58% cost, decisions no
+  more consistent").
+- The safety slide was a screenshot plus a bullet list that didn't follow
+  the brief's categories.
+- The writer fee read like a per-hour figure.
+- The last slide was terse fragments.
+
+- **Cost (slide 7):**
+  - Headline numbers now say what each one is.
+  - A comparison line: freelance writer about $75 an hour, or a
+    $1,500–5,000 flat fee; Instrumentl $299+ a month.
+  - "How we keep it cheap", in plain words.
+  - The quality test as three labelled bars (AI cost per 1,000
+    assessments: $0.88 / $1.34 / $1.39), with the verdict "the cheap setup
+    loses nothing, so we kept it".
+- **Safety (slide 8):** three columns in the brief's own categories:
+  - Attacks (prompt injection, data leaks, misbehaviour)
+  - Agent malfunction (invented facts, wrong action, infinite loops)
+  - Overspending (budget guards)
+
+  Each risk gives its defense and the test result that proves it. A
+  13/13 box shows the command to rerun the tests. The bottom row has two
+  "shown working" screenshots: the injection flagged as ignored, and the
+  Evidence Checker's contradicted claim.
+- **Writer fee:** checked on Grantable's live page. It lists $30–150 an
+  hour (about $75 mid-level), and $1,500–5,000 is the flat fee for a whole
+  foundation proposal (about 20–50 hours). Relabelled everywhere as a flat
+  fee, with the hourly rate. The report's source note says Grantable sells AI
+  software.
+- **Last slide (10):** rewritten as full sentences under "Where it falls
+  short today" and "With another month". The closing line is now "Less time
+  on paperwork. More time with the people we serve." / "The tool I wish I'd
+  had as a fundraiser."
+- **Checked:** every changed slide fits (screenshots); all 15 report pages
+  still fit.

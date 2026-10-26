@@ -180,53 +180,95 @@ slides.append(f"""
 </section>""")
 
 # 7 · Cost
+A_, B_, C_ = S["A_shipped"], S["B_no_cache_order"], S["C_medium_reasoning"]
+
+
+def cost_bar(label, sub, cost, top, verdict, ours=False):
+    return (f'<div class="cbar{" ours" if ours else ""}"><div class="cl"><b>{label}</b><span>{sub}</span></div>'
+            f'<div class="ct"><i style="width:{100 * cost / top:.0f}%"></i></div>'
+            f'<div class="cv"><b>${cost * 1000:.2f}</b><span>{verdict}</span></div></div>')
+
+
+top = max(A_["mean_cost"], B_["mean_cost"], C_["mean_cost"])
 slides.append(f"""
-<section>
+<section class="cost">
 <p class="kicker">Cost to run</p>
-<h2>Under a cent per grant, measured from {R.total_runs} real runs</h2>
+<h2>Running Grant Compass costs less than a cent per grant answer</h2>
 <div class="big4">
-<div><b>{R.money(R.trace_cost, 3)}</b><span>find, assess, draft, coach and check one answer</span></div>
-<div><b>{R.money(R.per_user_month, 2)}</b><span>per active user per month</span></div>
-<div><b>{R.money(R.per_user_month * 100, 0)}</b><span>per month for 100 users</span></div>
-<div><b>{R.money(ten_k, 0)}</b><span>per month for 10,000 users</span></div>
+<div><b>{R.money(R.trace_cost, 3)}</b><span><strong>One grant answer:</strong> find the funder, judge the fit, draft, coach and fact-check (5 AI agents)</span></div>
+<div><b>{R.money(R.per_user_month, 2)}</b><span><strong>One busy fundraiser for a month</strong> (4 applications, plus search and chat)</span></div>
+<div><b>{R.money(R.per_user_month * 100, 0)}</b><span><strong>100 users</strong> a month</span></div>
+<div><b>{R.money(ten_k, 0)}</b><span><strong>10,000 users</strong> a month</span></div>
 </div>
-<div class="cols">
-<div><h3>Cost cuts</h3><ul>
-<li>Code filters results before any AI call</li>
-<li>Pages re-read only when they change</li>
-<li>Cache-friendly prompts: <b>{S["A_shipped"]["cached_share"]:.0%}</b> of input cached</li>
-<li>Small model, low reasoning, hard caps</li></ul></div>
-<div><h3>Did they hurt quality? 18-run test</h3><ul>
-<li>Caching: <b>{cache_saving:.0%} cheaper</b>, same prompt, no quality cost</li>
-<li>Medium reasoning: <b>{reasoning_extra:+.0%} cost</b>, slower, decisions no more consistent</li>
-<li>So: keep it small, and flag borderline calls</li></ul></div>
+<p class="compare">For comparison: a freelance grant writer charges about <b>$75 an hour</b>, or a <b>$1,500–5,000 flat fee</b> for one full foundation proposal; a grant database like Instrumentl costs <b>$299+ a month</b>.
+All figures measured from {R.total_runs} real AI runs.</p>
+<div class="cols cost-cols">
+<div><h3>How we keep it cheap</h3>
+<ul class="plain">
+<li><b>Free checks first.</b> Simple code rules drop poor matches before any AI is used.</li>
+<li><b>Never pay twice.</b> A funder's page is re-read only if it has changed.</li>
+<li><b>Reuse what repeats.</b> The instructions and your documents are sent the same way every time, so the AI provider
+bills {A_["cached_share"]:.0%} of it at a tenth of the price.</li>
+<li><b>A small, fast model</b> with spending caps on every run.</li></ul></div>
+<div><h3>Did saving money make it worse? We tested it.</h3>
+<p class="small test-sub">Same 6 grants, assessed 3 ways · AI cost per 1,000 assessments</p>
+{cost_bar("Our setup", "cheap model + reuse", A_["mean_cost"], top, "the baseline", ours=True)}
+{cost_bar("Without reuse", "same instructions, no caching", B_["mean_cost"], top, f"{B_['mean_cost'] / A_['mean_cost'] - 1:.0%} more, no better")}
+{cost_bar("More AI 'thinking'", "medium reasoning effort", C_["mean_cost"], top, f"{C_['mean_cost'] / A_['mean_cost'] - 1:.0%} more, no better")}
+<p class="verdict">Verdict: the cheap setup loses nothing, so we kept it.</p></div>
 </div>
-{notes("Typical tokens per run come from the usage log; the per-user month assumes four applications with four "
-       "questions each, plus discovery and chat.")}
+{notes("Reuse (caching) sends the identical prompt, so the answers can't get worse; it just costs 35% less. Extra "
+       f"reasoning cost {reasoning_extra:.0%} more and took about 4 seconds longer, but on borderline grants the "
+       "recommendation flips between 'Research further' and 'No-Go' whatever the setting (even running our own setting "
+       "twice), so the extra spend bought nothing. We list that variation as a limit.")}
 </section>""")
 
 # 8 · Safety
+def crop_uri(name, box, width=1100):
+    im = Image.open(SLIDE_SHOTS / f"{name}.jpg").convert("RGB")
+    w, h = im.size
+    im = im.crop((round(box[0] * w), round(box[1] * h), round(box[2] * w), round(box[3] * h)))
+    if im.width > width:
+        im = im.resize((width, round(im.height * width / im.width)), Image.LANCZOS)
+    buf = io.BytesIO()
+    im.save(buf, "JPEG", quality=85, optimize=True)
+    return "data:image/jpeg;base64," + base64.b64encode(buf.getvalue()).decode()
+
+
+def risk(name, defense, proof):
+    return f'<div class="risk"><b>{name}</b><span>{defense}</span><em>✓ {proof}</em></div>'
+
+
 slides.append(f"""
-<section class="demo">
-<p class="kicker">Safety</p>
-<h2>{passed} of {total} attack and failure tests passed</h2>
-<div class="demo-grid">
-<div class="stage">{screen("injection", [(1, 61.5, 41, 0), (2, 62, 93, 1)], label="A planted instruction in a pasted 'grant'")}</div>
-<div class="safety-list">
-<ol class="steps static">
-<li><b>1</b><span>Shown in red as <b>ignored</b>; never acted on</span></li>
-<li><b>2</b><span>Fit <b>0%</b>; eligibility fails in code</span></li></ol>
-<ul class="tight">
-<li><b>Injection</b> in pages, documents, answers</li>
-<li><b>Invented facts</b>: quotes and numbers checked</li>
-<li><b>Wrong actions</b>: chat tools are read-only</li>
-<li><b>Data leaks</b>: one database per organisation; no private-network links</li>
-<li><b>Runaway cost</b>: 6 calls, 120k tokens per run</li></ul>
-<p class="small"><code>python tests/safety_tests.py</code> · about $0.002</p></div>
+<section class="safety2">
+<p class="kicker">Safety · every risk in the brief, with a defense and a test that proves it</p>
+<h2>{passed} of {total} attack and failure tests pass</h2>
+<div class="sgrid">
+<div class="scol"><h3>Attacks</h3>
+{risk("Prompt injection", "Funder pages, documents and answers are treated as data. Planted instructions are flagged in red; scores and eligibility are computed in code.", "Tests 1–4: blocked or ignored; Coach still scored a 'give me 100' answer 20/100")}
+{risk("Data leaks", "One database per organisation. Links can't reach this computer or a private network.", "Tests 10, 13: 0 leaks in 160 reads; 6 of 6 internal addresses refused")}
+{risk("Misbehaviour", "Password guessing locks the account; oversized uploads are refused unread.", "Tests 11, 12: locked after 5 wrong passwords; 10 MB+ files refused")}
 </div>
-{notes("The injection text told grant-matching tools to record this Norwegian robotics fellowship as a Go for a US "
-       "veterans nonprofit. The agent listed it as instruction-like text; the app shows it in red; the score and the "
-       "eligibility gate are computed in code.")}
+<div class="scol"><h3>Agent malfunction</h3>
+{risk("Invented facts", "Every quote must match the source word for word. The Evidence Checker tests each claim; the Executive Director's numbers must match real metrics.", "Tests 8, 9: invented quote rejected; 2 made-up figures removed")}
+{risk("Wrong action", "The chat assistant's tools are read-only, and it can only open the app's own pages. Nothing is submitted without you.", "Test 5: no tool can change data")}
+{risk("Infinite loops", "Every run stops after 6 AI calls.", "Test 6: a runaway agent was stopped")}
+</div>
+<div class="scol"><h3>Overspending</h3>
+{risk("Budget guards", "Per run: 6 calls, 120,000 tokens, 6,000 output tokens. Messages over 2,000 characters and libraries over 120,000 are refused before any AI call. Agent health shows each agent's cost.", "Tests 6, 7: stopped and refused with 0 AI calls")}
+<div class="suite"><b>{passed}/{total} passed</b><span>The whole suite attacks a throwaway copy of the data and costs about $0.002:</span>
+<code>python tests/safety_tests.py</code></div>
+</div>
+</div>
+<div class="proofs">
+<figure><img src="{crop_uri('injection', (0.6, 0.33, 1.0, 0.5))}" alt="Injection flagged">
+<figcaption><b>Shown working:</b> a pasted 'grant' told the AI to score it a Go. The instruction is shown as ignored, and the fit is 0%.</figcaption></figure>
+<figure><img src="{crop_uri('evidence', (0.6, 0.355, 0.9, 0.6))}" alt="Contradicted claims">
+<figcaption><b>Shown working:</b> the Evidence Checker caught two figures the Writer got wrong, with the source.</figcaption></figure>
+</div>
+{notes("This slide follows the project brief's three groups. Attacks: injection, data leaks, misbehaviour. Agent "
+       "malfunction: invented facts, wrong action, infinite loops. Overspending: budget guards. Every defense has an "
+       "automated test, and two are shown working in the app on the bottom row.")}
 </section>""")
 
 # 9 · Impact
@@ -249,7 +291,7 @@ is juggling research, deadlines and writing at the same time.”</blockquote>
 <tr><td>First draft of an answer</td><td>1–2 h</td><td><b>6 s</b> + editing</td></tr>
 <tr><td>Fact-check every claim</td><td>often skipped</td><td><b>6 s</b></td></tr>
 <tr><td>Board update</td><td>1–2 h</td><td><b>under 10 s</b></td></tr>
-<tr><td>Writer per proposal</td><td>$1,500–5,000</td><td><b>under $0.02</b> of AI</td></tr>
+<tr><td>Hiring a writer for one full proposal</td><td>$1,500–5,000 flat fee (≈$75/h)</td><td><b>under $0.02</b> of AI</td></tr>
 </tbody></table>
 <p class="em small">≈5 hours saved per application → about <b>20 hours a month</b> back for programmes.</p></div>
 </div>
@@ -261,23 +303,34 @@ answer, work that today needs a paid database and a dedicated grants team.</div>
 
 # 10 · Next
 slides.append(f"""
-<section>
+<section class="next">
 <p class="kicker">What's next</p>
-<h2>Honest limits, and the next month</h2>
-<div class="cols">
-<div><h3>Doesn't work yet</h3><ul>
-<li>Many funders hide behind portals and PDFs</li>
-<li>The writer still makes mistakes (the checker catches them)</li>
-<li>Borderline Go / No-Go calls vary between runs</li>
-<li>Runs locally; demo data is fictional</li></ul></div>
-<div><h3>With another month</h3><ul>
-<li>Pilot with 2–3 real nonprofits over a grant cycle</li>
-<li>Run twice on borderline grants; show "uncertain"</li>
-<li>Deepen the organisation-knowledge side</li>
-<li>Host it, with shared team accounts</li></ul></div>
+<h2>What it can't do yet, and what I'd build next</h2>
+<div class="cols next-cols">
+<div><h3>Where it falls short today</h3>
+<ul class="plain">
+<li><b>It can't read every funder.</b> Many post their guidelines behind logins or in scanned PDFs, so some still have
+to be pasted in by hand.</li>
+<li><b>The AI writer still makes mistakes.</b> In the demo it put the wrong year on two figures. The Evidence Checker
+caught them, but a person should always read the final answer.</li>
+<li><b>It can change its mind on close calls.</b> Asked twice about a borderline grant, it may say "Research further"
+once and "No-Go" the next.</li>
+<li><b>It hasn't met a real nonprofit's files yet.</b> It runs on one computer, with six realistic but invented
+organisations.</li></ul></div>
+<div><h3>With another month</h3>
+<ul class="plain">
+<li><b>Try it with 2–3 real nonprofits</b> for a full grant cycle, and measure the hours saved and grants won.</li>
+<li><b>Say "uncertain" honestly</b> when the AI gives two different answers on the same grant, instead of picking one.</li>
+<li><b>Help teams build their evidence</b> (my tester's top request): prompt for missing numbers, and update the
+library after every funder report.</li>
+<li><b>Put it online</b> so a whole development team can share one workspace.</li></ul></div>
 </div>
-<p class="close">Software does the searching, drafting and checking.<br>People spend their hours on the communities they serve.</p>
+<div class="closing">
+<p class="close">Less time on paperwork. More time with the people we serve.</p>
+<p class="close-sub">The tool I wish I'd had as a fundraiser.</p>
+</div>
 <p class="repo-end">Public repo: <a href="{R.REPO_URL}">{R.REPO_URL}</a> · <code>git clone {R.REPO_URL}.git</code></p>
+{notes("Close on the person: this is the tool I wanted when I was the one doing the grants.")}
 </section>""")
 
 assert len(slides) <= 10, len(slides)
@@ -335,6 +388,33 @@ ol.steps li > b{width:30px;height:30px;border-radius:50%;background:#c4472c;colo
 .quotes blockquote{margin:0 0 16px;width:auto;padding:16px 20px;background:#eef4f0;border-left:5px solid #2f5d50;border-radius:10px;
  box-shadow:none;font-family:"Iowan Old Style",Georgia,serif;font-size:24px;font-style:normal;line-height:1.35;text-align:left}
 .impact-cols{grid-template-columns:1fr 1.05fr}
+.cost h2{font-size:38px;margin-bottom:14px}
+.cost .big4{margin-bottom:10px} .cost .big4 b{font-size:36px} .cost .big4 span{font-size:15.5px} .big4 strong{color:#1f2a26}
+.compare{font-size:17px!important;color:#5b5a55;margin:0 0 14px}
+.cost-cols{grid-template-columns:.85fr 1.15fr;gap:30px} .cost h3{font-size:24px;margin-bottom:6px}
+ul.plain{list-style:none;margin:0;padding:0} ul.plain li{font-size:20px;margin:0 0 12px;line-height:1.35}
+.test-sub{margin:0 0 8px!important}
+.cbar{display:grid;grid-template-columns:150px 1fr 150px;gap:12px;align-items:center;margin:0 0 9px}
+.cl b{display:block;font-size:17px} .cl span{display:block;font-size:13px;color:#5b5a55;line-height:1.2}
+.ct{background:#efebe4;border-radius:999px;height:16px;overflow:hidden} .ct i{display:block;height:100%;background:#b9b2a4;border-radius:999px}
+.cbar.ours .ct i{background:#2f5d50}
+.cv b{display:block;font-size:19px;color:#1f2a26} .cv span{display:block;font-size:13px;color:#5b5a55;line-height:1.2}
+.verdict{margin-top:10px!important;padding:9px 14px;background:#eef4f0;border-left:4px solid #2f5d50;border-radius:8px;font-size:18px;font-weight:600;color:#2f5d50}
+.safety2 h2{font-size:36px;margin-bottom:12px}
+.sgrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.scol h3{font-size:21px;margin:0 0 6px;padding-bottom:4px;border-bottom:2px solid #2f5d50}
+.risk{margin:0 0 9px} .risk b{display:block;font-size:17px;color:#1f2a26}
+.risk span{display:block;font-size:14.5px;line-height:1.32;color:#3d3c38}
+.risk em{display:block;font-style:normal;font-size:13.5px;line-height:1.3;color:#2f5d50;font-weight:600;margin-top:2px}
+.suite{background:#1f2a26;color:#e8efe9;border-radius:10px;padding:10px 12px;margin-top:6px}
+.suite b{display:block;font-size:22px;color:#a7d1bf} .suite span{display:block;font-size:12.5px;line-height:1.3;margin:2px 0 6px}
+.suite code{background:rgba(255,255,255,.12);color:#fff;font-size:12.5px}
+.proofs{display:grid;grid-template-columns:1.15fr 1fr;gap:16px;margin-top:6px}
+.proofs img{width:100%;height:150px;object-fit:cover;object-position:top left;border:1px solid #e3ded4;border-radius:8px;margin:0;display:block}
+.proofs figcaption{font-size:13px;line-height:1.3;color:#5b5a55;margin-top:4px}
+.next h2{margin-bottom:14px} .next-cols{gap:40px} .next ul.plain li{font-size:18.5px;margin:0 0 11px}
+.closing{margin-top:14px;padding:16px 24px;background:#1f2a26;border-radius:14px;text-align:center}
+.closing .close{color:#fff;margin:0;font-size:32px} .closing .close-sub{color:#a7d1bf;margin:4px 0 0;font-size:20px;font-family:"Iowan Old Style",Georgia,serif;font-style:italic}
 .newly{margin-top:22px;padding:16px 22px;background:#1f2a26;color:#e8efe9;border-radius:12px;font-size:23px;line-height:1.4}
 .newly b{color:#a7d1bf}
 .close{font-family:"Iowan Old Style",Georgia,serif;font-size:30px;color:#2f5d50;margin-top:30px;text-align:center}
