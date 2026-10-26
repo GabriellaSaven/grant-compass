@@ -2730,3 +2730,24 @@ red dot?"
   had as a fundraiser."
 - **Checked:** every changed slide fits (screenshots); all 15 report pages
   still fit.
+
+## Slides: spread content across the whole slide
+
+**Prompt:** "when youre making the slides, spread out the information from top
+to bottom and left to right so that it isnt clumped at the top and so that
+its easy to read"
+
+**What was lacking before:** content stacked directly under each heading,
+leaving the bottom third of many slides empty and the text smaller than it
+needed to be.
+
+- Every slide (except the title) now has the heading at the top, with
+  everything below it in a body that fills the remaining height. Blocks are
+  spaced evenly from top to bottom, clear of the footer.
+- Used the extra room to enlarge text:
+  - slide 2: lead text and stat cards
+  - slide 3: comparison table and the core rule
+  - slide 7: cost labels and the comparison line
+  - slide 10: the limits and next-steps text
+- Checked every slide in Chrome: no overflow; the "22% vs 72%" stat stays on
+  one line.

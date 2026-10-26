@@ -335,10 +335,26 @@ library after every funder report.</li>
 
 assert len(slides) <= 10, len(slides)
 
+
+def spread(html_: str) -> str:
+    """Wrap everything below the heading in a body that fills the rest of the slide, so content is spread
+    from top to bottom instead of bunching under the title. (Title slide excluded.)"""
+    if 'class="title"' in html_ or "</h2>" not in html_:
+        return html_
+    head, rest = html_.split("</h2>", 1)
+    notes_at = rest.find('<aside class="notes">')
+    end = notes_at if notes_at != -1 else rest.rfind("</section>")
+    return f'{head}</h2><div class="body">{rest[:end]}</div>{rest[end:]}'
+
+
+slides = [spread(x) for x in slides]
+
 CSS = """
 .reveal{color:#1f2a26;font-family:Inter,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:26px}
 .reveal .slides{text-align:left}
 .reveal .slides section{height:100%;padding:6px 0}
+.reveal .slides section:not(.title){display:flex!important;flex-direction:column}
+.reveal .slides section > .body{flex:1;display:flex;flex-direction:column;justify-content:space-evenly;padding-bottom:34px;min-height:0}
 .reveal h1,.reveal h2,.reveal h3{font-family:"Iowan Old Style","Palatino Linotype",Georgia,serif;font-weight:600;text-transform:none;letter-spacing:0;color:#1f2a26}
 .reveal h1{font-size:96px;margin:0 0 18px;color:#fff} .reveal h1 em{color:#a7d1bf}
 .reveal h2{font-size:42px;line-height:1.15;margin:0 0 20px} .reveal h3{font-size:26px;margin:0 0 8px;color:#2f5d50}
@@ -415,6 +431,11 @@ ul.plain{list-style:none;margin:0;padding:0} ul.plain li{font-size:20px;margin:0
 .next h2{margin-bottom:14px} .next-cols{gap:40px} .next ul.plain li{font-size:18.5px;margin:0 0 11px}
 .closing{margin-top:14px;padding:16px 24px;background:#1f2a26;border-radius:14px;text-align:center}
 .closing .close{color:#fff;margin:0;font-size:32px} .closing .close-sub{color:#a7d1bf;margin:4px 0 0;font-size:20px;font-family:"Iowan Old Style",Georgia,serif;font-style:italic}
+.lead p{font-size:29px} .lead .em{font-size:31px}
+.stats{gap:18px} .stats div{padding:22px 22px} .stats b{font-size:46px;white-space:nowrap} .stats span{font-size:19px}
+.reveal table.cmp th{font-size:17px} .reveal table.cmp td{font-size:25px;padding:13px 14px} .rule{font-size:38px}
+.cost .big4 span{font-size:17px} .cost .big4 b{font-size:40px} .compare{font-size:18.5px!important}
+.next ul.plain li{font-size:20.5px!important;margin-bottom:14px}
 .newly{margin-top:22px;padding:16px 22px;background:#1f2a26;color:#e8efe9;border-radius:12px;font-size:23px;line-height:1.4}
 .newly b{color:#a7d1bf}
 .close{font-family:"Iowan Old Style",Georgia,serif;font-size:30px;color:#2f5d50;margin-top:30px;text-align:center}
