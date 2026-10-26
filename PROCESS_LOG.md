@@ -2645,3 +2645,38 @@ whole thing better"
   banner if reveal.js can't load.
 - **Checked** every slide and each demo step in Chrome: nothing overflows,
   and there are no errors other than a missing favicon.
+
+## Report and slides: clean-up for submission
+
+**Prompts:** about the yellow TO ADD box, "why is this here?"; about the
+sources, "i want to be able to click on these links so i can make sure they
+are real"; about a red circle in the slides' diagram legend, "what is this
+red dot?"
+
+**What was lacking before:**
+- A reminder meant for the author (the TO ADD box) was hidden in print but
+  showed on screen, which is how the grader will read the report.
+- The sources were plain text.
+- Source 7 wrongly said the usage logs are in the repository; they're
+  gitignored.
+- "2 days–4 weeks" was attributed to the GrantStation survey; that range is
+  SSIR's own framing.
+- The new slide markers used the CSS class `dot`, which the diagram
+  legend's dotted-line sample also uses, so the sample turned into a red
+  circle.
+
+- **TO ADD box removed:** neither file contains any now.
+- **Sources (page 15):** every source is now a clickable link that opens in
+  a new tab. Each one was fetched first and loaded (HTTP 200).
+  - Dropped AFP and GrantWatch: they block automated checks (403), so they
+    couldn't be verified, and their figures are already covered by
+    Grantable and Grantsights.
+  - Added links to the repo's safety results, cost experiment and user
+    review.
+  - States that the usage logs stay on the computer running the app and are
+    summarised in section 4.
+- **Fixed the attribution** of "2 days–4 weeks" to SSIR.
+- **Renamed the slide marker class** to `mk`; the legend shows its dotted
+  line again.
+- **Checked:** all 15 report pages fit; 12 source links work; the legend has
+  no red markers; the 16 demo markers are intact.

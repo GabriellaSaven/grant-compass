@@ -56,6 +56,7 @@ blockquote{margin:6px 0;padding:8px 12px;background:#fff;border:1px solid var(--
 blockquote.side{background:var(--soft);border-color:transparent;border-left-color:var(--green);font-size:11pt}
 .quotes{display:grid;grid-template-columns:1fr 1fr;gap:8px} .quotes blockquote{margin:0}
 .cite{font-size:8pt;color:var(--muted);margin:-2px 0 8px 16px}
+.links a{color:var(--green);text-decoration:underline;text-underline-offset:2px}
 .src{font-size:8pt;color:var(--muted)} code{background:#f1eee8;padding:1px 4px;border-radius:4px;font-size:8.5pt}
 /* navigation */
 .nav{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);display:flex;align-items:center;gap:6px;background:#1f2a26;color:#fff;
@@ -118,7 +119,7 @@ organisation's records.</li>
 <h3 class="first">What it costs: money, time and frustration</h3>
 <div class="statgrid">
 <div><b>68%</b><span>of organisations name <i>time</i> as their biggest grant-seeking challenge (GrantStation, 2023)</span></div>
-<div><b>2 days–4 weeks</b><span>to prepare a single proposal (same survey)</span></div>
+<div><b>2 days–4 weeks</b><span>to prepare a single proposal (SSIR, on grant-writing workloads)</span></div>
 <div><b>~48 hours</b><span>median time per application to a philanthropic funder (SmartyGrants)</span></div>
 <div><b>$1,500–$5,000</b><span>a freelance writer's fee for one foundation proposal (2026 rate guides)</span></div>
 <div><b>22% vs 72%</b><span>of very small vs other nonprofits received even one foundation grant (Candid)</span></div>
@@ -315,7 +316,7 @@ honest review (full text in <code>report/user_review.md</code>).</p>
 <blockquote class="">“The pipeline is probably my favourite bit. Being able to see deadlines, risk, funding amount, where each application is at and what the next action is all in one place is genuinely helpful.”</blockquote>
 </div>
 <p class="src">What they'd improve: “keep pushing the organisation knowledge/evidence side because that is where I think it
-becomes especially valuable.” It is now one of the next steps on page 15.</p><div class="todo"><b>TO ADD</b> Optional: a timed before/after session with the test kit (<code>user_test/user_test_kit.html</code>) would add measured minutes to these quotes.</div>
+becomes especially valuable.” It is now one of the next steps on page 15.</p>
 <h3>Measured in the app</h3>
 <table class="small"><thead><tr><th>Task</th><th>Today (typical)</th><th>With Grant Compass (measured)</th><th>Source</th></tr></thead><tbody><tr><td>Judge whether one funder is worth applying to</td><td>30–60 min reading guidelines</td><td>19 s to read and score the San Antonio page</td><td>Traced run</td></tr><tr><td>First draft of one 250-word answer from your records</td><td>1–2 hours</td><td>6 s draft, plus editing</td><td>Traced run</td></tr><tr><td>Check every claim in an answer against your documents</td><td>Often skipped</td><td>6 s; caught 2 contradicted figures</td><td>Traced run</td></tr><tr><td>Board fundraising update</td><td>1–2 hours compiling</td><td>Under 10 s, every number checked</td><td>Reports page</td></tr><tr><td>Paying for one foundation proposal</td><td>$1,500–$5,000 freelance</td><td>Under $0.02 in AI per application</td><td>Usage log; rate guides</td></tr></tbody></table>
 <h3>What it adds up to</h3>
@@ -348,14 +349,14 @@ gaps the Evidence Checker finds, and outcome data that updates the library after
 <li>Learn from outcomes: feed funders' feedback on losses back into Fit scores and the Coach.</li>
 <li>Host it, with shared team accounts, roles, and a record of who approved each answer.</li></ul>
 <h3>Sources</h3>
-<ol class="src">
-<li>Candid, "Money in the US social sector" (1.9 million registered nonprofits; most under $1M).</li>
-<li>Candid, "Very small nonprofits make up the majority of US nonprofits" (May 2025; 22% vs 72%).</li>
-<li>Stanford Social Innovation Review, "Grant-writing infrastructure", citing GrantStation's 2023 State of Grantseeking report.</li>
-<li>SmartyGrants, "SmartyStats" (median about 48 hours per application to philanthropic funders, Australia).</li>
-<li>Grantable, "How much does a grant writer cost? (2026)"; AFP, "How to hire a grant writer (2026)".</li>
-<li>Pricing: Instrumentl (aitoolsbakery.com, grantsights.com, 2026); Candid Foundation Directory (grantsights.com, grantwatch.com); Grantable (grantable.co/docs/billing/plans).</li>
-<li>Grant Compass usage logs, safety test results and cost experiment, in this repository.</li></ol><div class="pfoot"><span>Grant Compass · Gabriella Saven</span><span>Limits · 15 / 15</span></div></section><nav class="nav" aria-label="Pages"><button id="prev" title="Previous page (←)">← Prev</button><span class="where" id="where">Page 1 of 15</span><select id="go" aria-label="Jump to page"><option value="0">1. Title</option><option value="1">2. Motivation</option><option value="2">3. Motivation</option><option value="3">4. What is new</option><option value="4">5. Agents</option><option value="5">6. Agents</option><option value="6">7. Agents</option><option value="7">8. Agents</option><option value="8">9. Tokenomics</option><option value="9">10. Tokenomics</option><option value="10">11. Tokenomics</option><option value="11">12. Safety</option><option value="12">13. Safety</option><option value="13">14. Impact</option><option value="14">15. Limits</option></select><button id="next" title="Next page (→)">Next →</button></nav><script>
+<ol class="src links">
+<li><a href="https://candid.org/explore-issues/us-social-sector/money" target="_blank" rel="noopener">Candid, "Money in the US social sector"</a>: 1.9 million registered nonprofits, most under $1M.</li>
+<li><a href="https://candid.org/blogs/data-insights-very-small-nonprofits-make-up-majority-us-nonprofits/" target="_blank" rel="noopener">Candid, "Very small nonprofits make up the majority of US nonprofits"</a> (May 2025): 22% vs 72%.</li>
+<li><a href="https://ssir.org/articles/entry/grant-writing-infrastructure" target="_blank" rel="noopener">Stanford Social Innovation Review, "Grant-writing infrastructure"</a>, citing GrantStation's 2023 State of Grantseeking report: 68%; 2 days to 4 weeks per proposal.</li>
+<li><a href="https://smartygrants.com.au/articles/smartystats-reveal-how-applicants-are-lodging-forms" target="_blank" rel="noopener">SmartyGrants, "SmartyStats"</a>: median about 48 hours per application to philanthropic funders (Australia).</li>
+<li><a href="https://grantable.co/how-much-does-a-grant-writer-cost" target="_blank" rel="noopener">Grantable, "How much does a grant writer cost? (2026)"</a>: $1,500–$5,000 per foundation proposal.</li>
+<li>Pricing: Instrumentl (<a href="https://aitoolsbakery.com/blog/instrumentl-pricing/" target="_blank" rel="noopener">AI Tools Bakery</a>, <a href="https://grantsights.com/blog/instrumentl-pricing" target="_blank" rel="noopener">Grantsights</a>); Candid Foundation Directory (<a href="https://grantsights.com/blog/candid-foundation-directory-pricing" target="_blank" rel="noopener">Grantsights</a>); Grantable (<a href="https://grantable.co/docs/billing/plans" target="_blank" rel="noopener">Grantable plans</a>).</li>
+<li>Grant Compass evidence in the repository: <a href="https://github.com/GabriellaSaven/grant-compass/blob/master/tests/safety_results.md" target="_blank" rel="noopener">safety test results</a>, <a href="https://github.com/GabriellaSaven/grant-compass/blob/master/report/cost_experiment.json" target="_blank" rel="noopener">cost experiment</a>, <a href="https://github.com/GabriellaSaven/grant-compass/blob/master/report/user_review.md" target="_blank" rel="noopener">user review</a>. Token counts come from the app's usage logs, which stay on the computer running the app (they are excluded from git) and are summarised in section 4.</li></ol><div class="pfoot"><span>Grant Compass · Gabriella Saven</span><span>Limits · 15 / 15</span></div></section><nav class="nav" aria-label="Pages"><button id="prev" title="Previous page (←)">← Prev</button><span class="where" id="where">Page 1 of 15</span><select id="go" aria-label="Jump to page"><option value="0">1. Title</option><option value="1">2. Motivation</option><option value="2">3. Motivation</option><option value="3">4. What is new</option><option value="4">5. Agents</option><option value="5">6. Agents</option><option value="6">7. Agents</option><option value="7">8. Agents</option><option value="8">9. Tokenomics</option><option value="9">10. Tokenomics</option><option value="10">11. Tokenomics</option><option value="11">12. Safety</option><option value="12">13. Safety</option><option value="13">14. Impact</option><option value="14">15. Limits</option></select><button id="next" title="Next page (→)">Next →</button></nav><script>
 const pages=[...document.querySelectorAll('.page')], sel=document.getElementById('go'), where=document.getElementById('where');
 const prev=document.getElementById('prev'), next=document.getElementById('next');
 let cur=0;

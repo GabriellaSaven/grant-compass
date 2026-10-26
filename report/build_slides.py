@@ -31,7 +31,7 @@ def data_uri(path: Path, width: int = 1800) -> str:
 
 def screen(name: str, markers, frag: int | None = None, label: str = "") -> str:
     """A 16:9 app screenshot with numbered markers. markers = [(number, x%, y%, fragment index)]."""
-    dots = "".join(f'<span class="dot fragment" data-fragment-index="{i}" style="left:{x}%;top:{y}%">{n}</span>'
+    dots = "".join(f'<span class="mk fragment" data-fragment-index="{i}" style="left:{x}%;top:{y}%">{n}</span>'
                    for n, x, y, i in markers)
     cls = "screen" + (" fragment" if frag is not None else "")
     attr = f' data-fragment-index="{frag}"' if frag is not None else ""
@@ -325,7 +325,7 @@ tr.us td{background:#eef4f0;font-weight:600;color:#2f5d50}
 .screen img{width:100%;height:100%;margin:0;display:block;object-fit:cover}
 .screen-label{position:absolute;left:12px;bottom:12px;background:rgba(31,42,38,.88);color:#fff;font-size:14px;font-weight:600;
  padding:5px 12px;border-radius:999px;letter-spacing:.02em}
-.dot{position:absolute;width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;background:#c4472c;color:#fff;
+.mk{position:absolute;width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;background:#c4472c;color:#fff;
  font:700 18px/34px Inter,sans-serif;text-align:center;box-shadow:0 0 0 4px rgba(196,71,44,.25),0 4px 10px rgba(0,0,0,.25)}
 ol.steps{list-style:none;margin:0;padding:0}
 ol.steps li{display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:start;font-size:19px;line-height:1.35;margin:0 0 12px}
