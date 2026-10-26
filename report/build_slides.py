@@ -200,7 +200,7 @@ slides.append(f"""
 <div><b>{R.money(R.per_user_month * 100, 0)}</b><span><strong>100 users</strong> a month</span></div>
 <div><b>{R.money(ten_k, 0)}</b><span><strong>10,000 users</strong> a month</span></div>
 </div>
-<p class="compare">For comparison: a freelance grant writer charges about <b>$75 an hour</b>, or a <b>$1,500–5,000 flat fee</b> for one full foundation proposal; a grant database like Instrumentl costs <b>$299+ a month</b>.
+<p class="compare">For comparison: a freelance grant writer charges about <b>$75 an hour</b>, or about <b>$1,500</b> for one full foundation proposal; a grant database like Instrumentl costs <b>$299+ a month</b>.
 All figures measured from {R.total_runs} real AI runs.</p>
 <div class="cols cost-cols">
 <div><h3>How we keep it cheap</h3>
@@ -291,7 +291,7 @@ is juggling research, deadlines and writing at the same time.”</blockquote>
 <tr><td>First draft of an answer</td><td>1–2 h</td><td><b>6 s</b> + editing</td></tr>
 <tr><td>Fact-check every claim</td><td>often skipped</td><td><b>6 s</b></td></tr>
 <tr><td>Board update</td><td>1–2 h</td><td><b>under 10 s</b></td></tr>
-<tr><td>Hiring a writer for one full proposal</td><td>$1,500–5,000 flat fee (≈$75/h)</td><td><b>under $0.02</b> of AI</td></tr>
+<tr><td>Hiring a writer for one full proposal</td><td>about $1,500</td><td><b>under $0.02</b> of AI</td></tr>
 </tbody></table>
 <p class="em small">≈5 hours saved per application → about <b>20 hours a month</b> back for programmes.</p></div>
 </div>

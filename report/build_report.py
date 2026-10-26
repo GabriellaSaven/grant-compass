@@ -434,7 +434,7 @@ page("Motivation", f"""
 <div><b>68%</b><span>of organisations name <i>time</i> as their biggest grant-seeking challenge (GrantStation, 2023)</span></div>
 <div><b>2 days–4 weeks</b><span>to prepare a single proposal (SSIR, on grant-writing workloads)</span></div>
 <div><b>~48 hours</b><span>median time per application to a philanthropic funder (SmartyGrants)</span></div>
-<div><b>$1,500–$5,000</b><span>a freelance writer's flat fee for one full foundation proposal; hourly rates are $30–150 (Grantable, 2026)</span></div>
+<div><b>~$1,500</b><span>to hire a freelance writer for one foundation proposal (about 20 hours at $75 an hour)</span></div>
 <div><b>22% vs 72%</b><span>of very small vs other nonprofits received even one foundation grant (Candid)</span></div>
 <div><b>$299+/month</b><span>for a grant-search database like Instrumentl, out of reach for most small groups</span></div>
 </div>
@@ -464,7 +464,7 @@ page("What is new", f"""
  ("<b>Candid Foundation Directory</b>", "✓ reference database", "—", "—", "—", "—", "≈$1,200–$2,200/yr"),
  ("<b>Grantable</b> (startup)", "Basic", "—", "✓ AI drafting", "—", "—", "$0–$150/mo"),
  ("<b>ChatGPT</b>", "—", "Only what you paste", "✓", "— can invent numbers", "—", "$0–$20/mo"),
- ("<b>Freelance writer</b>", "Sometimes", "✓ (human)", "✓", "✓ (human)", "Extra fee", "$1,500–$5,000 flat fee per proposal (≈$75/h)"),
+ ("<b>Freelance writer</b>", "Sometimes", "✓ (human)", "✓", "✓ (human)", "Extra fee", "about $1,500 / proposal"),
  ("<b>Grant Compass</b>", "✓ Grants.gov, state portals, 74 foundations, any link", "✓ 7 dimensions, quotes verified", "✓ from your documents only", "✓ Evidence Checker + Coach", "✓ reports, board update", f"≈{money(per_user_month, 2)}/mo in AI"),
 ], "small")}
 <h3>What is different, honestly</h3>
@@ -605,7 +605,7 @@ page("Impact", f"""
  ("First draft of one 250-word answer from your records", "1–2 hours", "6 s draft, plus editing", "Traced run"),
  ("Check every claim in an answer against your documents", "Often skipped", "6 s; caught 2 contradicted figures", "Traced run"),
  ("Board fundraising update", "1–2 hours compiling", "Under 10 s, every number checked", "Reports page"),
- ("Hiring a writer for one full foundation proposal", "$1,500–$5,000 flat fee (writers charge $30–150/h)", "Under $0.02 in AI per application", "Usage log; rate guides"),
+ ("Hiring a writer for one full foundation proposal", "about $1,500 (≈20 h at $75/h)", "Under $0.02 in AI per application", "Usage log; rate guides"),
 ], "small")}
 <h3>What it adds up to</h3>
 <p>A careful estimate, to be tested by the user session: if a development director saves even <b>5 hours per
@@ -644,7 +644,7 @@ gaps the Evidence Checker finds, and outcome data that updates the library after
 <li><a href="https://candid.org/blogs/data-insights-very-small-nonprofits-make-up-majority-us-nonprofits/" target="_blank" rel="noopener">Candid, "Very small nonprofits make up the majority of US nonprofits"</a> (May 2025): 22% vs 72%.</li>
 <li><a href="https://ssir.org/articles/entry/grant-writing-infrastructure" target="_blank" rel="noopener">Stanford Social Innovation Review, "Grant-writing infrastructure"</a>, citing GrantStation's 2023 State of Grantseeking report: 68%; 2 days to 4 weeks per proposal.</li>
 <li><a href="https://smartygrants.com.au/articles/smartystats-reveal-how-applicants-are-lodging-forms" target="_blank" rel="noopener">SmartyGrants, "SmartyStats"</a>: median about 48 hours per application to philanthropic funders (Australia).</li>
-<li><a href="https://grantable.co/how-much-does-a-grant-writer-cost" target="_blank" rel="noopener">Grantable, "How much does a grant writer cost? (2026)"</a>: freelance writers charge $30–150 an hour (about $75 mid-level), or flat fees of $1,500–$5,000 per foundation proposal. Grantable sells AI grant-writing software, so treat its figures as an upper-middle estimate.</li>
+<li><a href="https://grantable.co/how-much-does-a-grant-writer-cost" target="_blank" rel="noopener">Grantable, "How much does a grant writer cost? (2026)"</a>: freelance writers charge $30–150 an hour (about $75 mid-level); flat fees for a foundation proposal start at about $1,500, the figure used here.</li>
 <li>Pricing: Instrumentl (<a href="https://aitoolsbakery.com/blog/instrumentl-pricing/" target="_blank" rel="noopener">AI Tools Bakery</a>, <a href="https://grantsights.com/blog/instrumentl-pricing" target="_blank" rel="noopener">Grantsights</a>); Candid Foundation Directory (<a href="https://grantsights.com/blog/candid-foundation-directory-pricing" target="_blank" rel="noopener">Grantsights</a>); Grantable (<a href="https://grantable.co/docs/billing/plans" target="_blank" rel="noopener">Grantable plans</a>).</li>
 <li>Grant Compass evidence in the repository: <a href="https://github.com/GabriellaSaven/grant-compass/blob/master/tests/safety_results.md" target="_blank" rel="noopener">safety test results</a>, <a href="https://github.com/GabriellaSaven/grant-compass/blob/master/report/cost_experiment.json" target="_blank" rel="noopener">cost experiment</a>, <a href="https://github.com/GabriellaSaven/grant-compass/blob/master/report/user_review.md" target="_blank" rel="noopener">user review</a>. Token counts come from the app's usage logs, which stay on the computer running the app (they are excluded from git) and are summarised in section 4.</li></ol>""")
 

@@ -2751,3 +2751,21 @@ needed to be.
   - slide 10: the limits and next-steps text
 - Checked every slide in Chrome: no overflow; the "22% vs 72%" stat stays on
   one line.
+
+## Writer fee: about $1,500 per proposal
+
+**Prompt:** "it should say approximately 1500 per grant, not 1500-5000, that is
+totally unrealistic"
+
+**What was lacking before:** the $1,500–5,000 range (Grantable's published
+flat-fee range) overstated what small nonprofits actually pay, according to
+the author's own fundraising experience.
+
+- Changed to "about $1,500 per proposal" everywhere:
+  - report: the page 3 stat (about 20 hours at $75 an hour), the page 4
+    comparison table, and the page 14 Impact table
+  - slides: the comparison line on slide 7, and the Impact table on
+    slide 9
+- The source note on page 15 now says $1,500 is where flat fees start in
+  the guide, and that it's the figure used.
+- Checked: no fee range is left in either file; all 15 report pages fit.
