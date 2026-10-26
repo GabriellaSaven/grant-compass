@@ -2807,3 +2807,14 @@ the oldest supported Python.
   links on Pipeline, which opens grants in a pop-up panel. Fixed in the
   script only.
 - Test clones and servers were removed afterwards.
+
+## Submitted
+
+**Prompt:** "ok i have uploaded those two files"
+
+**What was lacking before:** nothing; this marks submission.
+
+- Submitted on Canvas, 26 October 2026: `report/report.html` and
+  `report/slides.html`, no video. Both link to the public repo
+  https://github.com/GabriellaSaven/grant-compass. The final app commit is
+  `e286389`; later commits only change this log.
